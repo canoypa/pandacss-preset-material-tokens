@@ -1,4 +1,10 @@
-# Panda CSS Preset Material Tokens
+# pandacss-preset-material-tokens
+
+# Installation
+
+```shell
+npm install --save-dev pandacss-preset-material-tokens
+```
 
 # Usage
 
@@ -18,5 +24,13 @@ export default defineConfig({
       ],
     }),
   ],
+});
+```
+
+```jsx
+css({
+  backgroundColor: "dark.surface"
+  color: "dark.primary",
+  textStyle: "body-medium"
 });
 ```
