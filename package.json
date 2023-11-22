@@ -9,6 +9,9 @@
     "material design",
     "material3"
   ],
+  "files": [
+    "dist/"
+  ],
   "main": "./dist/index.cjs",
   "types": "./dist/index.d.ts",
   "exports": {
