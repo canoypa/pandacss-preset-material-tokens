@@ -29,6 +29,6 @@
     "tsup": "^8.0.2"
   },
   "peerDependencies": {
-    "@pandacss/dev": "^0.15.5"
+    "@pandacss/dev": "~0.x"
   }
 }
