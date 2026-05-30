@@ -17,6 +17,7 @@ export function presetMaterialTokens<T extends CustomColor>({
   const materialTheme = themeFromSourceColor(sourceColor, customColors);
 
   return definePreset({
+    name: "preset-material-tokens",
     theme: {
       extend: {
         tokens: {

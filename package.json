@@ -24,9 +24,9 @@
     "prepublishOnly": "pnpm run build"
   },
   "devDependencies": {
-    "@material/material-color-utilities": "^0.2.7",
-    "@pandacss/dev": "^0.37.2",
-    "tsup": "^8.0.2"
+    "@material/material-color-utilities": "^0.3.0",
+    "@pandacss/dev": "^0.53.7",
+    "tsup": "^8.5.0"
   },
   "peerDependencies": {
     "@pandacss/dev": "~0.x"
