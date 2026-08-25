@@ -1,7 +1,13 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "moduleResolution": "node"
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true
   },
   "include": ["src/**/*.ts"]
 }

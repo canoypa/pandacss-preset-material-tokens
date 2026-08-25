@@ -15,7 +15,7 @@ import presetMaterialTokens from "pandacss-preset-material-tokens";
 
 export default defineConfig({
   presets: [
-    materialTokens({
+    presetMaterialTokens({
       sourceColor: 0x8282f4,
       customColors: [
         { name: "info", value: 0x42a5f5, blend: true },
@@ -29,7 +29,7 @@ export default defineConfig({
 
 ```jsx
 css({
-  backgroundColor: "dark.surface"
+  backgroundColor: "dark.surface",
   color: "dark.primary",
   textStyle: "body-medium"
 });
