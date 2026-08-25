@@ -12,23 +12,33 @@
   "files": [
     "dist/"
   ],
-  "main": "./dist/index.cjs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
-    "types": "./dist/index.d.ts",
-    "import": "./dist/index.mjs",
-    "require": "./dist/index.cjs"
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
   },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --clean --minify",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "pnpm run build",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@material/material-color-utilities": "^0.4.0",
-    "@pandacss/dev": "^0.53.7",
-    "tsup": "^8.5.0"
+    "@pandacss/dev": "^1.12.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "@pandacss/dev": "~0.x"
+    "@pandacss/dev": "^1.0.0"
   }
 }
