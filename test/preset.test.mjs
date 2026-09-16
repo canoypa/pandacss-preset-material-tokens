@@ -17,7 +17,7 @@ test("options", (t) => {
     sourceColor: 0x8282f4,
     variant: "expressive",
     contrastLevel: 0.5,
-    darkCondition: "_osDark",
+    darkCondition: "_dark",
   });
   const { tokens, semanticTokens } = preset.theme.extend;
   t.assert.snapshot({

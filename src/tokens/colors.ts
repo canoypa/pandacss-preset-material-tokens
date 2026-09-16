@@ -160,7 +160,7 @@ export function makeColors(options: ColorOptions): {
 } {
   const light = makeModeColors(options, false);
   const dark = makeModeColors(options, true);
-  const darkCondition = options.darkCondition ?? "_dark";
+  const darkCondition = options.darkCondition ?? "_osDark";
 
   const semanticTokens: ColorSemanticTokens = {};
   for (const [name, { deprecated }] of Object.entries(light)) {

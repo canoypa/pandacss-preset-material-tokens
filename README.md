@@ -27,7 +27,7 @@ export default defineConfig({
 });
 ```
 
-Color roles switch between light and dark with the `_dark` condition:
+Color roles follow the OS light / dark setting (the `_osDark` condition):
 
 ```jsx
 css({
@@ -54,7 +54,7 @@ css({
 | `customColors`  | `[]`           | Extra color roles. `blend: true` harmonizes the color with `sourceColor`.          |
 | `variant`       | `"tonal-spot"` | Dynamic color scheme: `"tonal-spot"`, `"vibrant"`, `"expressive"` or `"neutral"`.  |
 | `contrastLevel` | `0`            | `-1` (reduced) to `1` (high). `0.5` is medium contrast.                            |
-| `darkCondition` | `"_dark"`      | Panda condition used for dark colors, e.g. `"_osDark"` to follow the OS setting.   |
+| `darkCondition` | `"_osDark"`    | Panda condition used for dark colors, e.g. `"_dark"` to switch with a `.dark` class. |
 
 # Tokens
 

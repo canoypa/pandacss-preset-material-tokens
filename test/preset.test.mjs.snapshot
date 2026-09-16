@@ -11,7 +11,7 @@ exports[`options 1`] = `
   "semantic": {
     "value": {
       "base": "{colors.light.primary}",
-      "_osDark": "{colors.dark.primary}"
+      "_dark": "{colors.dark.primary}"
     }
   }
 }
@@ -1370,1112 +1370,1112 @@ exports[`preset output 1`] = `
           "background": {
             "value": {
               "base": "{colors.light.background}",
-              "_dark": "{colors.dark.background}"
+              "_osDark": "{colors.dark.background}"
             }
           },
           "on-background": {
             "value": {
               "base": "{colors.light.on-background}",
-              "_dark": "{colors.dark.on-background}"
+              "_osDark": "{colors.dark.on-background}"
             }
           },
           "surface": {
             "value": {
               "base": "{colors.light.surface}",
-              "_dark": "{colors.dark.surface}"
+              "_osDark": "{colors.dark.surface}"
             }
           },
           "surface-dim": {
             "value": {
               "base": "{colors.light.surface-dim}",
-              "_dark": "{colors.dark.surface-dim}"
+              "_osDark": "{colors.dark.surface-dim}"
             }
           },
           "surface-bright": {
             "value": {
               "base": "{colors.light.surface-bright}",
-              "_dark": "{colors.dark.surface-bright}"
+              "_osDark": "{colors.dark.surface-bright}"
             }
           },
           "surface-container-lowest": {
             "value": {
               "base": "{colors.light.surface-container-lowest}",
-              "_dark": "{colors.dark.surface-container-lowest}"
+              "_osDark": "{colors.dark.surface-container-lowest}"
             }
           },
           "surface-container-low": {
             "value": {
               "base": "{colors.light.surface-container-low}",
-              "_dark": "{colors.dark.surface-container-low}"
+              "_osDark": "{colors.dark.surface-container-low}"
             }
           },
           "surface-container": {
             "value": {
               "base": "{colors.light.surface-container}",
-              "_dark": "{colors.dark.surface-container}"
+              "_osDark": "{colors.dark.surface-container}"
             }
           },
           "surface-container-high": {
             "value": {
               "base": "{colors.light.surface-container-high}",
-              "_dark": "{colors.dark.surface-container-high}"
+              "_osDark": "{colors.dark.surface-container-high}"
             }
           },
           "surface-container-highest": {
             "value": {
               "base": "{colors.light.surface-container-highest}",
-              "_dark": "{colors.dark.surface-container-highest}"
+              "_osDark": "{colors.dark.surface-container-highest}"
             }
           },
           "on-surface": {
             "value": {
               "base": "{colors.light.on-surface}",
-              "_dark": "{colors.dark.on-surface}"
+              "_osDark": "{colors.dark.on-surface}"
             }
           },
           "surface-variant": {
             "value": {
               "base": "{colors.light.surface-variant}",
-              "_dark": "{colors.dark.surface-variant}"
+              "_osDark": "{colors.dark.surface-variant}"
             }
           },
           "on-surface-variant": {
             "value": {
               "base": "{colors.light.on-surface-variant}",
-              "_dark": "{colors.dark.on-surface-variant}"
+              "_osDark": "{colors.dark.on-surface-variant}"
             }
           },
           "outline": {
             "value": {
               "base": "{colors.light.outline}",
-              "_dark": "{colors.dark.outline}"
+              "_osDark": "{colors.dark.outline}"
             }
           },
           "outline-variant": {
             "value": {
               "base": "{colors.light.outline-variant}",
-              "_dark": "{colors.dark.outline-variant}"
+              "_osDark": "{colors.dark.outline-variant}"
             }
           },
           "inverse-surface": {
             "value": {
               "base": "{colors.light.inverse-surface}",
-              "_dark": "{colors.dark.inverse-surface}"
+              "_osDark": "{colors.dark.inverse-surface}"
             }
           },
           "inverse-on-surface": {
             "value": {
               "base": "{colors.light.inverse-on-surface}",
-              "_dark": "{colors.dark.inverse-on-surface}"
+              "_osDark": "{colors.dark.inverse-on-surface}"
             }
           },
           "shadow": {
             "value": {
               "base": "{colors.light.shadow}",
-              "_dark": "{colors.dark.shadow}"
+              "_osDark": "{colors.dark.shadow}"
             }
           },
           "scrim": {
             "value": {
               "base": "{colors.light.scrim}",
-              "_dark": "{colors.dark.scrim}"
+              "_osDark": "{colors.dark.scrim}"
             }
           },
           "surface-tint": {
             "value": {
               "base": "{colors.light.surface-tint}",
-              "_dark": "{colors.dark.surface-tint}"
+              "_osDark": "{colors.dark.surface-tint}"
             },
             "deprecated": "Use elevation instead."
           },
           "primary": {
             "value": {
               "base": "{colors.light.primary}",
-              "_dark": "{colors.dark.primary}"
+              "_osDark": "{colors.dark.primary}"
             }
           },
           "on-primary": {
             "value": {
               "base": "{colors.light.on-primary}",
-              "_dark": "{colors.dark.on-primary}"
+              "_osDark": "{colors.dark.on-primary}"
             }
           },
           "primary-container": {
             "value": {
               "base": "{colors.light.primary-container}",
-              "_dark": "{colors.dark.primary-container}"
+              "_osDark": "{colors.dark.primary-container}"
             }
           },
           "on-primary-container": {
             "value": {
               "base": "{colors.light.on-primary-container}",
-              "_dark": "{colors.dark.on-primary-container}"
+              "_osDark": "{colors.dark.on-primary-container}"
             }
           },
           "inverse-primary": {
             "value": {
               "base": "{colors.light.inverse-primary}",
-              "_dark": "{colors.dark.inverse-primary}"
+              "_osDark": "{colors.dark.inverse-primary}"
             }
           },
           "primary-fixed": {
             "value": {
               "base": "{colors.light.primary-fixed}",
-              "_dark": "{colors.dark.primary-fixed}"
+              "_osDark": "{colors.dark.primary-fixed}"
             }
           },
           "primary-fixed-dim": {
             "value": {
               "base": "{colors.light.primary-fixed-dim}",
-              "_dark": "{colors.dark.primary-fixed-dim}"
+              "_osDark": "{colors.dark.primary-fixed-dim}"
             }
           },
           "on-primary-fixed": {
             "value": {
               "base": "{colors.light.on-primary-fixed}",
-              "_dark": "{colors.dark.on-primary-fixed}"
+              "_osDark": "{colors.dark.on-primary-fixed}"
             }
           },
           "on-primary-fixed-variant": {
             "value": {
               "base": "{colors.light.on-primary-fixed-variant}",
-              "_dark": "{colors.dark.on-primary-fixed-variant}"
+              "_osDark": "{colors.dark.on-primary-fixed-variant}"
             }
           },
           "secondary": {
             "value": {
               "base": "{colors.light.secondary}",
-              "_dark": "{colors.dark.secondary}"
+              "_osDark": "{colors.dark.secondary}"
             }
           },
           "on-secondary": {
             "value": {
               "base": "{colors.light.on-secondary}",
-              "_dark": "{colors.dark.on-secondary}"
+              "_osDark": "{colors.dark.on-secondary}"
             }
           },
           "secondary-container": {
             "value": {
               "base": "{colors.light.secondary-container}",
-              "_dark": "{colors.dark.secondary-container}"
+              "_osDark": "{colors.dark.secondary-container}"
             }
           },
           "on-secondary-container": {
             "value": {
               "base": "{colors.light.on-secondary-container}",
-              "_dark": "{colors.dark.on-secondary-container}"
+              "_osDark": "{colors.dark.on-secondary-container}"
             }
           },
           "secondary-fixed": {
             "value": {
               "base": "{colors.light.secondary-fixed}",
-              "_dark": "{colors.dark.secondary-fixed}"
+              "_osDark": "{colors.dark.secondary-fixed}"
             }
           },
           "secondary-fixed-dim": {
             "value": {
               "base": "{colors.light.secondary-fixed-dim}",
-              "_dark": "{colors.dark.secondary-fixed-dim}"
+              "_osDark": "{colors.dark.secondary-fixed-dim}"
             }
           },
           "on-secondary-fixed": {
             "value": {
               "base": "{colors.light.on-secondary-fixed}",
-              "_dark": "{colors.dark.on-secondary-fixed}"
+              "_osDark": "{colors.dark.on-secondary-fixed}"
             }
           },
           "on-secondary-fixed-variant": {
             "value": {
               "base": "{colors.light.on-secondary-fixed-variant}",
-              "_dark": "{colors.dark.on-secondary-fixed-variant}"
+              "_osDark": "{colors.dark.on-secondary-fixed-variant}"
             }
           },
           "tertiary": {
             "value": {
               "base": "{colors.light.tertiary}",
-              "_dark": "{colors.dark.tertiary}"
+              "_osDark": "{colors.dark.tertiary}"
             }
           },
           "on-tertiary": {
             "value": {
               "base": "{colors.light.on-tertiary}",
-              "_dark": "{colors.dark.on-tertiary}"
+              "_osDark": "{colors.dark.on-tertiary}"
             }
           },
           "tertiary-container": {
             "value": {
               "base": "{colors.light.tertiary-container}",
-              "_dark": "{colors.dark.tertiary-container}"
+              "_osDark": "{colors.dark.tertiary-container}"
             }
           },
           "on-tertiary-container": {
             "value": {
               "base": "{colors.light.on-tertiary-container}",
-              "_dark": "{colors.dark.on-tertiary-container}"
+              "_osDark": "{colors.dark.on-tertiary-container}"
             }
           },
           "tertiary-fixed": {
             "value": {
               "base": "{colors.light.tertiary-fixed}",
-              "_dark": "{colors.dark.tertiary-fixed}"
+              "_osDark": "{colors.dark.tertiary-fixed}"
             }
           },
           "tertiary-fixed-dim": {
             "value": {
               "base": "{colors.light.tertiary-fixed-dim}",
-              "_dark": "{colors.dark.tertiary-fixed-dim}"
+              "_osDark": "{colors.dark.tertiary-fixed-dim}"
             }
           },
           "on-tertiary-fixed": {
             "value": {
               "base": "{colors.light.on-tertiary-fixed}",
-              "_dark": "{colors.dark.on-tertiary-fixed}"
+              "_osDark": "{colors.dark.on-tertiary-fixed}"
             }
           },
           "on-tertiary-fixed-variant": {
             "value": {
               "base": "{colors.light.on-tertiary-fixed-variant}",
-              "_dark": "{colors.dark.on-tertiary-fixed-variant}"
+              "_osDark": "{colors.dark.on-tertiary-fixed-variant}"
             }
           },
           "error": {
             "value": {
               "base": "{colors.light.error}",
-              "_dark": "{colors.dark.error}"
+              "_osDark": "{colors.dark.error}"
             }
           },
           "on-error": {
             "value": {
               "base": "{colors.light.on-error}",
-              "_dark": "{colors.dark.on-error}"
+              "_osDark": "{colors.dark.on-error}"
             }
           },
           "error-container": {
             "value": {
               "base": "{colors.light.error-container}",
-              "_dark": "{colors.dark.error-container}"
+              "_osDark": "{colors.dark.error-container}"
             }
           },
           "on-error-container": {
             "value": {
               "base": "{colors.light.on-error-container}",
-              "_dark": "{colors.dark.on-error-container}"
+              "_osDark": "{colors.dark.on-error-container}"
             }
           },
           "primary-0": {
             "value": {
               "base": "{colors.light.primary-0}",
-              "_dark": "{colors.dark.primary-0}"
+              "_osDark": "{colors.dark.primary-0}"
             }
           },
           "primary-10": {
             "value": {
               "base": "{colors.light.primary-10}",
-              "_dark": "{colors.dark.primary-10}"
+              "_osDark": "{colors.dark.primary-10}"
             }
           },
           "primary-20": {
             "value": {
               "base": "{colors.light.primary-20}",
-              "_dark": "{colors.dark.primary-20}"
+              "_osDark": "{colors.dark.primary-20}"
             }
           },
           "primary-25": {
             "value": {
               "base": "{colors.light.primary-25}",
-              "_dark": "{colors.dark.primary-25}"
+              "_osDark": "{colors.dark.primary-25}"
             }
           },
           "primary-30": {
             "value": {
               "base": "{colors.light.primary-30}",
-              "_dark": "{colors.dark.primary-30}"
+              "_osDark": "{colors.dark.primary-30}"
             }
           },
           "primary-35": {
             "value": {
               "base": "{colors.light.primary-35}",
-              "_dark": "{colors.dark.primary-35}"
+              "_osDark": "{colors.dark.primary-35}"
             }
           },
           "primary-40": {
             "value": {
               "base": "{colors.light.primary-40}",
-              "_dark": "{colors.dark.primary-40}"
+              "_osDark": "{colors.dark.primary-40}"
             }
           },
           "primary-50": {
             "value": {
               "base": "{colors.light.primary-50}",
-              "_dark": "{colors.dark.primary-50}"
+              "_osDark": "{colors.dark.primary-50}"
             }
           },
           "primary-60": {
             "value": {
               "base": "{colors.light.primary-60}",
-              "_dark": "{colors.dark.primary-60}"
+              "_osDark": "{colors.dark.primary-60}"
             }
           },
           "primary-70": {
             "value": {
               "base": "{colors.light.primary-70}",
-              "_dark": "{colors.dark.primary-70}"
+              "_osDark": "{colors.dark.primary-70}"
             }
           },
           "primary-80": {
             "value": {
               "base": "{colors.light.primary-80}",
-              "_dark": "{colors.dark.primary-80}"
+              "_osDark": "{colors.dark.primary-80}"
             }
           },
           "primary-90": {
             "value": {
               "base": "{colors.light.primary-90}",
-              "_dark": "{colors.dark.primary-90}"
+              "_osDark": "{colors.dark.primary-90}"
             }
           },
           "primary-95": {
             "value": {
               "base": "{colors.light.primary-95}",
-              "_dark": "{colors.dark.primary-95}"
+              "_osDark": "{colors.dark.primary-95}"
             }
           },
           "primary-98": {
             "value": {
               "base": "{colors.light.primary-98}",
-              "_dark": "{colors.dark.primary-98}"
+              "_osDark": "{colors.dark.primary-98}"
             }
           },
           "primary-99": {
             "value": {
               "base": "{colors.light.primary-99}",
-              "_dark": "{colors.dark.primary-99}"
+              "_osDark": "{colors.dark.primary-99}"
             }
           },
           "primary-100": {
             "value": {
               "base": "{colors.light.primary-100}",
-              "_dark": "{colors.dark.primary-100}"
+              "_osDark": "{colors.dark.primary-100}"
             }
           },
           "secondary-0": {
             "value": {
               "base": "{colors.light.secondary-0}",
-              "_dark": "{colors.dark.secondary-0}"
+              "_osDark": "{colors.dark.secondary-0}"
             }
           },
           "secondary-10": {
             "value": {
               "base": "{colors.light.secondary-10}",
-              "_dark": "{colors.dark.secondary-10}"
+              "_osDark": "{colors.dark.secondary-10}"
             }
           },
           "secondary-20": {
             "value": {
               "base": "{colors.light.secondary-20}",
-              "_dark": "{colors.dark.secondary-20}"
+              "_osDark": "{colors.dark.secondary-20}"
             }
           },
           "secondary-25": {
             "value": {
               "base": "{colors.light.secondary-25}",
-              "_dark": "{colors.dark.secondary-25}"
+              "_osDark": "{colors.dark.secondary-25}"
             }
           },
           "secondary-30": {
             "value": {
               "base": "{colors.light.secondary-30}",
-              "_dark": "{colors.dark.secondary-30}"
+              "_osDark": "{colors.dark.secondary-30}"
             }
           },
           "secondary-35": {
             "value": {
               "base": "{colors.light.secondary-35}",
-              "_dark": "{colors.dark.secondary-35}"
+              "_osDark": "{colors.dark.secondary-35}"
             }
           },
           "secondary-40": {
             "value": {
               "base": "{colors.light.secondary-40}",
-              "_dark": "{colors.dark.secondary-40}"
+              "_osDark": "{colors.dark.secondary-40}"
             }
           },
           "secondary-50": {
             "value": {
               "base": "{colors.light.secondary-50}",
-              "_dark": "{colors.dark.secondary-50}"
+              "_osDark": "{colors.dark.secondary-50}"
             }
           },
           "secondary-60": {
             "value": {
               "base": "{colors.light.secondary-60}",
-              "_dark": "{colors.dark.secondary-60}"
+              "_osDark": "{colors.dark.secondary-60}"
             }
           },
           "secondary-70": {
             "value": {
               "base": "{colors.light.secondary-70}",
-              "_dark": "{colors.dark.secondary-70}"
+              "_osDark": "{colors.dark.secondary-70}"
             }
           },
           "secondary-80": {
             "value": {
               "base": "{colors.light.secondary-80}",
-              "_dark": "{colors.dark.secondary-80}"
+              "_osDark": "{colors.dark.secondary-80}"
             }
           },
           "secondary-90": {
             "value": {
               "base": "{colors.light.secondary-90}",
-              "_dark": "{colors.dark.secondary-90}"
+              "_osDark": "{colors.dark.secondary-90}"
             }
           },
           "secondary-95": {
             "value": {
               "base": "{colors.light.secondary-95}",
-              "_dark": "{colors.dark.secondary-95}"
+              "_osDark": "{colors.dark.secondary-95}"
             }
           },
           "secondary-98": {
             "value": {
               "base": "{colors.light.secondary-98}",
-              "_dark": "{colors.dark.secondary-98}"
+              "_osDark": "{colors.dark.secondary-98}"
             }
           },
           "secondary-99": {
             "value": {
               "base": "{colors.light.secondary-99}",
-              "_dark": "{colors.dark.secondary-99}"
+              "_osDark": "{colors.dark.secondary-99}"
             }
           },
           "secondary-100": {
             "value": {
               "base": "{colors.light.secondary-100}",
-              "_dark": "{colors.dark.secondary-100}"
+              "_osDark": "{colors.dark.secondary-100}"
             }
           },
           "tertiary-0": {
             "value": {
               "base": "{colors.light.tertiary-0}",
-              "_dark": "{colors.dark.tertiary-0}"
+              "_osDark": "{colors.dark.tertiary-0}"
             }
           },
           "tertiary-10": {
             "value": {
               "base": "{colors.light.tertiary-10}",
-              "_dark": "{colors.dark.tertiary-10}"
+              "_osDark": "{colors.dark.tertiary-10}"
             }
           },
           "tertiary-20": {
             "value": {
               "base": "{colors.light.tertiary-20}",
-              "_dark": "{colors.dark.tertiary-20}"
+              "_osDark": "{colors.dark.tertiary-20}"
             }
           },
           "tertiary-25": {
             "value": {
               "base": "{colors.light.tertiary-25}",
-              "_dark": "{colors.dark.tertiary-25}"
+              "_osDark": "{colors.dark.tertiary-25}"
             }
           },
           "tertiary-30": {
             "value": {
               "base": "{colors.light.tertiary-30}",
-              "_dark": "{colors.dark.tertiary-30}"
+              "_osDark": "{colors.dark.tertiary-30}"
             }
           },
           "tertiary-35": {
             "value": {
               "base": "{colors.light.tertiary-35}",
-              "_dark": "{colors.dark.tertiary-35}"
+              "_osDark": "{colors.dark.tertiary-35}"
             }
           },
           "tertiary-40": {
             "value": {
               "base": "{colors.light.tertiary-40}",
-              "_dark": "{colors.dark.tertiary-40}"
+              "_osDark": "{colors.dark.tertiary-40}"
             }
           },
           "tertiary-50": {
             "value": {
               "base": "{colors.light.tertiary-50}",
-              "_dark": "{colors.dark.tertiary-50}"
+              "_osDark": "{colors.dark.tertiary-50}"
             }
           },
           "tertiary-60": {
             "value": {
               "base": "{colors.light.tertiary-60}",
-              "_dark": "{colors.dark.tertiary-60}"
+              "_osDark": "{colors.dark.tertiary-60}"
             }
           },
           "tertiary-70": {
             "value": {
               "base": "{colors.light.tertiary-70}",
-              "_dark": "{colors.dark.tertiary-70}"
+              "_osDark": "{colors.dark.tertiary-70}"
             }
           },
           "tertiary-80": {
             "value": {
               "base": "{colors.light.tertiary-80}",
-              "_dark": "{colors.dark.tertiary-80}"
+              "_osDark": "{colors.dark.tertiary-80}"
             }
           },
           "tertiary-90": {
             "value": {
               "base": "{colors.light.tertiary-90}",
-              "_dark": "{colors.dark.tertiary-90}"
+              "_osDark": "{colors.dark.tertiary-90}"
             }
           },
           "tertiary-95": {
             "value": {
               "base": "{colors.light.tertiary-95}",
-              "_dark": "{colors.dark.tertiary-95}"
+              "_osDark": "{colors.dark.tertiary-95}"
             }
           },
           "tertiary-98": {
             "value": {
               "base": "{colors.light.tertiary-98}",
-              "_dark": "{colors.dark.tertiary-98}"
+              "_osDark": "{colors.dark.tertiary-98}"
             }
           },
           "tertiary-99": {
             "value": {
               "base": "{colors.light.tertiary-99}",
-              "_dark": "{colors.dark.tertiary-99}"
+              "_osDark": "{colors.dark.tertiary-99}"
             }
           },
           "tertiary-100": {
             "value": {
               "base": "{colors.light.tertiary-100}",
-              "_dark": "{colors.dark.tertiary-100}"
+              "_osDark": "{colors.dark.tertiary-100}"
             }
           },
           "neutral-0": {
             "value": {
               "base": "{colors.light.neutral-0}",
-              "_dark": "{colors.dark.neutral-0}"
+              "_osDark": "{colors.dark.neutral-0}"
             }
           },
           "neutral-10": {
             "value": {
               "base": "{colors.light.neutral-10}",
-              "_dark": "{colors.dark.neutral-10}"
+              "_osDark": "{colors.dark.neutral-10}"
             }
           },
           "neutral-20": {
             "value": {
               "base": "{colors.light.neutral-20}",
-              "_dark": "{colors.dark.neutral-20}"
+              "_osDark": "{colors.dark.neutral-20}"
             }
           },
           "neutral-25": {
             "value": {
               "base": "{colors.light.neutral-25}",
-              "_dark": "{colors.dark.neutral-25}"
+              "_osDark": "{colors.dark.neutral-25}"
             }
           },
           "neutral-30": {
             "value": {
               "base": "{colors.light.neutral-30}",
-              "_dark": "{colors.dark.neutral-30}"
+              "_osDark": "{colors.dark.neutral-30}"
             }
           },
           "neutral-35": {
             "value": {
               "base": "{colors.light.neutral-35}",
-              "_dark": "{colors.dark.neutral-35}"
+              "_osDark": "{colors.dark.neutral-35}"
             }
           },
           "neutral-40": {
             "value": {
               "base": "{colors.light.neutral-40}",
-              "_dark": "{colors.dark.neutral-40}"
+              "_osDark": "{colors.dark.neutral-40}"
             }
           },
           "neutral-50": {
             "value": {
               "base": "{colors.light.neutral-50}",
-              "_dark": "{colors.dark.neutral-50}"
+              "_osDark": "{colors.dark.neutral-50}"
             }
           },
           "neutral-60": {
             "value": {
               "base": "{colors.light.neutral-60}",
-              "_dark": "{colors.dark.neutral-60}"
+              "_osDark": "{colors.dark.neutral-60}"
             }
           },
           "neutral-70": {
             "value": {
               "base": "{colors.light.neutral-70}",
-              "_dark": "{colors.dark.neutral-70}"
+              "_osDark": "{colors.dark.neutral-70}"
             }
           },
           "neutral-80": {
             "value": {
               "base": "{colors.light.neutral-80}",
-              "_dark": "{colors.dark.neutral-80}"
+              "_osDark": "{colors.dark.neutral-80}"
             }
           },
           "neutral-90": {
             "value": {
               "base": "{colors.light.neutral-90}",
-              "_dark": "{colors.dark.neutral-90}"
+              "_osDark": "{colors.dark.neutral-90}"
             }
           },
           "neutral-95": {
             "value": {
               "base": "{colors.light.neutral-95}",
-              "_dark": "{colors.dark.neutral-95}"
+              "_osDark": "{colors.dark.neutral-95}"
             }
           },
           "neutral-98": {
             "value": {
               "base": "{colors.light.neutral-98}",
-              "_dark": "{colors.dark.neutral-98}"
+              "_osDark": "{colors.dark.neutral-98}"
             }
           },
           "neutral-99": {
             "value": {
               "base": "{colors.light.neutral-99}",
-              "_dark": "{colors.dark.neutral-99}"
+              "_osDark": "{colors.dark.neutral-99}"
             }
           },
           "neutral-100": {
             "value": {
               "base": "{colors.light.neutral-100}",
-              "_dark": "{colors.dark.neutral-100}"
+              "_osDark": "{colors.dark.neutral-100}"
             }
           },
           "neutral-variant-0": {
             "value": {
               "base": "{colors.light.neutral-variant-0}",
-              "_dark": "{colors.dark.neutral-variant-0}"
+              "_osDark": "{colors.dark.neutral-variant-0}"
             }
           },
           "neutral-variant-10": {
             "value": {
               "base": "{colors.light.neutral-variant-10}",
-              "_dark": "{colors.dark.neutral-variant-10}"
+              "_osDark": "{colors.dark.neutral-variant-10}"
             }
           },
           "neutral-variant-20": {
             "value": {
               "base": "{colors.light.neutral-variant-20}",
-              "_dark": "{colors.dark.neutral-variant-20}"
+              "_osDark": "{colors.dark.neutral-variant-20}"
             }
           },
           "neutral-variant-25": {
             "value": {
               "base": "{colors.light.neutral-variant-25}",
-              "_dark": "{colors.dark.neutral-variant-25}"
+              "_osDark": "{colors.dark.neutral-variant-25}"
             }
           },
           "neutral-variant-30": {
             "value": {
               "base": "{colors.light.neutral-variant-30}",
-              "_dark": "{colors.dark.neutral-variant-30}"
+              "_osDark": "{colors.dark.neutral-variant-30}"
             }
           },
           "neutral-variant-35": {
             "value": {
               "base": "{colors.light.neutral-variant-35}",
-              "_dark": "{colors.dark.neutral-variant-35}"
+              "_osDark": "{colors.dark.neutral-variant-35}"
             }
           },
           "neutral-variant-40": {
             "value": {
               "base": "{colors.light.neutral-variant-40}",
-              "_dark": "{colors.dark.neutral-variant-40}"
+              "_osDark": "{colors.dark.neutral-variant-40}"
             }
           },
           "neutral-variant-50": {
             "value": {
               "base": "{colors.light.neutral-variant-50}",
-              "_dark": "{colors.dark.neutral-variant-50}"
+              "_osDark": "{colors.dark.neutral-variant-50}"
             }
           },
           "neutral-variant-60": {
             "value": {
               "base": "{colors.light.neutral-variant-60}",
-              "_dark": "{colors.dark.neutral-variant-60}"
+              "_osDark": "{colors.dark.neutral-variant-60}"
             }
           },
           "neutral-variant-70": {
             "value": {
               "base": "{colors.light.neutral-variant-70}",
-              "_dark": "{colors.dark.neutral-variant-70}"
+              "_osDark": "{colors.dark.neutral-variant-70}"
             }
           },
           "neutral-variant-80": {
             "value": {
               "base": "{colors.light.neutral-variant-80}",
-              "_dark": "{colors.dark.neutral-variant-80}"
+              "_osDark": "{colors.dark.neutral-variant-80}"
             }
           },
           "neutral-variant-90": {
             "value": {
               "base": "{colors.light.neutral-variant-90}",
-              "_dark": "{colors.dark.neutral-variant-90}"
+              "_osDark": "{colors.dark.neutral-variant-90}"
             }
           },
           "neutral-variant-95": {
             "value": {
               "base": "{colors.light.neutral-variant-95}",
-              "_dark": "{colors.dark.neutral-variant-95}"
+              "_osDark": "{colors.dark.neutral-variant-95}"
             }
           },
           "neutral-variant-98": {
             "value": {
               "base": "{colors.light.neutral-variant-98}",
-              "_dark": "{colors.dark.neutral-variant-98}"
+              "_osDark": "{colors.dark.neutral-variant-98}"
             }
           },
           "neutral-variant-99": {
             "value": {
               "base": "{colors.light.neutral-variant-99}",
-              "_dark": "{colors.dark.neutral-variant-99}"
+              "_osDark": "{colors.dark.neutral-variant-99}"
             }
           },
           "neutral-variant-100": {
             "value": {
               "base": "{colors.light.neutral-variant-100}",
-              "_dark": "{colors.dark.neutral-variant-100}"
+              "_osDark": "{colors.dark.neutral-variant-100}"
             }
           },
           "error-0": {
             "value": {
               "base": "{colors.light.error-0}",
-              "_dark": "{colors.dark.error-0}"
+              "_osDark": "{colors.dark.error-0}"
             }
           },
           "error-10": {
             "value": {
               "base": "{colors.light.error-10}",
-              "_dark": "{colors.dark.error-10}"
+              "_osDark": "{colors.dark.error-10}"
             }
           },
           "error-20": {
             "value": {
               "base": "{colors.light.error-20}",
-              "_dark": "{colors.dark.error-20}"
+              "_osDark": "{colors.dark.error-20}"
             }
           },
           "error-25": {
             "value": {
               "base": "{colors.light.error-25}",
-              "_dark": "{colors.dark.error-25}"
+              "_osDark": "{colors.dark.error-25}"
             }
           },
           "error-30": {
             "value": {
               "base": "{colors.light.error-30}",
-              "_dark": "{colors.dark.error-30}"
+              "_osDark": "{colors.dark.error-30}"
             }
           },
           "error-35": {
             "value": {
               "base": "{colors.light.error-35}",
-              "_dark": "{colors.dark.error-35}"
+              "_osDark": "{colors.dark.error-35}"
             }
           },
           "error-40": {
             "value": {
               "base": "{colors.light.error-40}",
-              "_dark": "{colors.dark.error-40}"
+              "_osDark": "{colors.dark.error-40}"
             }
           },
           "error-50": {
             "value": {
               "base": "{colors.light.error-50}",
-              "_dark": "{colors.dark.error-50}"
+              "_osDark": "{colors.dark.error-50}"
             }
           },
           "error-60": {
             "value": {
               "base": "{colors.light.error-60}",
-              "_dark": "{colors.dark.error-60}"
+              "_osDark": "{colors.dark.error-60}"
             }
           },
           "error-70": {
             "value": {
               "base": "{colors.light.error-70}",
-              "_dark": "{colors.dark.error-70}"
+              "_osDark": "{colors.dark.error-70}"
             }
           },
           "error-80": {
             "value": {
               "base": "{colors.light.error-80}",
-              "_dark": "{colors.dark.error-80}"
+              "_osDark": "{colors.dark.error-80}"
             }
           },
           "error-90": {
             "value": {
               "base": "{colors.light.error-90}",
-              "_dark": "{colors.dark.error-90}"
+              "_osDark": "{colors.dark.error-90}"
             }
           },
           "error-95": {
             "value": {
               "base": "{colors.light.error-95}",
-              "_dark": "{colors.dark.error-95}"
+              "_osDark": "{colors.dark.error-95}"
             }
           },
           "error-98": {
             "value": {
               "base": "{colors.light.error-98}",
-              "_dark": "{colors.dark.error-98}"
+              "_osDark": "{colors.dark.error-98}"
             }
           },
           "error-99": {
             "value": {
               "base": "{colors.light.error-99}",
-              "_dark": "{colors.dark.error-99}"
+              "_osDark": "{colors.dark.error-99}"
             }
           },
           "error-100": {
             "value": {
               "base": "{colors.light.error-100}",
-              "_dark": "{colors.dark.error-100}"
+              "_osDark": "{colors.dark.error-100}"
             }
           },
           "info": {
             "value": {
               "base": "{colors.light.info}",
-              "_dark": "{colors.dark.info}"
+              "_osDark": "{colors.dark.info}"
             }
           },
           "on-info": {
             "value": {
               "base": "{colors.light.on-info}",
-              "_dark": "{colors.dark.on-info}"
+              "_osDark": "{colors.dark.on-info}"
             }
           },
           "info-container": {
             "value": {
               "base": "{colors.light.info-container}",
-              "_dark": "{colors.dark.info-container}"
+              "_osDark": "{colors.dark.info-container}"
             }
           },
           "on-info-container": {
             "value": {
               "base": "{colors.light.on-info-container}",
-              "_dark": "{colors.dark.on-info-container}"
+              "_osDark": "{colors.dark.on-info-container}"
             }
           },
           "info-0": {
             "value": {
               "base": "{colors.light.info-0}",
-              "_dark": "{colors.dark.info-0}"
+              "_osDark": "{colors.dark.info-0}"
             }
           },
           "info-10": {
             "value": {
               "base": "{colors.light.info-10}",
-              "_dark": "{colors.dark.info-10}"
+              "_osDark": "{colors.dark.info-10}"
             }
           },
           "info-20": {
             "value": {
               "base": "{colors.light.info-20}",
-              "_dark": "{colors.dark.info-20}"
+              "_osDark": "{colors.dark.info-20}"
             }
           },
           "info-25": {
             "value": {
               "base": "{colors.light.info-25}",
-              "_dark": "{colors.dark.info-25}"
+              "_osDark": "{colors.dark.info-25}"
             }
           },
           "info-30": {
             "value": {
               "base": "{colors.light.info-30}",
-              "_dark": "{colors.dark.info-30}"
+              "_osDark": "{colors.dark.info-30}"
             }
           },
           "info-35": {
             "value": {
               "base": "{colors.light.info-35}",
-              "_dark": "{colors.dark.info-35}"
+              "_osDark": "{colors.dark.info-35}"
             }
           },
           "info-40": {
             "value": {
               "base": "{colors.light.info-40}",
-              "_dark": "{colors.dark.info-40}"
+              "_osDark": "{colors.dark.info-40}"
             }
           },
           "info-50": {
             "value": {
               "base": "{colors.light.info-50}",
-              "_dark": "{colors.dark.info-50}"
+              "_osDark": "{colors.dark.info-50}"
             }
           },
           "info-60": {
             "value": {
               "base": "{colors.light.info-60}",
-              "_dark": "{colors.dark.info-60}"
+              "_osDark": "{colors.dark.info-60}"
             }
           },
           "info-70": {
             "value": {
               "base": "{colors.light.info-70}",
-              "_dark": "{colors.dark.info-70}"
+              "_osDark": "{colors.dark.info-70}"
             }
           },
           "info-80": {
             "value": {
               "base": "{colors.light.info-80}",
-              "_dark": "{colors.dark.info-80}"
+              "_osDark": "{colors.dark.info-80}"
             }
           },
           "info-90": {
             "value": {
               "base": "{colors.light.info-90}",
-              "_dark": "{colors.dark.info-90}"
+              "_osDark": "{colors.dark.info-90}"
             }
           },
           "info-95": {
             "value": {
               "base": "{colors.light.info-95}",
-              "_dark": "{colors.dark.info-95}"
+              "_osDark": "{colors.dark.info-95}"
             }
           },
           "info-98": {
             "value": {
               "base": "{colors.light.info-98}",
-              "_dark": "{colors.dark.info-98}"
+              "_osDark": "{colors.dark.info-98}"
             }
           },
           "info-99": {
             "value": {
               "base": "{colors.light.info-99}",
-              "_dark": "{colors.dark.info-99}"
+              "_osDark": "{colors.dark.info-99}"
             }
           },
           "info-100": {
             "value": {
               "base": "{colors.light.info-100}",
-              "_dark": "{colors.dark.info-100}"
+              "_osDark": "{colors.dark.info-100}"
             }
           },
           "warning": {
             "value": {
               "base": "{colors.light.warning}",
-              "_dark": "{colors.dark.warning}"
+              "_osDark": "{colors.dark.warning}"
             }
           },
           "on-warning": {
             "value": {
               "base": "{colors.light.on-warning}",
-              "_dark": "{colors.dark.on-warning}"
+              "_osDark": "{colors.dark.on-warning}"
             }
           },
           "warning-container": {
             "value": {
               "base": "{colors.light.warning-container}",
-              "_dark": "{colors.dark.warning-container}"
+              "_osDark": "{colors.dark.warning-container}"
             }
           },
           "on-warning-container": {
             "value": {
               "base": "{colors.light.on-warning-container}",
-              "_dark": "{colors.dark.on-warning-container}"
+              "_osDark": "{colors.dark.on-warning-container}"
             }
           },
           "warning-0": {
             "value": {
               "base": "{colors.light.warning-0}",
-              "_dark": "{colors.dark.warning-0}"
+              "_osDark": "{colors.dark.warning-0}"
             }
           },
           "warning-10": {
             "value": {
               "base": "{colors.light.warning-10}",
-              "_dark": "{colors.dark.warning-10}"
+              "_osDark": "{colors.dark.warning-10}"
             }
           },
           "warning-20": {
             "value": {
               "base": "{colors.light.warning-20}",
-              "_dark": "{colors.dark.warning-20}"
+              "_osDark": "{colors.dark.warning-20}"
             }
           },
           "warning-25": {
             "value": {
               "base": "{colors.light.warning-25}",
-              "_dark": "{colors.dark.warning-25}"
+              "_osDark": "{colors.dark.warning-25}"
             }
           },
           "warning-30": {
             "value": {
               "base": "{colors.light.warning-30}",
-              "_dark": "{colors.dark.warning-30}"
+              "_osDark": "{colors.dark.warning-30}"
             }
           },
           "warning-35": {
             "value": {
               "base": "{colors.light.warning-35}",
-              "_dark": "{colors.dark.warning-35}"
+              "_osDark": "{colors.dark.warning-35}"
             }
           },
           "warning-40": {
             "value": {
               "base": "{colors.light.warning-40}",
-              "_dark": "{colors.dark.warning-40}"
+              "_osDark": "{colors.dark.warning-40}"
             }
           },
           "warning-50": {
             "value": {
               "base": "{colors.light.warning-50}",
-              "_dark": "{colors.dark.warning-50}"
+              "_osDark": "{colors.dark.warning-50}"
             }
           },
           "warning-60": {
             "value": {
               "base": "{colors.light.warning-60}",
-              "_dark": "{colors.dark.warning-60}"
+              "_osDark": "{colors.dark.warning-60}"
             }
           },
           "warning-70": {
             "value": {
               "base": "{colors.light.warning-70}",
-              "_dark": "{colors.dark.warning-70}"
+              "_osDark": "{colors.dark.warning-70}"
             }
           },
           "warning-80": {
             "value": {
               "base": "{colors.light.warning-80}",
-              "_dark": "{colors.dark.warning-80}"
+              "_osDark": "{colors.dark.warning-80}"
             }
           },
           "warning-90": {
             "value": {
               "base": "{colors.light.warning-90}",
-              "_dark": "{colors.dark.warning-90}"
+              "_osDark": "{colors.dark.warning-90}"
             }
           },
           "warning-95": {
             "value": {
               "base": "{colors.light.warning-95}",
-              "_dark": "{colors.dark.warning-95}"
+              "_osDark": "{colors.dark.warning-95}"
             }
           },
           "warning-98": {
             "value": {
               "base": "{colors.light.warning-98}",
-              "_dark": "{colors.dark.warning-98}"
+              "_osDark": "{colors.dark.warning-98}"
             }
           },
           "warning-99": {
             "value": {
               "base": "{colors.light.warning-99}",
-              "_dark": "{colors.dark.warning-99}"
+              "_osDark": "{colors.dark.warning-99}"
             }
           },
           "warning-100": {
             "value": {
               "base": "{colors.light.warning-100}",
-              "_dark": "{colors.dark.warning-100}"
+              "_osDark": "{colors.dark.warning-100}"
             }
           }
         }
