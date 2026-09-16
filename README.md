@@ -27,10 +27,41 @@ export default defineConfig({
 });
 ```
 
+Color roles switch between light and dark with the `_dark` condition:
+
+```jsx
+css({
+  backgroundColor: "surface",
+  color: "primary",
+  textStyle: "body-medium",
+});
+```
+
+A specific mode can be referenced explicitly with the `light.` / `dark.` prefix:
+
 ```jsx
 css({
   backgroundColor: "dark.surface",
   color: "dark.primary",
-  textStyle: "body-medium"
 });
 ```
+
+# Options
+
+| Option          | Default        | Description                                                                        |
+| --------------- | -------------- | ---------------------------------------------------------------------------------- |
+| `sourceColor`   | (required)     | Source color as ARGB/RGB number.                                                   |
+| `customColors`  | `[]`           | Extra color roles. `blend: true` harmonizes the color with `sourceColor`.          |
+| `variant`       | `"tonal-spot"` | Dynamic color scheme: `"tonal-spot"`, `"vibrant"`, `"expressive"` or `"neutral"`.  |
+| `contrastLevel` | `0`            | `-1` (reduced) to `1` (high). `0.5` is medium contrast.                            |
+| `darkCondition` | `"_dark"`      | Panda condition used for dark colors, e.g. `"_osDark"` to follow the OS setting.   |
+
+# Tokens
+
+- `colors`: color roles, custom colors and tonal palettes (`primary-40` etc.), each under `light.` / `dark.` and as semantic tokens
+- `radii`: shape corner scale (`extra-small` … `extra-extra-large`, `full`)
+- `opacity`: state layer opacities (`hover`, `focus`, `pressed`, `dragged`)
+- `shadows`: elevation levels `0`–`5`
+- `durations`, `easings`: motion
+- `breakpoints`: window size classes (`sm` medium, `md` expanded, `lg` large, `xl` extra-large)
+- `textStyles`: type scale, and `*-emphasized` variants

@@ -1,13 +1,17 @@
 import {
   Blend,
   DynamicColor,
+  DynamicScheme,
   Hct,
   MaterialDynamicColors,
+  SchemeExpressive,
+  SchemeNeutral,
   SchemeTonalSpot,
+  SchemeVibrant,
   TonalPalette,
   hexFromArgb,
 } from "@material/material-color-utilities";
-import type { Tokens } from "@pandacss/dev";
+import type { SemanticTokens, Tokens } from "@pandacss/dev";
 
 export type CustomColor = {
   name: string;
@@ -15,22 +19,39 @@ export type CustomColor = {
   blend?: boolean;
 };
 
+// The 2025 color spec only covers these variants; the library silently
+// falls back to the 2021 spec for the others.
+export type SchemeVariant = "tonal-spot" | "vibrant" | "expressive" | "neutral";
+
+export type ColorOptions = {
+  sourceColor: number;
+  customColors?: CustomColor[];
+  variant?: SchemeVariant;
+  contrastLevel?: number;
+  darkCondition?: string;
+};
+
+const schemeClasses = {
+  "tonal-spot": SchemeTonalSpot,
+  vibrant: SchemeVibrant,
+  expressive: SchemeExpressive,
+  neutral: SchemeNeutral,
+} satisfies Record<SchemeVariant, unknown>;
+
+type ColorTokens = NonNullable<Tokens["colors"]>;
+type ColorSemanticTokens = NonNullable<SemanticTokens["colors"]>;
+
 const tones = [0, 10, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90, 95, 98, 99, 100];
-function paletteColors(palettes: Record<string, TonalPalette>) {
-  const result: Tokens["colors"] = {};
 
-  for (const key in palettes) {
-    tones.forEach((tone) => {
-      result[`${key}-${tone}`] = {
-        value: hexFromArgb(palettes[key].tone(tone)),
-      };
-    });
+function paletteColors(name: string, palette: TonalPalette): ColorTokens {
+  const result: ColorTokens = {};
+  for (const tone of tones) {
+    result[`${name}-${tone}`] = { value: hexFromArgb(palette.tone(tone)) };
   }
-
   return result;
 }
 
-function schemeColors(scheme: SchemeTonalSpot): Tokens["colors"] {
+function schemeColors(scheme: DynamicScheme): ColorTokens {
   const mdc = new MaterialDynamicColors();
   const c = (d: DynamicColor) => ({ value: hexFromArgb(d.getArgb(scheme)) });
 
@@ -56,7 +77,6 @@ function schemeColors(scheme: SchemeTonalSpot): Tokens["colors"] {
     "scrim":                          c(mdc.scrim()),
     "surface-tint":                   c(mdc.surfaceTint()),
     "primary":                        c(mdc.primary()),
-    "primary-dim":                    c(mdc.primaryDim()!),
     "on-primary":                     c(mdc.onPrimary()),
     "primary-container":              c(mdc.primaryContainer()),
     "on-primary-container":           c(mdc.onPrimaryContainer()),
@@ -66,7 +86,6 @@ function schemeColors(scheme: SchemeTonalSpot): Tokens["colors"] {
     "on-primary-fixed":               c(mdc.onPrimaryFixed()),
     "on-primary-fixed-variant":       c(mdc.onPrimaryFixedVariant()),
     "secondary":                      c(mdc.secondary()),
-    "secondary-dim":                  c(mdc.secondaryDim()!),
     "on-secondary":                   c(mdc.onSecondary()),
     "secondary-container":            c(mdc.secondaryContainer()),
     "on-secondary-container":         c(mdc.onSecondaryContainer()),
@@ -75,7 +94,6 @@ function schemeColors(scheme: SchemeTonalSpot): Tokens["colors"] {
     "on-secondary-fixed":             c(mdc.onSecondaryFixed()),
     "on-secondary-fixed-variant":     c(mdc.onSecondaryFixedVariant()),
     "tertiary":                       c(mdc.tertiary()),
-    "tertiary-dim":                   c(mdc.tertiaryDim()!),
     "on-tertiary":                    c(mdc.onTertiary()),
     "tertiary-container":             c(mdc.tertiaryContainer()),
     "on-tertiary-container":          c(mdc.onTertiaryContainer()),
@@ -84,72 +102,74 @@ function schemeColors(scheme: SchemeTonalSpot): Tokens["colors"] {
     "on-tertiary-fixed":              c(mdc.onTertiaryFixed()),
     "on-tertiary-fixed-variant":      c(mdc.onTertiaryFixedVariant()),
     "error":                          c(mdc.error()),
-    "error-dim":                      c(mdc.errorDim()!),
     "on-error":                       c(mdc.onError()),
     "error-container":                c(mdc.errorContainer()),
     "on-error-container":             c(mdc.onErrorContainer()),
+
+    ...paletteColors("primary", scheme.primaryPalette),
+    ...paletteColors("secondary", scheme.secondaryPalette),
+    ...paletteColors("tertiary", scheme.tertiaryPalette),
+    ...paletteColors("neutral", scheme.neutralPalette),
+    ...paletteColors("neutral-variant", scheme.neutralVariantPalette),
+    ...paletteColors("error", scheme.errorPalette),
   };
 }
 
-export function makeColors(
-  sourceColor: number,
-  customColors: CustomColor[] = []
-): Tokens["colors"] {
-  const hct = Hct.fromInt(sourceColor);
-  const schemeLight = new SchemeTonalSpot(hct, false, 0, "2025", "phone");
-  const schemeDark = new SchemeTonalSpot(hct, true, 0, "2025", "phone");
-
-  const palettes: Record<string, TonalPalette> = {
-    primary: schemeLight.primaryPalette,
-    secondary: schemeLight.secondaryPalette,
-    tertiary: schemeLight.tertiaryPalette,
-    neutral: schemeLight.neutralPalette,
-    "neutral-variant": schemeLight.neutralVariantPalette,
-    error: schemeLight.errorPalette,
-  };
-
-  const lightCustom: Tokens["colors"] = {};
-  const darkCustom: Tokens["colors"] = {};
-
-  customColors.forEach((c) => {
-    const value = c.blend ? Blend.harmonize(c.value, sourceColor) : c.value;
-    const chct = Hct.fromInt(value);
-    const palette = TonalPalette.fromHueAndChroma(
-      chct.hue,
-      Math.max(48, chct.chroma)
-    );
-
-    lightCustom[c.name] = { value: hexFromArgb(palette.tone(40)) };
-    lightCustom[`on-${c.name}`] = { value: hexFromArgb(palette.tone(100)) };
-    lightCustom[`${c.name}-container`] = {
-      value: hexFromArgb(palette.tone(90)),
-    };
-    lightCustom[`on-${c.name}-container`] = {
-      value: hexFromArgb(palette.tone(10)),
-    };
-
-    darkCustom[c.name] = { value: hexFromArgb(palette.tone(80)) };
-    darkCustom[`on-${c.name}`] = { value: hexFromArgb(palette.tone(20)) };
-    darkCustom[`${c.name}-container`] = {
-      value: hexFromArgb(palette.tone(30)),
-    };
-    darkCustom[`on-${c.name}-container`] = {
-      value: hexFromArgb(palette.tone(90)),
-    };
-
-    palettes[c.name] = palette;
-  });
+function customColors(name: string, scheme: DynamicScheme): ColorTokens {
+  const mdc = new MaterialDynamicColors();
+  const c = (d: DynamicColor) => ({ value: hexFromArgb(d.getArgb(scheme)) });
 
   return {
-    ...paletteColors(palettes),
-
-    light: {
-      ...schemeColors(schemeLight),
-      ...lightCustom,
-    },
-    dark: {
-      ...schemeColors(schemeDark),
-      ...darkCustom,
-    },
+    [name]: c(mdc.primary()),
+    [`on-${name}`]: c(mdc.onPrimary()),
+    [`${name}-container`]: c(mdc.primaryContainer()),
+    [`on-${name}-container`]: c(mdc.onPrimaryContainer()),
+    ...paletteColors(name, scheme.primaryPalette),
   };
+}
+
+function makeScheme(
+  { variant = "tonal-spot", contrastLevel = 0 }: ColorOptions,
+  color: number,
+  isDark: boolean
+): DynamicScheme {
+  const Scheme = schemeClasses[variant];
+  return new Scheme(Hct.fromInt(color), isDark, contrastLevel, "2025", "phone");
+}
+
+function makeModeColors(options: ColorOptions, isDark: boolean): ColorTokens {
+  const result = schemeColors(makeScheme(options, options.sourceColor, isDark));
+
+  for (const custom of options.customColors ?? []) {
+    const value = custom.blend
+      ? Blend.harmonize(custom.value, options.sourceColor)
+      : custom.value;
+    Object.assign(
+      result,
+      customColors(custom.name, makeScheme(options, value, isDark))
+    );
+  }
+
+  return result;
+}
+
+export function makeColors(options: ColorOptions): {
+  tokens: ColorTokens;
+  semanticTokens: ColorSemanticTokens;
+} {
+  const light = makeModeColors(options, false);
+  const dark = makeModeColors(options, true);
+  const darkCondition = options.darkCondition ?? "_dark";
+
+  const semanticTokens: ColorSemanticTokens = {};
+  for (const name in light) {
+    semanticTokens[name] = {
+      value: {
+        base: `{colors.light.${name}}`,
+        [darkCondition]: `{colors.dark.${name}}`,
+      },
+    };
+  }
+
+  return { tokens: { light, dark }, semanticTokens };
 }

@@ -1,29 +1,28 @@
 import { definePreset, type Preset } from "@pandacss/dev";
 import * as tokens from "./tokens";
-import type { CustomColor } from "./tokens/colors";
+import type { ColorOptions } from "./tokens/colors";
 
-export type { CustomColor } from "./tokens/colors";
+export type { CustomColor, SchemeVariant } from "./tokens/colors";
 
-export type Options = {
-  sourceColor: number;
-  customColors?: CustomColor[];
-};
+export type Options = ColorOptions;
 
-export function presetMaterialTokens({
-  sourceColor,
-  customColors,
-}: Options): Preset {
+export function presetMaterialTokens(options: Options): Preset {
+  const colors = tokens.makeColors(options);
+
   return definePreset({
     name: "preset-material-tokens",
     theme: {
       extend: {
         tokens: {
           radii: tokens.radii,
-          colors: tokens.makeColors(sourceColor, customColors),
+          colors: colors.tokens,
           opacity: tokens.opacity,
           shadows: tokens.shadows,
           durations: tokens.durations,
           easings: tokens.easings,
+        },
+        semanticTokens: {
+          colors: colors.semanticTokens,
         },
         breakpoints: tokens.breakpoints,
         textStyles: tokens.textStyles,
