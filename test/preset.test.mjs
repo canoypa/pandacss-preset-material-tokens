@@ -1,0 +1,27 @@
+import { test } from "node:test";
+import presetMaterialTokens from "../dist/index.mjs";
+
+test("preset output", (t) => {
+  const preset = presetMaterialTokens({
+    sourceColor: 0x8282f4,
+    customColors: [
+      { name: "info", value: 0x42a5f5, blend: true },
+      { name: "warning", value: 0xffee58 },
+    ],
+  });
+  t.assert.snapshot(preset);
+});
+
+test("options", (t) => {
+  const preset = presetMaterialTokens({
+    sourceColor: 0x8282f4,
+    variant: "expressive",
+    contrastLevel: 0.5,
+    darkCondition: "_osDark",
+  });
+  const { tokens, semanticTokens } = preset.theme.extend;
+  t.assert.snapshot({
+    primary: [tokens.colors.light.primary, tokens.colors.dark.primary],
+    semantic: semanticTokens.colors.primary,
+  });
+});
