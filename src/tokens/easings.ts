@@ -9,4 +9,17 @@ export const easings = {
   legacy: { value: 'cubic-bezier(0.4, 0, 0.2, 1)' },
   'legacy-decelerate': { value: 'cubic-bezier(0.0, 0, 0.2, 1)' },
   'legacy-accelerate': { value: 'cubic-bezier(0.4, 0, 1.0, 1)' },
+
+  'expressive-fast-spatial': { value: 'cubic-bezier(0.42, 1.67, 0.21, 0.9)' },
+  'expressive-default-spatial': { value: 'cubic-bezier(0.38, 1.21, 0.22, 1)' },
+  'expressive-slow-spatial': { value: 'cubic-bezier(0.39, 1.29, 0.35, 0.98)' },
+  'expressive-fast-effects': { value: 'cubic-bezier(0.31, 0.94, 0.34, 1)' },
+  'expressive-default-effects': { value: 'cubic-bezier(0.34, 0.8, 0.34, 1)' },
+  'expressive-slow-effects': { value: 'cubic-bezier(0.34, 0.88, 0.34, 1)' },
+  'standard-fast-spatial': { value: 'cubic-bezier(0.27, 1.06, 0.18, 1)' },
+  'standard-default-spatial': { value: 'cubic-bezier(0.27, 1.06, 0.18, 1)' },
+  'standard-slow-spatial': { value: 'cubic-bezier(0.27, 1.06, 0.18, 1)' },
+  'standard-fast-effects': { value: 'cubic-bezier(0.31, 0.94, 0.34, 1)' },
+  'standard-default-effects': { value: 'cubic-bezier(0.34, 0.8, 0.34, 1)' },
+  'standard-slow-effects': { value: 'cubic-bezier(0.34, 0.88, 0.34, 1)' },
 }

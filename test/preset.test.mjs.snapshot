@@ -1253,6 +1253,42 @@ exports[`preset output 1`] = `
           },
           "extra-long-4": {
             "value": "1000ms"
+          },
+          "expressive-fast-spatial": {
+            "value": "350ms"
+          },
+          "expressive-default-spatial": {
+            "value": "500ms"
+          },
+          "expressive-slow-spatial": {
+            "value": "650ms"
+          },
+          "expressive-fast-effects": {
+            "value": "150ms"
+          },
+          "expressive-default-effects": {
+            "value": "200ms"
+          },
+          "expressive-slow-effects": {
+            "value": "300ms"
+          },
+          "standard-fast-spatial": {
+            "value": "350ms"
+          },
+          "standard-default-spatial": {
+            "value": "500ms"
+          },
+          "standard-slow-spatial": {
+            "value": "750ms"
+          },
+          "standard-fast-effects": {
+            "value": "150ms"
+          },
+          "standard-default-effects": {
+            "value": "200ms"
+          },
+          "standard-slow-effects": {
+            "value": "300ms"
           }
         },
         "easings": {
@@ -1285,6 +1321,42 @@ exports[`preset output 1`] = `
           },
           "legacy-accelerate": {
             "value": "cubic-bezier(0.4, 0, 1.0, 1)"
+          },
+          "expressive-fast-spatial": {
+            "value": "cubic-bezier(0.42, 1.67, 0.21, 0.9)"
+          },
+          "expressive-default-spatial": {
+            "value": "cubic-bezier(0.38, 1.21, 0.22, 1)"
+          },
+          "expressive-slow-spatial": {
+            "value": "cubic-bezier(0.39, 1.29, 0.35, 0.98)"
+          },
+          "expressive-fast-effects": {
+            "value": "cubic-bezier(0.31, 0.94, 0.34, 1)"
+          },
+          "expressive-default-effects": {
+            "value": "cubic-bezier(0.34, 0.8, 0.34, 1)"
+          },
+          "expressive-slow-effects": {
+            "value": "cubic-bezier(0.34, 0.88, 0.34, 1)"
+          },
+          "standard-fast-spatial": {
+            "value": "cubic-bezier(0.27, 1.06, 0.18, 1)"
+          },
+          "standard-default-spatial": {
+            "value": "cubic-bezier(0.27, 1.06, 0.18, 1)"
+          },
+          "standard-slow-spatial": {
+            "value": "cubic-bezier(0.27, 1.06, 0.18, 1)"
+          },
+          "standard-fast-effects": {
+            "value": "cubic-bezier(0.31, 0.94, 0.34, 1)"
+          },
+          "standard-default-effects": {
+            "value": "cubic-bezier(0.34, 0.8, 0.34, 1)"
+          },
+          "standard-slow-effects": {
+            "value": "cubic-bezier(0.34, 0.88, 0.34, 1)"
           }
         }
       },

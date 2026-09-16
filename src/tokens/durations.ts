@@ -15,4 +15,17 @@ export const durations = {
   'extra-long-2': { value: '800ms' },
   'extra-long-3': { value: '900ms' },
   'extra-long-4': { value: '1000ms' },
+
+  'expressive-fast-spatial': { value: '350ms' },
+  'expressive-default-spatial': { value: '500ms' },
+  'expressive-slow-spatial': { value: '650ms' },
+  'expressive-fast-effects': { value: '150ms' },
+  'expressive-default-effects': { value: '200ms' },
+  'expressive-slow-effects': { value: '300ms' },
+  'standard-fast-spatial': { value: '350ms' },
+  'standard-default-spatial': { value: '500ms' },
+  'standard-slow-spatial': { value: '750ms' },
+  'standard-fast-effects': { value: '150ms' },
+  'standard-default-effects': { value: '200ms' },
+  'standard-slow-effects': { value: '300ms' },
 }
