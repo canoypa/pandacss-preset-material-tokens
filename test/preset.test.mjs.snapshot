@@ -2414,7 +2414,7 @@ exports[`preset output 1`] = `
             "fontSize": "57px",
             "fontWeight": 400,
             "lineHeight": "64px",
-            "letterSpacing": "-0.25px"
+            "letterSpacing": "0px"
           }
         },
         "display-medium": {
@@ -2462,7 +2462,7 @@ exports[`preset output 1`] = `
             "fontSize": "16px",
             "fontWeight": 400,
             "lineHeight": "24px",
-            "letterSpacing": "0.5px"
+            "letterSpacing": "0px"
           }
         },
         "body-medium": {
@@ -2470,7 +2470,7 @@ exports[`preset output 1`] = `
             "fontSize": "14px",
             "fontWeight": 400,
             "lineHeight": "20px",
-            "letterSpacing": "0.25px"
+            "letterSpacing": "0px"
           }
         },
         "body-small": {
@@ -2478,7 +2478,7 @@ exports[`preset output 1`] = `
             "fontSize": "12px",
             "fontWeight": 400,
             "lineHeight": "16px",
-            "letterSpacing": "0.4px"
+            "letterSpacing": "0.1px"
           }
         },
         "label-large": {
@@ -2486,7 +2486,7 @@ exports[`preset output 1`] = `
             "fontSize": "14px",
             "fontWeight": 500,
             "lineHeight": "20px",
-            "letterSpacing": "0.1px"
+            "letterSpacing": "0px"
           }
         },
         "label-medium": {
@@ -2494,7 +2494,7 @@ exports[`preset output 1`] = `
             "fontSize": "12px",
             "fontWeight": 500,
             "lineHeight": "16px",
-            "letterSpacing": "0.5px"
+            "letterSpacing": "0.1px"
           }
         },
         "label-small": {
@@ -2502,7 +2502,7 @@ exports[`preset output 1`] = `
             "fontSize": "11px",
             "fontWeight": 500,
             "lineHeight": "16px",
-            "letterSpacing": "0.5px"
+            "letterSpacing": "0.1px"
           }
         },
         "title-large": {
@@ -2518,7 +2518,7 @@ exports[`preset output 1`] = `
             "fontSize": "16px",
             "fontWeight": 500,
             "lineHeight": "24px",
-            "letterSpacing": "0.15px"
+            "letterSpacing": "0px"
           }
         },
         "title-small": {
@@ -2526,7 +2526,7 @@ exports[`preset output 1`] = `
             "fontSize": "14px",
             "fontWeight": 500,
             "lineHeight": "20px",
-            "letterSpacing": "0.1px"
+            "letterSpacing": "0px"
           }
         },
         "display-large-emphasized": {
@@ -2582,7 +2582,7 @@ exports[`preset output 1`] = `
             "fontSize": "16px",
             "fontWeight": 500,
             "lineHeight": "24px",
-            "letterSpacing": "0.15px"
+            "letterSpacing": "0px"
           }
         },
         "body-medium-emphasized": {
@@ -2590,7 +2590,7 @@ exports[`preset output 1`] = `
             "fontSize": "14px",
             "fontWeight": 500,
             "lineHeight": "20px",
-            "letterSpacing": "0.25px"
+            "letterSpacing": "0px"
           }
         },
         "body-small-emphasized": {
@@ -2598,7 +2598,7 @@ exports[`preset output 1`] = `
             "fontSize": "12px",
             "fontWeight": 500,
             "lineHeight": "16px",
-            "letterSpacing": "0.4px"
+            "letterSpacing": "0px"
           }
         },
         "label-large-emphasized": {
@@ -2606,7 +2606,7 @@ exports[`preset output 1`] = `
             "fontSize": "14px",
             "fontWeight": 700,
             "lineHeight": "20px",
-            "letterSpacing": "0.1px"
+            "letterSpacing": "0px"
           }
         },
         "label-medium-emphasized": {
@@ -2614,7 +2614,7 @@ exports[`preset output 1`] = `
             "fontSize": "12px",
             "fontWeight": 700,
             "lineHeight": "16px",
-            "letterSpacing": "0.5px"
+            "letterSpacing": "0.1px"
           }
         },
         "label-small-emphasized": {
@@ -2622,7 +2622,7 @@ exports[`preset output 1`] = `
             "fontSize": "11px",
             "fontWeight": 700,
             "lineHeight": "16px",
-            "letterSpacing": "0.5px"
+            "letterSpacing": "0.1px"
           }
         },
         "title-large-emphasized": {
@@ -2638,7 +2638,7 @@ exports[`preset output 1`] = `
             "fontSize": "16px",
             "fontWeight": 700,
             "lineHeight": "24px",
-            "letterSpacing": "0.15px"
+            "letterSpacing": "0px"
           }
         },
         "title-small-emphasized": {
@@ -2646,7 +2646,7 @@ exports[`preset output 1`] = `
             "fontSize": "14px",
             "fontWeight": 700,
             "lineHeight": "20px",
-            "letterSpacing": "0.1px"
+            "letterSpacing": "0px"
           }
         }
       }

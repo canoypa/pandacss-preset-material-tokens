@@ -4,7 +4,7 @@ export const textStyles = {
       fontSize: '57px',
       fontWeight: 400,
       lineHeight: '64px',
-      letterSpacing: '-0.25px',
+      letterSpacing: '0px',
     },
   },
   'display-medium': {
@@ -52,7 +52,7 @@ export const textStyles = {
       fontSize: '16px',
       fontWeight: 400,
       lineHeight: '24px',
-      letterSpacing: '0.5px',
+      letterSpacing: '0px',
     },
   },
   'body-medium': {
@@ -60,7 +60,7 @@ export const textStyles = {
       fontSize: '14px',
       fontWeight: 400,
       lineHeight: '20px',
-      letterSpacing: '0.25px',
+      letterSpacing: '0px',
     },
   },
   'body-small': {
@@ -68,7 +68,7 @@ export const textStyles = {
       fontSize: '12px',
       fontWeight: 400,
       lineHeight: '16px',
-      letterSpacing: '0.4px',
+      letterSpacing: '0.1px',
     },
   },
   'label-large': {
@@ -76,7 +76,7 @@ export const textStyles = {
       fontSize: '14px',
       fontWeight: 500,
       lineHeight: '20px',
-      letterSpacing: '0.1px',
+      letterSpacing: '0px',
     },
   },
   'label-medium': {
@@ -84,7 +84,7 @@ export const textStyles = {
       fontSize: '12px',
       fontWeight: 500,
       lineHeight: '16px',
-      letterSpacing: '0.5px',
+      letterSpacing: '0.1px',
     },
   },
   'label-small': {
@@ -92,7 +92,7 @@ export const textStyles = {
       fontSize: '11px',
       fontWeight: 500,
       lineHeight: '16px',
-      letterSpacing: '0.5px',
+      letterSpacing: '0.1px',
     },
   },
   'title-large': {
@@ -108,7 +108,7 @@ export const textStyles = {
       fontSize: '16px',
       fontWeight: 500,
       lineHeight: '24px',
-      letterSpacing: '0.15px',
+      letterSpacing: '0px',
     },
   },
   'title-small': {
@@ -116,7 +116,7 @@ export const textStyles = {
       fontSize: '14px',
       fontWeight: 500,
       lineHeight: '20px',
-      letterSpacing: '0.1px',
+      letterSpacing: '0px',
     },
   },
   'display-large-emphasized': {
@@ -172,7 +172,7 @@ export const textStyles = {
       fontSize: '16px',
       fontWeight: 500,
       lineHeight: '24px',
-      letterSpacing: '0.15px',
+      letterSpacing: '0px',
     },
   },
   'body-medium-emphasized': {
@@ -180,7 +180,7 @@ export const textStyles = {
       fontSize: '14px',
       fontWeight: 500,
       lineHeight: '20px',
-      letterSpacing: '0.25px',
+      letterSpacing: '0px',
     },
   },
   'body-small-emphasized': {
@@ -188,7 +188,7 @@ export const textStyles = {
       fontSize: '12px',
       fontWeight: 500,
       lineHeight: '16px',
-      letterSpacing: '0.4px',
+      letterSpacing: '0px',
     },
   },
   'label-large-emphasized': {
@@ -196,7 +196,7 @@ export const textStyles = {
       fontSize: '14px',
       fontWeight: 700,
       lineHeight: '20px',
-      letterSpacing: '0.1px',
+      letterSpacing: '0px',
     },
   },
   'label-medium-emphasized': {
@@ -204,7 +204,7 @@ export const textStyles = {
       fontSize: '12px',
       fontWeight: 700,
       lineHeight: '16px',
-      letterSpacing: '0.5px',
+      letterSpacing: '0.1px',
     },
   },
   'label-small-emphasized': {
@@ -212,7 +212,7 @@ export const textStyles = {
       fontSize: '11px',
       fontWeight: 700,
       lineHeight: '16px',
-      letterSpacing: '0.5px',
+      letterSpacing: '0.1px',
     },
   },
   'title-large-emphasized': {
@@ -228,7 +228,7 @@ export const textStyles = {
       fontSize: '16px',
       fontWeight: 700,
       lineHeight: '24px',
-      letterSpacing: '0.15px',
+      letterSpacing: '0px',
     },
   },
   'title-small-emphasized': {
@@ -236,7 +236,7 @@ export const textStyles = {
       fontSize: '14px',
       fontWeight: 700,
       lineHeight: '20px',
-      letterSpacing: '0.1px',
+      letterSpacing: '0px',
     },
   },
 }
