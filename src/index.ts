@@ -24,7 +24,6 @@ export function presetMaterialTokens({
           shadows: tokens.shadows,
           durations: tokens.durations,
           easings: tokens.easings,
-          zIndex: tokens.zIndex,
         },
         breakpoints: tokens.breakpoints,
         textStyles: tokens.textStyles,
