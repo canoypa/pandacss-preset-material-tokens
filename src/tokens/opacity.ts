@@ -3,4 +3,5 @@ export const opacity = {
   focus: { value: '0.1' },
   pressed: { value: '0.1' },
   dragged: { value: '0.16' },
+  disabled: { value: '0.38' },
 }

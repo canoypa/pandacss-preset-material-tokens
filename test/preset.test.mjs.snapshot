@@ -115,7 +115,8 @@ exports[`preset output 1`] = `
               "value": "#000000"
             },
             "surface-tint": {
-              "value": "#5a5a8b"
+              "value": "#5a5a8b",
+              "deprecated": "Use elevation instead."
             },
             "primary": {
               "value": "#5a5a8b"
@@ -672,7 +673,8 @@ exports[`preset output 1`] = `
               "value": "#000000"
             },
             "surface-tint": {
-              "value": "#c4c2ee"
+              "value": "#c4c2ee",
+              "deprecated": "Use elevation instead."
             },
             "primary": {
               "value": "#c4c2ee"
@@ -1183,6 +1185,9 @@ exports[`preset output 1`] = `
           },
           "dragged": {
             "value": "0.16"
+          },
+          "disabled": {
+            "value": "0.38"
           }
         },
         "shadows": {
@@ -1480,7 +1485,8 @@ exports[`preset output 1`] = `
             "value": {
               "base": "{colors.light.surface-tint}",
               "_dark": "{colors.dark.surface-tint}"
-            }
+            },
+            "deprecated": "Use elevation instead."
           },
           "primary": {
             "value": {

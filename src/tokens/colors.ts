@@ -39,19 +39,20 @@ const schemeClasses = {
 } satisfies Record<SchemeVariant, unknown>;
 
 type ColorTokens = NonNullable<Tokens["colors"]>;
+type ModeColors = Record<string, { value: string; deprecated?: string }>;
 type ColorSemanticTokens = NonNullable<SemanticTokens["colors"]>;
 
 const tones = [0, 10, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90, 95, 98, 99, 100];
 
-function paletteColors(name: string, palette: TonalPalette): ColorTokens {
-  const result: ColorTokens = {};
+function paletteColors(name: string, palette: TonalPalette): ModeColors {
+  const result: ModeColors = {};
   for (const tone of tones) {
     result[`${name}-${tone}`] = { value: hexFromArgb(palette.tone(tone)) };
   }
   return result;
 }
 
-function schemeColors(scheme: DynamicScheme): ColorTokens {
+function schemeColors(scheme: DynamicScheme): ModeColors {
   const mdc = new MaterialDynamicColors();
   const c = (d: DynamicColor) => ({ value: hexFromArgb(d.getArgb(scheme)) });
 
@@ -75,7 +76,7 @@ function schemeColors(scheme: DynamicScheme): ColorTokens {
     "inverse-on-surface":             c(mdc.inverseOnSurface()),
     "shadow":                         c(mdc.shadow()),
     "scrim":                          c(mdc.scrim()),
-    "surface-tint":                   c(mdc.surfaceTint()),
+    "surface-tint":                   { ...c(mdc.surfaceTint()), deprecated: "Use elevation instead." },
     "primary":                        c(mdc.primary()),
     "on-primary":                     c(mdc.onPrimary()),
     "primary-container":              c(mdc.primaryContainer()),
@@ -115,7 +116,7 @@ function schemeColors(scheme: DynamicScheme): ColorTokens {
   };
 }
 
-function customColors(name: string, scheme: DynamicScheme): ColorTokens {
+function customColors(name: string, scheme: DynamicScheme): ModeColors {
   const mdc = new MaterialDynamicColors();
   const c = (d: DynamicColor) => ({ value: hexFromArgb(d.getArgb(scheme)) });
 
@@ -137,7 +138,7 @@ function makeScheme(
   return new Scheme(Hct.fromInt(color), isDark, contrastLevel, "2025", "phone");
 }
 
-function makeModeColors(options: ColorOptions, isDark: boolean): ColorTokens {
+function makeModeColors(options: ColorOptions, isDark: boolean): ModeColors {
   const result = schemeColors(makeScheme(options, options.sourceColor, isDark));
 
   for (const custom of options.customColors ?? []) {
@@ -162,12 +163,14 @@ export function makeColors(options: ColorOptions): {
   const darkCondition = options.darkCondition ?? "_dark";
 
   const semanticTokens: ColorSemanticTokens = {};
-  for (const name in light) {
+  for (const [name, { deprecated }] of Object.entries(light)) {
     semanticTokens[name] = {
       value: {
         base: `{colors.light.${name}}`,
         [darkCondition]: `{colors.dark.${name}}`,
       },
+      // Panda's token walker crashes on an explicit `deprecated: undefined`.
+      ...(deprecated && { deprecated }),
     };
   }
 

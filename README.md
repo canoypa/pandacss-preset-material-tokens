@@ -60,8 +60,8 @@ css({
 
 - `colors`: color roles, custom colors and tonal palettes (`primary-40` etc.), each under `light.` / `dark.` and as semantic tokens
 - `radii`: shape corner scale (`extra-small` … `extra-extra-large`, `full`)
-- `opacity`: state layer opacities (`hover`, `focus`, `pressed`, `dragged`)
+- `opacity`: state layer opacities (`hover`, `focus`, `pressed`, `dragged`, `disabled`)
 - `shadows`: elevation levels `0`–`5`
-- `durations`, `easings`: motion
+- `durations`, `easings`: motion. Springs are provided as curve + duration pairs with the same name, e.g. `expressive-default-spatial`
 - `breakpoints`: window size classes (`sm` medium, `md` expanded, `lg` large, `xl` extra-large)
 - `textStyles`: type scale, and `*-emphasized` variants
