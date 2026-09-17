@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "name": "pandacss-preset-material-tokens",
   "description": "Material Design Tokens for Panda CSS.",
   "license": "MIT",
@@ -28,9 +28,10 @@
     }
   },
   "scripts": {
-    "build": "tsdown src/index.ts --format cjs,esm --dts --clean --minify",
+    "build": "tsdown src/index.ts --format cjs,esm --dts --clean",
     "prepublishOnly": "pnpm run build",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "pnpm run build && node --test \"test/*.test.mjs\""
   },
   "devDependencies": {
     "@material/material-color-utilities": "^0.4.0",

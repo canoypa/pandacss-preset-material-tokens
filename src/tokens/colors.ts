@@ -1,38 +1,71 @@
 import {
   Blend,
   DynamicColor,
+  DynamicScheme,
   Hct,
-  MaterialDynamicColors,
+  SchemeExpressive,
+  SchemeNeutral,
   SchemeTonalSpot,
+  SchemeVibrant,
   TonalPalette,
+  Variant,
   hexFromArgb,
 } from "@material/material-color-utilities";
-import type { Tokens } from "@pandacss/dev";
+import type { SemanticTokens, Tokens } from "@pandacss/dev";
 
 export type CustomColor = {
   name: string;
   value: number;
   blend?: boolean;
+  fidelity?: boolean;
 };
 
-const tones = [0, 10, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90, 95, 98, 99, 100];
-function paletteColors(palettes: Record<string, TonalPalette>) {
-  const result: Tokens["colors"] = {};
+// The 2025 color spec only covers these variants; the library silently
+// falls back to the 2021 spec for the others.
+export type SchemeVariant = "tonal-spot" | "vibrant" | "expressive" | "neutral";
 
-  for (const key in palettes) {
-    tones.forEach((tone) => {
-      result[`${key}-${tone}`] = {
-        value: hexFromArgb(palettes[key].tone(tone)),
-      };
-    });
+export type ColorOptions = {
+  sourceColor: number;
+  customColors?: CustomColor[];
+  variant?: SchemeVariant;
+  contrastLevel?: number;
+  darkCondition?: string;
+};
+
+const schemeClasses = {
+  "tonal-spot": SchemeTonalSpot,
+  vibrant: SchemeVibrant,
+  expressive: SchemeExpressive,
+  neutral: SchemeNeutral,
+} satisfies Record<SchemeVariant, unknown>;
+
+type ColorTokens = NonNullable<Tokens["colors"]>;
+type ModeColors = Record<string, { value: string; deprecated?: string }>;
+type ColorSemanticTokens = NonNullable<SemanticTokens["colors"]>;
+
+const tones = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 98, 99, 100];
+// Only the neutral palette has these extra tones in md.ref.palette.
+const neutralTones = [...tones, 4, 6, 12, 17, 22, 24, 87, 92, 94, 96].sort((a, b) => a - b);
+
+function colorOf(scheme: DynamicScheme) {
+  return (color: DynamicColor) => ({ value: hexFromArgb(color.getArgb(scheme)) });
+}
+
+function paletteColors(
+  name: string,
+  palette: TonalPalette,
+  paletteTones = tones
+): ModeColors {
+  const result: ModeColors = {};
+  for (const tone of paletteTones) {
+    result[`${name}${tone}`] = { value: hexFromArgb(palette.tone(tone)) };
   }
-
   return result;
 }
 
-function schemeColors(scheme: SchemeTonalSpot): Tokens["colors"] {
-  const mdc = new MaterialDynamicColors();
-  const c = (d: DynamicColor) => ({ value: hexFromArgb(d.getArgb(scheme)) });
+function schemeColors(scheme: DynamicScheme): ModeColors {
+  const mdc = scheme.colors;
+  const c = colorOf(scheme);
 
   return {
     "background":                     c(mdc.background()),
@@ -54,9 +87,8 @@ function schemeColors(scheme: SchemeTonalSpot): Tokens["colors"] {
     "inverse-on-surface":             c(mdc.inverseOnSurface()),
     "shadow":                         c(mdc.shadow()),
     "scrim":                          c(mdc.scrim()),
-    "surface-tint":                   c(mdc.surfaceTint()),
+    "surface-tint":                   { ...c(mdc.surfaceTint()), deprecated: "Use elevation instead." },
     "primary":                        c(mdc.primary()),
-    "primary-dim":                    c(mdc.primaryDim()!),
     "on-primary":                     c(mdc.onPrimary()),
     "primary-container":              c(mdc.primaryContainer()),
     "on-primary-container":           c(mdc.onPrimaryContainer()),
@@ -66,7 +98,6 @@ function schemeColors(scheme: SchemeTonalSpot): Tokens["colors"] {
     "on-primary-fixed":               c(mdc.onPrimaryFixed()),
     "on-primary-fixed-variant":       c(mdc.onPrimaryFixedVariant()),
     "secondary":                      c(mdc.secondary()),
-    "secondary-dim":                  c(mdc.secondaryDim()!),
     "on-secondary":                   c(mdc.onSecondary()),
     "secondary-container":            c(mdc.secondaryContainer()),
     "on-secondary-container":         c(mdc.onSecondaryContainer()),
@@ -75,7 +106,6 @@ function schemeColors(scheme: SchemeTonalSpot): Tokens["colors"] {
     "on-secondary-fixed":             c(mdc.onSecondaryFixed()),
     "on-secondary-fixed-variant":     c(mdc.onSecondaryFixedVariant()),
     "tertiary":                       c(mdc.tertiary()),
-    "tertiary-dim":                   c(mdc.tertiaryDim()!),
     "on-tertiary":                    c(mdc.onTertiary()),
     "tertiary-container":             c(mdc.tertiaryContainer()),
     "on-tertiary-container":          c(mdc.onTertiaryContainer()),
@@ -84,72 +114,118 @@ function schemeColors(scheme: SchemeTonalSpot): Tokens["colors"] {
     "on-tertiary-fixed":              c(mdc.onTertiaryFixed()),
     "on-tertiary-fixed-variant":      c(mdc.onTertiaryFixedVariant()),
     "error":                          c(mdc.error()),
-    "error-dim":                      c(mdc.errorDim()!),
     "on-error":                       c(mdc.onError()),
     "error-container":                c(mdc.errorContainer()),
     "on-error-container":             c(mdc.onErrorContainer()),
+
+    ...paletteColors("primary", scheme.primaryPalette),
+    ...paletteColors("secondary", scheme.secondaryPalette),
+    ...paletteColors("tertiary", scheme.tertiaryPalette),
+    ...paletteColors("neutral", scheme.neutralPalette, neutralTones),
+    ...paletteColors("neutral-variant", scheme.neutralVariantPalette),
+    ...paletteColors("error", scheme.errorPalette),
   };
 }
 
-export function makeColors(
-  sourceColor: number,
-  customColors: CustomColor[] = []
-): Tokens["colors"] {
-  const hct = Hct.fromInt(sourceColor);
-  const schemeLight = new SchemeTonalSpot(hct, false, 0, "2025", "phone");
-  const schemeDark = new SchemeTonalSpot(hct, true, 0, "2025", "phone");
-
-  const palettes: Record<string, TonalPalette> = {
-    primary: schemeLight.primaryPalette,
-    secondary: schemeLight.secondaryPalette,
-    tertiary: schemeLight.tertiaryPalette,
-    neutral: schemeLight.neutralPalette,
-    "neutral-variant": schemeLight.neutralVariantPalette,
-    error: schemeLight.errorPalette,
-  };
-
-  const lightCustom: Tokens["colors"] = {};
-  const darkCustom: Tokens["colors"] = {};
-
-  customColors.forEach((c) => {
-    const value = c.blend ? Blend.harmonize(c.value, sourceColor) : c.value;
-    const chct = Hct.fromInt(value);
-    const palette = TonalPalette.fromHueAndChroma(
-      chct.hue,
-      Math.max(48, chct.chroma)
-    );
-
-    lightCustom[c.name] = { value: hexFromArgb(palette.tone(40)) };
-    lightCustom[`on-${c.name}`] = { value: hexFromArgb(palette.tone(100)) };
-    lightCustom[`${c.name}-container`] = {
-      value: hexFromArgb(palette.tone(90)),
-    };
-    lightCustom[`on-${c.name}-container`] = {
-      value: hexFromArgb(palette.tone(10)),
-    };
-
-    darkCustom[c.name] = { value: hexFromArgb(palette.tone(80)) };
-    darkCustom[`on-${c.name}`] = { value: hexFromArgb(palette.tone(20)) };
-    darkCustom[`${c.name}-container`] = {
-      value: hexFromArgb(palette.tone(30)),
-    };
-    darkCustom[`on-${c.name}-container`] = {
-      value: hexFromArgb(palette.tone(90)),
-    };
-
-    palettes[c.name] = palette;
-  });
+function customColors(name: string, scheme: DynamicScheme): ModeColors {
+  const mdc = scheme.colors;
+  const c = colorOf(scheme);
 
   return {
-    ...paletteColors(palettes),
-
-    light: {
-      ...schemeColors(schemeLight),
-      ...lightCustom,
-    },
-    dark: {
-      ...schemeColors(schemeDark),
-      ...darkCustom,
-    },
+    [name]: c(mdc.primary()),
+    [`on-${name}`]: c(mdc.onPrimary()),
+    [`${name}-container`]: c(mdc.primaryContainer()),
+    [`on-${name}-container`]: c(mdc.onPrimaryContainer()),
+    ...paletteColors(name, scheme.primaryPalette),
   };
+}
+
+function makeScheme(
+  { variant = "tonal-spot", contrastLevel = 0 }: ColorOptions,
+  color: number,
+  isDark: boolean
+): DynamicScheme {
+  if (!Object.hasOwn(schemeClasses, variant)) {
+    throw new Error(`Unknown variant "${variant}". Expected one of: ${Object.keys(schemeClasses).join(", ")}.`);
+  }
+  const Scheme = schemeClasses[variant];
+  return new Scheme(Hct.fromInt(color), isDark, contrastLevel, "2025", "phone");
+}
+
+function makeCustomScheme(
+  main: DynamicScheme,
+  color: number,
+  fidelity: boolean
+): DynamicScheme {
+  return new DynamicScheme({
+    sourceColorHct: Hct.fromInt(color),
+    // MCU has no 2025 spec for the fidelity variant and computes it with the 2021 spec.
+    variant: fidelity ? Variant.FIDELITY : main.variant,
+    contrastLevel: main.contrastLevel,
+    isDark: main.isDark,
+    platform: "phone",
+    specVersion: "2025",
+    ...(!fidelity && { primaryPalette: TonalPalette.fromInt(color) }),
+    // Role tones are contrasted against surfaces from these palettes, so they must
+    // be the main scheme's, not ones derived from the custom color.
+    neutralPalette: main.neutralPalette,
+    neutralVariantPalette: main.neutralVariantPalette,
+  });
+}
+
+function makeModeColors(options: ColorOptions, isDark: boolean): ModeColors {
+  const main = makeScheme(options, options.sourceColor, isDark);
+  const result = schemeColors(main);
+
+  for (const custom of options.customColors ?? []) {
+    if (!/^[A-Za-z][\w-]*$/.test(custom.name)) {
+      throw new Error(`Custom color name "${custom.name}" must start with a letter and contain only letters, digits, "_" and "-".`);
+    }
+    const value = custom.blend
+      ? Blend.harmonize(custom.value, options.sourceColor)
+      : custom.value;
+    const colors = customColors(
+      custom.name,
+      makeCustomScheme(main, value, custom.fidelity ?? false)
+    );
+    for (const key in colors) {
+      if (key in result) {
+        throw new Error(`Custom color "${custom.name}" produces "${key}", which already exists.`);
+      }
+    }
+    Object.assign(result, colors);
+  }
+
+  return result;
+}
+
+export function makeColors(options: ColorOptions): {
+  tokens: ColorTokens;
+  semanticTokens: ColorSemanticTokens;
+} {
+  const light = makeModeColors(options, false);
+  const dark = makeModeColors(options, true);
+  const darkCondition = options.darkCondition ?? "_osDark";
+
+  // Semantic md.light-x and the raw token md.light.x share the CSS variable --colors-md-light-x.
+  for (const name in light) {
+    const shadowed = name.match(/^(?:light|dark)-(.+)$/)?.[1];
+    if (shadowed && shadowed in light) {
+      throw new Error(`Color "${name}" conflicts with the CSS variable of "${name.replace("-", ".")}".`);
+    }
+  }
+
+  const semanticTokens: ColorSemanticTokens = {};
+  for (const [name, { deprecated }] of Object.entries(light)) {
+    semanticTokens[name] = {
+      value: {
+        base: `{colors.md.light.${name}}`,
+        [darkCondition]: `{colors.md.dark.${name}}`,
+      },
+      // Panda's token walker crashes on an explicit `deprecated: undefined`.
+      ...(deprecated && { deprecated }),
+    };
+  }
+
+  return { tokens: { md: { light, dark } }, semanticTokens: { md: semanticTokens } };
 }

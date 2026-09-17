@@ -1,33 +1,46 @@
 import { definePreset, type Preset } from "@pandacss/dev";
 import * as tokens from "./tokens";
-import type { CustomColor } from "./tokens/colors";
+import type { ColorOptions } from "./tokens/colors";
+import type { MotionScheme } from "./tokens/easings";
+import type { LanguageHeight, Typeface } from "./tokens/text_styles";
 
-export type { CustomColor } from "./tokens/colors";
+export type { CustomColor, SchemeVariant } from "./tokens/colors";
+export type { MotionScheme } from "./tokens/easings";
+export type { LanguageHeight, Typeface } from "./tokens/text_styles";
 
-export type Options = {
-  sourceColor: number;
-  customColors?: CustomColor[];
+export type Options = ColorOptions & {
+  motionScheme?: MotionScheme;
+  languageHeight?: LanguageHeight;
+  typeface?: Typeface;
 };
 
-export function presetMaterialTokens({
-  sourceColor,
-  customColors,
-}: Options): Preset {
+export function presetMaterialTokens(options: Options): Preset {
+  const { motionScheme = "standard", languageHeight = "medium" } = options;
+  const typeface = options.typeface ?? {};
+  const colors = tokens.makeColors(options);
+  const easings = tokens.makeEasings(motionScheme);
+
   return definePreset({
     name: "preset-material-tokens",
     theme: {
       extend: {
         tokens: {
-          radii: tokens.radii,
-          colors: tokens.makeColors(sourceColor, customColors),
-          opacity: tokens.opacity,
-          shadows: tokens.shadows,
-          durations: tokens.durations,
-          easings: tokens.easings,
-          zIndex: tokens.zIndex,
+          radii: { md: tokens.radii },
+          colors: colors.tokens,
+          opacity: { md: tokens.opacity },
+          shadows: { md: tokens.shadows },
+          spacing: { md: tokens.spacing },
+          borderWidths: { md: tokens.borderWidths },
+          durations: { md: tokens.makeDurations(motionScheme) },
+          easings: { md: easings },
+          fonts: { md: tokens.makeFonts(typeface) },
+          fontWeights: { md: tokens.fontWeights },
+        },
+        semanticTokens: {
+          colors: colors.semanticTokens,
         },
         breakpoints: tokens.breakpoints,
-        textStyles: tokens.textStyles,
+        textStyles: tokens.makeTextStyles(languageHeight, typeface),
       },
     },
   });
