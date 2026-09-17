@@ -1,6 +1,16 @@
 export type MotionScheme = 'standard' | 'expressive'
 
-const springEasings = {
+type Spring = Record<'fast' | 'default' | 'slow', Record<'spatial' | 'effects', string>>
+
+export function springTokens(spring: Spring) {
+  const tokens: Record<string, Record<string, { value: string }>> = {}
+  for (const [speed, { spatial, effects }] of Object.entries(spring)) {
+    tokens[speed] = { spatial: { value: spatial }, effects: { value: effects } }
+  }
+  return tokens
+}
+
+const springEasings: Record<MotionScheme, Spring> = {
   standard: {
     fast: {
       spatial: 'cubic-bezier(0.27, 1.06, 0.18, 1)',
@@ -32,8 +42,6 @@ const springEasings = {
 }
 
 export function makeEasings(motionScheme: MotionScheme) {
-  const spring = springEasings[motionScheme]
-
   return {
     linear: { value: 'cubic-bezier(0, 0, 1, 1)' },
     standard: {
@@ -54,19 +62,6 @@ export function makeEasings(motionScheme: MotionScheme) {
       decelerate: { value: 'cubic-bezier(0, 0, 0.2, 1)' },
     },
 
-    spring: {
-      fast: {
-        spatial: { value: spring.fast.spatial },
-        effects: { value: spring.fast.effects },
-      },
-      default: {
-        spatial: { value: spring.default.spatial },
-        effects: { value: spring.default.effects },
-      },
-      slow: {
-        spatial: { value: spring.slow.spatial },
-        effects: { value: spring.slow.effects },
-      },
-    },
+    spring: springTokens(springEasings[motionScheme]),
   }
 }

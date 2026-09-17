@@ -44,43 +44,21 @@ export function makeTextStyles(languageHeight: LanguageHeight, typeface: Typefac
     const lineHeight = rem(style.lineHeight[languageHeight])
     const fontFamily = typeface[style.typeface] && `md.${style.typeface}`
 
-    baseline[name] = {
+    const textStyle = (fontWeight: number, letterSpacing: string) => ({
       value: {
         ...(fontFamily && { fontFamily }),
         fontSize,
-        fontWeight: style.weight,
+        fontWeight,
         lineHeight,
-        letterSpacing: em(style.tracking, style.size),
+        letterSpacing,
       },
-    }
-    emphasized[name] = {
-      value: {
-        ...(fontFamily && { fontFamily }),
-        fontSize,
-        fontWeight: style.emphasized.weight,
-        lineHeight,
-        letterSpacing: em(style.emphasized.tracking, style.size),
-      },
-    }
+    })
+
+    baseline[name] = textStyle(style.weight, em(style.tracking, style.size))
+    emphasized[name] = textStyle(style.emphasized.weight, em(style.emphasized.tracking, style.size))
     // Tracking is 0 for every style in the variable type scale.
-    variable[name] = {
-      value: {
-        ...(fontFamily && { fontFamily }),
-        fontSize,
-        fontWeight: style.weight,
-        lineHeight,
-        letterSpacing: '0em',
-      },
-    }
-    variableEmphasized[name] = {
-      value: {
-        ...(fontFamily && { fontFamily }),
-        fontSize,
-        fontWeight: style.emphasized.variableWeight,
-        lineHeight,
-        letterSpacing: '0em',
-      },
-    }
+    variable[name] = textStyle(style.weight, '0em')
+    variableEmphasized[name] = textStyle(style.emphasized.variableWeight, '0em')
   }
 
   return {

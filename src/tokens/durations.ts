@@ -1,4 +1,4 @@
-import type { MotionScheme } from './easings'
+import { springTokens, type MotionScheme } from './easings'
 
 const springDurations = {
   standard: {
@@ -14,8 +14,6 @@ const springDurations = {
 }
 
 export function makeDurations(motionScheme: MotionScheme) {
-  const spring = springDurations[motionScheme]
-
   return {
     short1: { value: '50ms' },
     short2: { value: '100ms' },
@@ -34,19 +32,6 @@ export function makeDurations(motionScheme: MotionScheme) {
     'extra-long3': { value: '900ms' },
     'extra-long4': { value: '1000ms' },
 
-    spring: {
-      fast: {
-        spatial: { value: spring.fast.spatial },
-        effects: { value: spring.fast.effects },
-      },
-      default: {
-        spatial: { value: spring.default.spatial },
-        effects: { value: spring.default.effects },
-      },
-      slow: {
-        spatial: { value: spring.slow.spatial },
-        effects: { value: spring.slow.effects },
-      },
-    },
+    spring: springTokens(springDurations[motionScheme]),
   }
 }

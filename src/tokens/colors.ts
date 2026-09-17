@@ -3,13 +3,13 @@ import {
   DynamicColor,
   DynamicScheme,
   Hct,
-  MaterialDynamicColors,
   SchemeExpressive,
   SchemeFidelity,
   SchemeNeutral,
   SchemeTonalSpot,
   SchemeVibrant,
   TonalPalette,
+  Variant,
   hexFromArgb,
 } from "@material/material-color-utilities";
 import type { SemanticTokens, Tokens } from "@pandacss/dev";
@@ -40,6 +40,13 @@ const schemeClasses = {
   neutral: SchemeNeutral,
 } satisfies Record<SchemeVariant, unknown>;
 
+const schemeVariants: Record<SchemeVariant, Variant> = {
+  "tonal-spot": Variant.TONAL_SPOT,
+  vibrant: Variant.VIBRANT,
+  expressive: Variant.EXPRESSIVE,
+  neutral: Variant.NEUTRAL,
+};
+
 type ColorTokens = NonNullable<Tokens["colors"]>;
 type ModeColors = Record<string, { value: string; deprecated?: string }>;
 type ColorSemanticTokens = NonNullable<SemanticTokens["colors"]>;
@@ -47,6 +54,10 @@ type ColorSemanticTokens = NonNullable<SemanticTokens["colors"]>;
 const tones = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 98, 99, 100];
 // Only the neutral palette has these extra tones in md.ref.palette.
 const neutralTones = [...tones, 4, 6, 12, 17, 22, 24, 87, 92, 94, 96].sort((a, b) => a - b);
+
+function colorOf(scheme: DynamicScheme) {
+  return (color: DynamicColor) => ({ value: hexFromArgb(color.getArgb(scheme)) });
+}
 
 function paletteColors(
   name: string,
@@ -61,8 +72,8 @@ function paletteColors(
 }
 
 function schemeColors(scheme: DynamicScheme): ModeColors {
-  const mdc = new MaterialDynamicColors();
-  const c = (d: DynamicColor) => ({ value: hexFromArgb(d.getArgb(scheme)) });
+  const mdc = scheme.colors;
+  const c = colorOf(scheme);
 
   return {
     "background":                     c(mdc.background()),
@@ -125,8 +136,8 @@ function schemeColors(scheme: DynamicScheme): ModeColors {
 }
 
 function customColors(name: string, scheme: DynamicScheme): ModeColors {
-  const mdc = new MaterialDynamicColors();
-  const c = (d: DynamicColor) => ({ value: hexFromArgb(d.getArgb(scheme)) });
+  const mdc = scheme.colors;
+  const c = colorOf(scheme);
 
   return {
     [name]: c(mdc.primary()),
@@ -147,13 +158,12 @@ function makeScheme(
 }
 
 function makeCustomScheme(
-  options: ColorOptions,
+  { variant = "tonal-spot", contrastLevel = 0 }: ColorOptions,
   color: number,
   fidelity: boolean,
   isDark: boolean
 ): DynamicScheme {
   const hct = Hct.fromInt(color);
-  const { contrastLevel = 0 } = options;
 
   if (fidelity) {
     // MCU has no 2025 spec for SchemeFidelity and computes it with the 2021 spec.
@@ -162,7 +172,7 @@ function makeCustomScheme(
 
   return new DynamicScheme({
     sourceColorHct: hct,
-    variant: makeScheme(options, color, isDark).variant,
+    variant: schemeVariants[variant],
     contrastLevel,
     isDark,
     platform: "phone",
