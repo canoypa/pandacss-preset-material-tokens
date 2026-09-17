@@ -76,6 +76,7 @@ css({
 | `md.sys.motion.spring.default.spatial`       | easing and duration `"md.spring.default.spatial"`             |
 | `md.sys.typescale.body-large`                | `textStyle: "md.body-large"`                                  |
 | `md.sys.typescale.emphasized.body-large`     | `textStyle: "md.emphasized.body-large"`                       |
+| `md.sys.typescale.variable.body-large`       | `textStyle: "md.variable.body-large"`                         |
 | `md.sys.typescale.label-large.weight.prominent` | `fontWeight: "md.label-large.weight.prominent"`          |
 | `md.ref.typeface.brand`                      | `fontFamily: "md.brand"`                                      |
 
