@@ -31,6 +31,7 @@ const typeScale: Record<string, TypeStyle> = {
 }
 
 const rem = (px: number) => `${px / 16}rem`
+const em = (tracking: number, size: number) => `${tracking / size}em`
 
 export function makeTextStyles(languageHeight: LanguageHeight, typeface: Typeface) {
   const baseline: Record<string, { value: object }> = {}
@@ -47,7 +48,7 @@ export function makeTextStyles(languageHeight: LanguageHeight, typeface: Typefac
         fontSize,
         fontWeight: style.weight,
         lineHeight,
-        letterSpacing: rem(style.tracking),
+        letterSpacing: em(style.tracking, style.size),
       },
     }
     emphasized[name] = {
@@ -56,7 +57,7 @@ export function makeTextStyles(languageHeight: LanguageHeight, typeface: Typefac
         fontSize,
         fontWeight: style.emphasized.weight,
         lineHeight,
-        letterSpacing: rem(style.emphasized.tracking),
+        letterSpacing: em(style.emphasized.tracking, style.size),
       },
     }
   }
