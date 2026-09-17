@@ -80,4 +80,4 @@ css({
 | `md.sys.typescale.label-large.weight.prominent` | `fontWeight: "md.label-large.weight.prominent"`          |
 | `md.ref.typeface.brand`                      | `fontFamily: "md.brand"`                                      |
 
-Breakpoints are the Material window size classes: `medium` (600px), `expanded` (840px), `large` (1200px), `extraLarge` (1600px).
+Breakpoints are the Material window size classes: `mdMedium` (600px), `mdExpanded` (840px), `mdLarge` (1200px), `mdExtraLarge` (1600px).
