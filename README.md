@@ -56,7 +56,7 @@ css({
 | `contrastLevel` | `0`            | `-1` (reduced) to `1` (high). `0.5` is medium contrast.                              |
 | `darkCondition` | `"_osDark"`    | Panda condition used for dark colors, e.g. `"_dark"` to switch with a `.dark` class. |
 | `motionScheme`  | `"standard"`   | Spring motion scheme: `"standard"` or `"expressive"`.                                |
-| `languageHeight`| `"medium"`     | Line heights for the script: `"small"` (Latin, Cyrillic, Greek, Hebrew) or `"medium"` (CJK, Arabic, Thai and most other scripts). |
+| `languageHeight`| `"medium"`     | Line heights for the script: `"small"` (Latin, Cyrillic, Greek, Hebrew), `"medium"` (CJK, Arabic, Thai and most other scripts), `"large"` (Burmese, Telugu) or `"extra-large"` (Nastaliq). |
 | `typeface`      | `{}`           | `{ brand?, plain? }` font-family values. Given roles become `md.brand` / `md.plain` font tokens and are applied to the text styles that use them (brand: display, headline, title-large; plain: the rest). Loading the fonts is up to you. |
 
 # Tokens
