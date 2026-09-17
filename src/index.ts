@@ -1,12 +1,17 @@
 import { definePreset, type Preset } from "@pandacss/dev";
 import * as tokens from "./tokens";
 import type { ColorOptions } from "./tokens/colors";
+import type { MotionScheme } from "./tokens/easings";
 
 export type { CustomColor, SchemeVariant } from "./tokens/colors";
+export type { MotionScheme } from "./tokens/easings";
 
-export type Options = ColorOptions;
+export type Options = ColorOptions & {
+  motionScheme?: MotionScheme;
+};
 
 export function presetMaterialTokens(options: Options): Preset {
+  const { motionScheme = "standard" } = options;
   const colors = tokens.makeColors(options);
 
   return definePreset({
@@ -14,18 +19,18 @@ export function presetMaterialTokens(options: Options): Preset {
     theme: {
       extend: {
         tokens: {
-          radii: tokens.radii,
+          radii: { md: tokens.radii },
           colors: colors.tokens,
-          opacity: tokens.opacity,
-          shadows: tokens.shadows,
-          durations: tokens.durations,
-          easings: tokens.easings,
+          opacity: { md: tokens.opacity },
+          shadows: { md: tokens.shadows },
+          durations: { md: tokens.makeDurations(motionScheme) },
+          easings: { md: tokens.makeEasings(motionScheme) },
         },
         semanticTokens: {
           colors: colors.semanticTokens,
         },
         breakpoints: tokens.breakpoints,
-        textStyles: tokens.textStyles,
+        textStyles: { md: tokens.textStyles },
       },
     },
   });

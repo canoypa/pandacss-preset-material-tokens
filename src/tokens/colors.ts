@@ -47,7 +47,7 @@ const tones = [0, 10, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90, 95, 98, 99, 100];
 function paletteColors(name: string, palette: TonalPalette): ModeColors {
   const result: ModeColors = {};
   for (const tone of tones) {
-    result[`${name}-${tone}`] = { value: hexFromArgb(palette.tone(tone)) };
+    result[`${name}${tone}`] = { value: hexFromArgb(palette.tone(tone)) };
   }
   return result;
 }
@@ -166,13 +166,13 @@ export function makeColors(options: ColorOptions): {
   for (const [name, { deprecated }] of Object.entries(light)) {
     semanticTokens[name] = {
       value: {
-        base: `{colors.light.${name}}`,
-        [darkCondition]: `{colors.dark.${name}}`,
+        base: `{colors.md.light.${name}}`,
+        [darkCondition]: `{colors.md.dark.${name}}`,
       },
       // Panda's token walker crashes on an explicit `deprecated: undefined`.
       ...(deprecated && { deprecated }),
     };
   }
 
-  return { tokens: { light, dark }, semanticTokens };
+  return { tokens: { md: { light, dark } }, semanticTokens: { md: semanticTokens } };
 }

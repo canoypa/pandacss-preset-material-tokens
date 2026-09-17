@@ -27,41 +27,49 @@ export default defineConfig({
 });
 ```
 
-Color roles follow the OS light / dark setting (the `_osDark` condition):
+Tokens live under the `md.` namespace and follow the Material Design token names (`md.sys.color.primary` → `md.primary`). Color roles follow the OS light / dark setting (the `_osDark` condition):
 
 ```jsx
 css({
-  backgroundColor: "surface",
-  color: "primary",
-  textStyle: "body-medium",
+  backgroundColor: "md.surface",
+  color: "md.primary",
+  textStyle: "md.body-medium",
 });
 ```
 
-A specific mode can be referenced explicitly with the `light.` / `dark.` prefix:
+A specific mode can be referenced explicitly with `md.light.` / `md.dark.`:
 
 ```jsx
 css({
-  backgroundColor: "dark.surface",
-  color: "dark.primary",
+  backgroundColor: "md.dark.surface",
+  color: "md.dark.primary",
 });
 ```
 
 # Options
 
-| Option          | Default        | Description                                                                        |
-| --------------- | -------------- | ---------------------------------------------------------------------------------- |
-| `sourceColor`   | (required)     | Source color as ARGB/RGB number.                                                   |
-| `customColors`  | `[]`           | Extra color roles. `blend: true` harmonizes the color with `sourceColor`.          |
-| `variant`       | `"tonal-spot"` | Dynamic color scheme: `"tonal-spot"`, `"vibrant"`, `"expressive"` or `"neutral"`.  |
-| `contrastLevel` | `0`            | `-1` (reduced) to `1` (high). `0.5` is medium contrast.                            |
+| Option          | Default        | Description                                                                          |
+| --------------- | -------------- | ------------------------------------------------------------------------------------ |
+| `sourceColor`   | (required)     | Source color as ARGB/RGB number.                                                     |
+| `customColors`  | `[]`           | Extra color roles. `blend: true` harmonizes the color with `sourceColor`.            |
+| `variant`       | `"tonal-spot"` | Dynamic color scheme: `"tonal-spot"`, `"vibrant"`, `"expressive"` or `"neutral"`.    |
+| `contrastLevel` | `0`            | `-1` (reduced) to `1` (high). `0.5` is medium contrast.                              |
 | `darkCondition` | `"_osDark"`    | Panda condition used for dark colors, e.g. `"_dark"` to switch with a `.dark` class. |
+| `motionScheme`  | `"standard"`   | Spring motion scheme: `"standard"` or `"expressive"`.                                |
 
 # Tokens
 
-- `colors`: color roles, custom colors and tonal palettes (`primary-40` etc.), each under `light.` / `dark.` and as semantic tokens
-- `radii`: shape corner scale (`extra-small` … `extra-extra-large`, `full`)
-- `opacity`: state layer opacities (`hover`, `focus`, `pressed`, `dragged`, `disabled`)
-- `shadows`: elevation levels `0`–`5`
-- `durations`, `easings`: motion. Springs are provided as curve + duration pairs with the same name, e.g. `expressive-default-spatial`
-- `breakpoints`: window size classes (`sm` medium, `md` expanded, `lg` large, `xl` extra-large)
-- `textStyles`: type scale, and `*-emphasized` variants
+| Material token                               | Panda                                                        |
+| -------------------------------------------- | ------------------------------------------------------------ |
+| `md.sys.color.primary`                       | `color: "md.primary"` (`md.light.primary`, `md.dark.primary`) |
+| `md.ref.palette.primary40`                   | `color: "md.primary40"`                                       |
+| `md.sys.shape.corner.medium`                 | `rounded: "md.medium"`                                        |
+| `md.sys.state.hover.state-layer-opacity`     | `opacity: "md.hover"`                                         |
+| `md.sys.elevation.level1`                    | `boxShadow: "md.level1"`                                      |
+| `md.sys.motion.duration.short1`              | `transitionDuration: "md.short1"`                             |
+| `md.sys.motion.easing.emphasized.decelerate` | `transitionTimingFunction: "md.emphasized.decelerate"`        |
+| `md.sys.motion.spring.default.spatial`       | easing and duration `"md.spring.default.spatial"`             |
+| `md.sys.typescale.body-large`                | `textStyle: "md.body-large"`                                  |
+| `md.sys.typescale.emphasized.body-large`     | `textStyle: "md.emphasized.body-large"`                       |
+
+Breakpoints are the Material window size classes: `medium` (600px), `expanded` (840px), `large` (1200px), `extraLarge` (1600px).

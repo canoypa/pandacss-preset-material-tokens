@@ -18,10 +18,12 @@ test("options", (t) => {
     variant: "expressive",
     contrastLevel: 0.5,
     darkCondition: "_dark",
+    motionScheme: "expressive",
   });
   const { tokens, semanticTokens } = preset.theme.extend;
   t.assert.snapshot({
-    primary: [tokens.colors.light.primary, tokens.colors.dark.primary],
-    semantic: semanticTokens.colors.primary,
+    primary: [tokens.colors.md.light.primary, tokens.colors.md.dark.primary],
+    semantic: semanticTokens.colors.md.primary,
+    spring: [tokens.easings.md.spring, tokens.durations.md.spring],
   });
 });
