@@ -19,11 +19,13 @@ test("options", (t) => {
     contrastLevel: 0.5,
     darkCondition: "_dark",
     motionScheme: "expressive",
+    languageHeight: "small",
   });
   const { tokens, semanticTokens } = preset.theme.extend;
   t.assert.snapshot({
     primary: [tokens.colors.md.light.primary, tokens.colors.md.dark.primary],
     semantic: semanticTokens.colors.md.primary,
     spring: [tokens.easings.md.spring, tokens.durations.md.spring],
+    textStyle: preset.theme.extend.textStyles.md["body-large"],
   });
 });

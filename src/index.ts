@@ -2,16 +2,19 @@ import { definePreset, type Preset } from "@pandacss/dev";
 import * as tokens from "./tokens";
 import type { ColorOptions } from "./tokens/colors";
 import type { MotionScheme } from "./tokens/easings";
+import type { LanguageHeight } from "./tokens/text_styles";
 
 export type { CustomColor, SchemeVariant } from "./tokens/colors";
 export type { MotionScheme } from "./tokens/easings";
+export type { LanguageHeight } from "./tokens/text_styles";
 
 export type Options = ColorOptions & {
   motionScheme?: MotionScheme;
+  languageHeight?: LanguageHeight;
 };
 
 export function presetMaterialTokens(options: Options): Preset {
-  const { motionScheme = "standard" } = options;
+  const { motionScheme = "standard", languageHeight = "medium" } = options;
   const colors = tokens.makeColors(options);
 
   return definePreset({
@@ -30,7 +33,7 @@ export function presetMaterialTokens(options: Options): Preset {
           colors: colors.semanticTokens,
         },
         breakpoints: tokens.breakpoints,
-        textStyles: { md: tokens.textStyles },
+        textStyles: { md: tokens.makeTextStyles(languageHeight) },
       },
     },
   });
