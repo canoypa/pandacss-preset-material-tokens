@@ -42,11 +42,17 @@ type ColorTokens = NonNullable<Tokens["colors"]>;
 type ModeColors = Record<string, { value: string; deprecated?: string }>;
 type ColorSemanticTokens = NonNullable<SemanticTokens["colors"]>;
 
-const tones = [0, 10, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90, 95, 98, 99, 100];
+const tones = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 98, 99, 100];
+// Only the neutral palette has these extra tones in md.ref.palette.
+const neutralTones = [...tones, 4, 6, 12, 17, 22, 24, 87, 92, 94, 96].sort((a, b) => a - b);
 
-function paletteColors(name: string, palette: TonalPalette): ModeColors {
+function paletteColors(
+  name: string,
+  palette: TonalPalette,
+  paletteTones = tones
+): ModeColors {
   const result: ModeColors = {};
-  for (const tone of tones) {
+  for (const tone of paletteTones) {
     result[`${name}${tone}`] = { value: hexFromArgb(palette.tone(tone)) };
   }
   return result;
@@ -110,7 +116,7 @@ function schemeColors(scheme: DynamicScheme): ModeColors {
     ...paletteColors("primary", scheme.primaryPalette),
     ...paletteColors("secondary", scheme.secondaryPalette),
     ...paletteColors("tertiary", scheme.tertiaryPalette),
-    ...paletteColors("neutral", scheme.neutralPalette),
+    ...paletteColors("neutral", scheme.neutralPalette, neutralTones),
     ...paletteColors("neutral-variant", scheme.neutralVariantPalette),
     ...paletteColors("error", scheme.errorPalette),
   };

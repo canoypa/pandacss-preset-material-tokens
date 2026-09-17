@@ -297,14 +297,8 @@ exports[`preset output 1`] = `
               "primary20": {
                 "value": "#2b2b59"
               },
-              "primary25": {
-                "value": "#363665"
-              },
               "primary30": {
                 "value": "#424271"
-              },
-              "primary35": {
-                "value": "#4e4e7e"
               },
               "primary40": {
                 "value": "#5a5a8b"
@@ -345,14 +339,8 @@ exports[`preset output 1`] = `
               "secondary20": {
                 "value": "#2f2f42"
               },
-              "secondary25": {
-                "value": "#3a3a4d"
-              },
               "secondary30": {
                 "value": "#454559"
-              },
-              "secondary35": {
-                "value": "#515065"
               },
               "secondary40": {
                 "value": "#5d5c72"
@@ -393,14 +381,8 @@ exports[`preset output 1`] = `
               "tertiary20": {
                 "value": "#422647"
               },
-              "tertiary25": {
-                "value": "#4e3153"
-              },
               "tertiary30": {
                 "value": "#5b3c5f"
-              },
-              "tertiary35": {
-                "value": "#67476b"
               },
               "tertiary40": {
                 "value": "#745378"
@@ -435,20 +417,32 @@ exports[`preset output 1`] = `
               "neutral0": {
                 "value": "#000000"
               },
+              "neutral4": {
+                "value": "#0e0e12"
+              },
+              "neutral6": {
+                "value": "#131317"
+              },
               "neutral10": {
                 "value": "#1b1b20"
+              },
+              "neutral12": {
+                "value": "#201f24"
+              },
+              "neutral17": {
+                "value": "#2a292e"
               },
               "neutral20": {
                 "value": "#313035"
               },
-              "neutral25": {
-                "value": "#3c3b40"
+              "neutral22": {
+                "value": "#353439"
+              },
+              "neutral24": {
+                "value": "#39393d"
               },
               "neutral30": {
                 "value": "#47464b"
-              },
-              "neutral35": {
-                "value": "#535257"
               },
               "neutral40": {
                 "value": "#5f5e63"
@@ -465,11 +459,23 @@ exports[`preset output 1`] = `
               "neutral80": {
                 "value": "#c8c5cb"
               },
+              "neutral87": {
+                "value": "#dcd9df"
+              },
               "neutral90": {
                 "value": "#e5e1e7"
               },
+              "neutral92": {
+                "value": "#eae7ed"
+              },
+              "neutral94": {
+                "value": "#f0ecf3"
+              },
               "neutral95": {
                 "value": "#f3eff6"
+              },
+              "neutral96": {
+                "value": "#f6f2f9"
               },
               "neutral98": {
                 "value": "#fcf8fe"
@@ -489,14 +495,8 @@ exports[`preset output 1`] = `
               "neutral-variant20": {
                 "value": "#302f38"
               },
-              "neutral-variant25": {
-                "value": "#3b3a44"
-              },
               "neutral-variant30": {
                 "value": "#47464f"
-              },
-              "neutral-variant35": {
-                "value": "#52515b"
               },
               "neutral-variant40": {
                 "value": "#5e5d67"
@@ -537,14 +537,8 @@ exports[`preset output 1`] = `
               "error20": {
                 "value": "#67001f"
               },
-              "error25": {
-                "value": "#770e29"
-              },
               "error30": {
                 "value": "#871c34"
-              },
-              "error35": {
-                "value": "#97293f"
               },
               "error40": {
                 "value": "#a7354a"
@@ -597,14 +591,8 @@ exports[`preset output 1`] = `
               "info20": {
                 "value": "#173059"
               },
-              "info25": {
-                "value": "#233b65"
-              },
               "info30": {
                 "value": "#2f4671"
-              },
-              "info35": {
-                "value": "#3c527d"
               },
               "info40": {
                 "value": "#485e8a"
@@ -657,14 +645,8 @@ exports[`preset output 1`] = `
               "warning20": {
                 "value": "#363100"
               },
-              "warning25": {
-                "value": "#423c00"
-              },
               "warning30": {
                 "value": "#4e4806"
-              },
-              "warning35": {
-                "value": "#5a5313"
               },
               "warning40": {
                 "value": "#67601f"
@@ -855,14 +837,8 @@ exports[`preset output 1`] = `
               "primary20": {
                 "value": "#2d2d50"
               },
-              "primary25": {
-                "value": "#38385c"
-              },
               "primary30": {
                 "value": "#434368"
-              },
-              "primary35": {
-                "value": "#4f4f74"
               },
               "primary40": {
                 "value": "#5b5b81"
@@ -903,14 +879,8 @@ exports[`preset output 1`] = `
               "secondary20": {
                 "value": "#2f2f42"
               },
-              "secondary25": {
-                "value": "#3a3a4d"
-              },
               "secondary30": {
                 "value": "#454559"
-              },
-              "secondary35": {
-                "value": "#515065"
               },
               "secondary40": {
                 "value": "#5d5c72"
@@ -951,14 +921,8 @@ exports[`preset output 1`] = `
               "tertiary20": {
                 "value": "#422647"
               },
-              "tertiary25": {
-                "value": "#4e3153"
-              },
               "tertiary30": {
                 "value": "#5b3c5f"
-              },
-              "tertiary35": {
-                "value": "#67476b"
               },
               "tertiary40": {
                 "value": "#745378"
@@ -993,20 +957,32 @@ exports[`preset output 1`] = `
               "neutral0": {
                 "value": "#000000"
               },
+              "neutral4": {
+                "value": "#0e0e12"
+              },
+              "neutral6": {
+                "value": "#131317"
+              },
               "neutral10": {
                 "value": "#1b1b20"
+              },
+              "neutral12": {
+                "value": "#201f24"
+              },
+              "neutral17": {
+                "value": "#2a292e"
               },
               "neutral20": {
                 "value": "#313035"
               },
-              "neutral25": {
-                "value": "#3c3b40"
+              "neutral22": {
+                "value": "#353439"
+              },
+              "neutral24": {
+                "value": "#39393d"
               },
               "neutral30": {
                 "value": "#47464b"
-              },
-              "neutral35": {
-                "value": "#535257"
               },
               "neutral40": {
                 "value": "#5f5e63"
@@ -1023,11 +999,23 @@ exports[`preset output 1`] = `
               "neutral80": {
                 "value": "#c8c5cb"
               },
+              "neutral87": {
+                "value": "#dcd9df"
+              },
               "neutral90": {
                 "value": "#e5e1e7"
               },
+              "neutral92": {
+                "value": "#eae7ed"
+              },
+              "neutral94": {
+                "value": "#f0ecf3"
+              },
               "neutral95": {
                 "value": "#f3eff6"
+              },
+              "neutral96": {
+                "value": "#f6f2f9"
               },
               "neutral98": {
                 "value": "#fcf8fe"
@@ -1047,14 +1035,8 @@ exports[`preset output 1`] = `
               "neutral-variant20": {
                 "value": "#302f38"
               },
-              "neutral-variant25": {
-                "value": "#3b3a44"
-              },
               "neutral-variant30": {
                 "value": "#47464f"
-              },
-              "neutral-variant35": {
-                "value": "#52515b"
               },
               "neutral-variant40": {
                 "value": "#5e5d67"
@@ -1095,14 +1077,8 @@ exports[`preset output 1`] = `
               "error20": {
                 "value": "#67001f"
               },
-              "error25": {
-                "value": "#770e29"
-              },
               "error30": {
                 "value": "#871c34"
-              },
-              "error35": {
-                "value": "#97293f"
               },
               "error40": {
                 "value": "#a7354a"
@@ -1155,14 +1131,8 @@ exports[`preset output 1`] = `
               "info20": {
                 "value": "#1f304f"
               },
-              "info25": {
-                "value": "#2b3b5b"
-              },
               "info30": {
                 "value": "#364767"
-              },
-              "info35": {
-                "value": "#425274"
               },
               "info40": {
                 "value": "#4e5e80"
@@ -1215,14 +1185,8 @@ exports[`preset output 1`] = `
               "warning20": {
                 "value": "#363103"
               },
-              "warning25": {
-                "value": "#413c0d"
-              },
               "warning30": {
                 "value": "#4d4817"
-              },
-              "warning35": {
-                "value": "#595322"
               },
               "warning40": {
                 "value": "#665f2d"
@@ -1837,22 +1801,10 @@ exports[`preset output 1`] = `
                 "_osDark": "{colors.md.dark.primary20}"
               }
             },
-            "primary25": {
-              "value": {
-                "base": "{colors.md.light.primary25}",
-                "_osDark": "{colors.md.dark.primary25}"
-              }
-            },
             "primary30": {
               "value": {
                 "base": "{colors.md.light.primary30}",
                 "_osDark": "{colors.md.dark.primary30}"
-              }
-            },
-            "primary35": {
-              "value": {
-                "base": "{colors.md.light.primary35}",
-                "_osDark": "{colors.md.dark.primary35}"
               }
             },
             "primary40": {
@@ -1933,22 +1885,10 @@ exports[`preset output 1`] = `
                 "_osDark": "{colors.md.dark.secondary20}"
               }
             },
-            "secondary25": {
-              "value": {
-                "base": "{colors.md.light.secondary25}",
-                "_osDark": "{colors.md.dark.secondary25}"
-              }
-            },
             "secondary30": {
               "value": {
                 "base": "{colors.md.light.secondary30}",
                 "_osDark": "{colors.md.dark.secondary30}"
-              }
-            },
-            "secondary35": {
-              "value": {
-                "base": "{colors.md.light.secondary35}",
-                "_osDark": "{colors.md.dark.secondary35}"
               }
             },
             "secondary40": {
@@ -2029,22 +1969,10 @@ exports[`preset output 1`] = `
                 "_osDark": "{colors.md.dark.tertiary20}"
               }
             },
-            "tertiary25": {
-              "value": {
-                "base": "{colors.md.light.tertiary25}",
-                "_osDark": "{colors.md.dark.tertiary25}"
-              }
-            },
             "tertiary30": {
               "value": {
                 "base": "{colors.md.light.tertiary30}",
                 "_osDark": "{colors.md.dark.tertiary30}"
-              }
-            },
-            "tertiary35": {
-              "value": {
-                "base": "{colors.md.light.tertiary35}",
-                "_osDark": "{colors.md.dark.tertiary35}"
               }
             },
             "tertiary40": {
@@ -2113,10 +2041,34 @@ exports[`preset output 1`] = `
                 "_osDark": "{colors.md.dark.neutral0}"
               }
             },
+            "neutral4": {
+              "value": {
+                "base": "{colors.md.light.neutral4}",
+                "_osDark": "{colors.md.dark.neutral4}"
+              }
+            },
+            "neutral6": {
+              "value": {
+                "base": "{colors.md.light.neutral6}",
+                "_osDark": "{colors.md.dark.neutral6}"
+              }
+            },
             "neutral10": {
               "value": {
                 "base": "{colors.md.light.neutral10}",
                 "_osDark": "{colors.md.dark.neutral10}"
+              }
+            },
+            "neutral12": {
+              "value": {
+                "base": "{colors.md.light.neutral12}",
+                "_osDark": "{colors.md.dark.neutral12}"
+              }
+            },
+            "neutral17": {
+              "value": {
+                "base": "{colors.md.light.neutral17}",
+                "_osDark": "{colors.md.dark.neutral17}"
               }
             },
             "neutral20": {
@@ -2125,22 +2077,22 @@ exports[`preset output 1`] = `
                 "_osDark": "{colors.md.dark.neutral20}"
               }
             },
-            "neutral25": {
+            "neutral22": {
               "value": {
-                "base": "{colors.md.light.neutral25}",
-                "_osDark": "{colors.md.dark.neutral25}"
+                "base": "{colors.md.light.neutral22}",
+                "_osDark": "{colors.md.dark.neutral22}"
+              }
+            },
+            "neutral24": {
+              "value": {
+                "base": "{colors.md.light.neutral24}",
+                "_osDark": "{colors.md.dark.neutral24}"
               }
             },
             "neutral30": {
               "value": {
                 "base": "{colors.md.light.neutral30}",
                 "_osDark": "{colors.md.dark.neutral30}"
-              }
-            },
-            "neutral35": {
-              "value": {
-                "base": "{colors.md.light.neutral35}",
-                "_osDark": "{colors.md.dark.neutral35}"
               }
             },
             "neutral40": {
@@ -2173,16 +2125,40 @@ exports[`preset output 1`] = `
                 "_osDark": "{colors.md.dark.neutral80}"
               }
             },
+            "neutral87": {
+              "value": {
+                "base": "{colors.md.light.neutral87}",
+                "_osDark": "{colors.md.dark.neutral87}"
+              }
+            },
             "neutral90": {
               "value": {
                 "base": "{colors.md.light.neutral90}",
                 "_osDark": "{colors.md.dark.neutral90}"
               }
             },
+            "neutral92": {
+              "value": {
+                "base": "{colors.md.light.neutral92}",
+                "_osDark": "{colors.md.dark.neutral92}"
+              }
+            },
+            "neutral94": {
+              "value": {
+                "base": "{colors.md.light.neutral94}",
+                "_osDark": "{colors.md.dark.neutral94}"
+              }
+            },
             "neutral95": {
               "value": {
                 "base": "{colors.md.light.neutral95}",
                 "_osDark": "{colors.md.dark.neutral95}"
+              }
+            },
+            "neutral96": {
+              "value": {
+                "base": "{colors.md.light.neutral96}",
+                "_osDark": "{colors.md.dark.neutral96}"
               }
             },
             "neutral98": {
@@ -2221,22 +2197,10 @@ exports[`preset output 1`] = `
                 "_osDark": "{colors.md.dark.neutral-variant20}"
               }
             },
-            "neutral-variant25": {
-              "value": {
-                "base": "{colors.md.light.neutral-variant25}",
-                "_osDark": "{colors.md.dark.neutral-variant25}"
-              }
-            },
             "neutral-variant30": {
               "value": {
                 "base": "{colors.md.light.neutral-variant30}",
                 "_osDark": "{colors.md.dark.neutral-variant30}"
-              }
-            },
-            "neutral-variant35": {
-              "value": {
-                "base": "{colors.md.light.neutral-variant35}",
-                "_osDark": "{colors.md.dark.neutral-variant35}"
               }
             },
             "neutral-variant40": {
@@ -2317,22 +2281,10 @@ exports[`preset output 1`] = `
                 "_osDark": "{colors.md.dark.error20}"
               }
             },
-            "error25": {
-              "value": {
-                "base": "{colors.md.light.error25}",
-                "_osDark": "{colors.md.dark.error25}"
-              }
-            },
             "error30": {
               "value": {
                 "base": "{colors.md.light.error30}",
                 "_osDark": "{colors.md.dark.error30}"
-              }
-            },
-            "error35": {
-              "value": {
-                "base": "{colors.md.light.error35}",
-                "_osDark": "{colors.md.dark.error35}"
               }
             },
             "error40": {
@@ -2437,22 +2389,10 @@ exports[`preset output 1`] = `
                 "_osDark": "{colors.md.dark.info20}"
               }
             },
-            "info25": {
-              "value": {
-                "base": "{colors.md.light.info25}",
-                "_osDark": "{colors.md.dark.info25}"
-              }
-            },
             "info30": {
               "value": {
                 "base": "{colors.md.light.info30}",
                 "_osDark": "{colors.md.dark.info30}"
-              }
-            },
-            "info35": {
-              "value": {
-                "base": "{colors.md.light.info35}",
-                "_osDark": "{colors.md.dark.info35}"
               }
             },
             "info40": {
@@ -2557,22 +2497,10 @@ exports[`preset output 1`] = `
                 "_osDark": "{colors.md.dark.warning20}"
               }
             },
-            "warning25": {
-              "value": {
-                "base": "{colors.md.light.warning25}",
-                "_osDark": "{colors.md.dark.warning25}"
-              }
-            },
             "warning30": {
               "value": {
                 "base": "{colors.md.light.warning30}",
                 "_osDark": "{colors.md.dark.warning30}"
-              }
-            },
-            "warning35": {
-              "value": {
-                "base": "{colors.md.light.warning35}",
-                "_osDark": "{colors.md.dark.warning35}"
               }
             },
             "warning40": {
