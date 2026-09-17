@@ -72,9 +72,46 @@ exports[`options 1`] = `
     "md": {
       "brand": {
         "value": "Comfortaa, sans-serif"
+      },
+      "plain": {
+        "value": "Roboto, sans-serif"
       }
     }
   },
+  "customColors": [
+    [
+      {
+        "value": "#004672"
+      },
+      {
+        "value": "#7bbeff"
+      }
+    ],
+    [
+      {
+        "value": "#0079c1"
+      },
+      {
+        "value": "#40a4f4"
+      }
+    ],
+    [
+      {
+        "value": "#004011"
+      },
+      {
+        "value": "#99f199"
+      }
+    ],
+    [
+      {
+        "value": "#277d34"
+      },
+      {
+        "value": "#66bb6a"
+      }
+    ]
+  ],
   "textStyle": [
     {
       "value": {
@@ -87,10 +124,38 @@ exports[`options 1`] = `
     },
     {
       "value": {
+        "fontFamily": "md.plain",
         "fontSize": "1rem",
         "fontWeight": 400,
         "lineHeight": "1.5rem",
         "letterSpacing": "0.03125em"
+      }
+    },
+    {
+      "value": {
+        "fontFamily": "md.brand",
+        "fontSize": "3.5625rem",
+        "fontWeight": 500,
+        "lineHeight": "4rem",
+        "letterSpacing": "-0.0043859649122807015em"
+      }
+    },
+    {
+      "value": {
+        "fontFamily": "md.plain",
+        "fontSize": "0.875rem",
+        "fontWeight": 400,
+        "lineHeight": "1.25rem",
+        "letterSpacing": "0em"
+      }
+    },
+    {
+      "value": {
+        "fontFamily": "md.plain",
+        "fontSize": "0.875rem",
+        "fontWeight": 600,
+        "lineHeight": "1.25rem",
+        "letterSpacing": "0em"
       }
     }
   ]
