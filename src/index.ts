@@ -15,8 +15,10 @@ export type Options = ColorOptions & {
 };
 
 export function presetMaterialTokens(options: Options): Preset {
-  const { motionScheme = "standard", languageHeight = "medium", typeface = {} } = options;
+  const { motionScheme = "standard", languageHeight = "medium" } = options;
+  const typeface = options.typeface ?? {};
   const colors = tokens.makeColors(options);
+  const easings = tokens.makeEasings(motionScheme);
 
   return definePreset({
     name: "preset-material-tokens",
@@ -30,7 +32,7 @@ export function presetMaterialTokens(options: Options): Preset {
           spacing: { md: tokens.spacing },
           borderWidths: { md: tokens.borderWidths },
           durations: { md: tokens.makeDurations(motionScheme) },
-          easings: { md: tokens.makeEasings(motionScheme) },
+          easings: { md: easings },
           fonts: { md: tokens.makeFonts(typeface) },
           fontWeights: { md: tokens.fontWeights },
         },

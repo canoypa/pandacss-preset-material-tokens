@@ -145,6 +145,9 @@ function makeScheme(
   color: number,
   isDark: boolean
 ): DynamicScheme {
+  if (!Object.hasOwn(schemeClasses, variant)) {
+    throw new Error(`Unknown variant "${variant}". Expected one of: ${Object.keys(schemeClasses).join(", ")}.`);
+  }
   const Scheme = schemeClasses[variant];
   return new Scheme(Hct.fromInt(color), isDark, contrastLevel, "2025", "phone");
 }
@@ -175,16 +178,22 @@ function makeModeColors(options: ColorOptions, isDark: boolean): ModeColors {
   const result = schemeColors(main);
 
   for (const custom of options.customColors ?? []) {
+    if (!/^[A-Za-z][\w-]*$/.test(custom.name)) {
+      throw new Error(`Custom color name "${custom.name}" must start with a letter and contain only letters, digits, "_" and "-".`);
+    }
     const value = custom.blend
       ? Blend.harmonize(custom.value, options.sourceColor)
       : custom.value;
-    Object.assign(
-      result,
-      customColors(
-        custom.name,
-        makeCustomScheme(main, value, custom.fidelity ?? false)
-      )
+    const colors = customColors(
+      custom.name,
+      makeCustomScheme(main, value, custom.fidelity ?? false)
     );
+    for (const key in colors) {
+      if (key in result) {
+        throw new Error(`Custom color "${custom.name}" produces "${key}", which already exists.`);
+      }
+    }
+    Object.assign(result, colors);
   }
 
   return result;
@@ -197,6 +206,14 @@ export function makeColors(options: ColorOptions): {
   const light = makeModeColors(options, false);
   const dark = makeModeColors(options, true);
   const darkCondition = options.darkCondition ?? "_osDark";
+
+  // Semantic md.light-x and the raw token md.light.x share the CSS variable --colors-md-light-x.
+  for (const name in light) {
+    const shadowed = name.match(/^(?:light|dark)-(.+)$/)?.[1];
+    if (shadowed && shadowed in light) {
+      throw new Error(`Color "${name}" conflicts with the CSS variable of "${name.replace("-", ".")}".`);
+    }
+  }
 
   const semanticTokens: ColorSemanticTokens = {};
   for (const [name, { deprecated }] of Object.entries(light)) {

@@ -42,6 +42,9 @@ const springEasings: Record<MotionScheme, Spring> = {
 }
 
 export function makeEasings(motionScheme: MotionScheme) {
+  if (!Object.hasOwn(springEasings, motionScheme)) {
+    throw new Error(`Unknown motionScheme "${motionScheme}". Expected one of: ${Object.keys(springEasings).join(", ")}.`)
+  }
   return {
     linear: { value: 'cubic-bezier(0, 0, 1, 1)' },
     standard: {

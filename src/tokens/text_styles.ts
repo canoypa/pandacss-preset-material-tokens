@@ -40,6 +40,9 @@ const rem = (px: number) => `${px / 16}rem`
 const em = (tracking: number, size: number) => `${tracking / size}em`
 
 export function makeTextStyles(languageHeight: LanguageHeight, typeface: Typeface) {
+  if (!Object.hasOwn(typeScale['body-large'].lineHeight, languageHeight)) {
+    throw new Error(`Unknown languageHeight "${languageHeight}". Expected one of: ${Object.keys(typeScale['body-large'].lineHeight).join(", ")}.`)
+  }
   const baseline: Record<string, { value: object }> = {}
   const emphasized: Record<string, { value: object }> = {}
   const variable: Record<string, { value: object }> = {}
