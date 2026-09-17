@@ -57,6 +57,7 @@ css({
 | `darkCondition` | `"_osDark"`    | Panda condition used for dark colors, e.g. `"_dark"` to switch with a `.dark` class. |
 | `motionScheme`  | `"standard"`   | Spring motion scheme: `"standard"` or `"expressive"`.                                |
 | `languageHeight`| `"medium"`     | Line heights for the script: `"small"` (Latin, Cyrillic, Greek, Hebrew) or `"medium"` (CJK, Arabic, Thai and most other scripts). |
+| `typeface`      | `{}`           | `{ brand?, plain? }` font-family values. Given roles become `md.brand` / `md.plain` font tokens and are applied to the text styles that use them (brand: display, headline, title-large; plain: the rest). Loading the fonts is up to you. |
 
 # Tokens
 
@@ -72,5 +73,6 @@ css({
 | `md.sys.motion.spring.default.spatial`       | easing and duration `"md.spring.default.spatial"`             |
 | `md.sys.typescale.body-large`                | `textStyle: "md.body-large"`                                  |
 | `md.sys.typescale.emphasized.body-large`     | `textStyle: "md.emphasized.body-large"`                       |
+| `md.ref.typeface.brand`                      | `fontFamily: "md.brand"`                                      |
 
 Breakpoints are the Material window size classes: `medium` (600px), `expanded` (840px), `large` (1200px), `extraLarge` (1600px).

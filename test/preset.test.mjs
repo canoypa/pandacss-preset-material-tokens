@@ -20,12 +20,17 @@ test("options", (t) => {
     darkCondition: "_dark",
     motionScheme: "expressive",
     languageHeight: "small",
+    typeface: { brand: "Comfortaa, sans-serif" },
   });
   const { tokens, semanticTokens } = preset.theme.extend;
   t.assert.snapshot({
     primary: [tokens.colors.md.light.primary, tokens.colors.md.dark.primary],
     semantic: semanticTokens.colors.md.primary,
     spring: [tokens.easings.md.spring, tokens.durations.md.spring],
-    textStyle: preset.theme.extend.textStyles.md["body-large"],
+    fonts: tokens.fonts,
+    textStyle: [
+      preset.theme.extend.textStyles.md["title-large"],
+      preset.theme.extend.textStyles.md["body-large"],
+    ],
   });
 });
