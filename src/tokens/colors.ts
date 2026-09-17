@@ -4,7 +4,6 @@ import {
   DynamicScheme,
   Hct,
   SchemeExpressive,
-  SchemeFidelity,
   SchemeNeutral,
   SchemeTonalSpot,
   SchemeVibrant,
@@ -39,13 +38,6 @@ const schemeClasses = {
   expressive: SchemeExpressive,
   neutral: SchemeNeutral,
 } satisfies Record<SchemeVariant, unknown>;
-
-const schemeVariants: Record<SchemeVariant, Variant> = {
-  "tonal-spot": Variant.TONAL_SPOT,
-  vibrant: Variant.VIBRANT,
-  expressive: Variant.EXPRESSIVE,
-  neutral: Variant.NEUTRAL,
-};
 
 type ColorTokens = NonNullable<Tokens["colors"]>;
 type ModeColors = Record<string, { value: string; deprecated?: string }>;
@@ -158,31 +150,29 @@ function makeScheme(
 }
 
 function makeCustomScheme(
-  { variant = "tonal-spot", contrastLevel = 0 }: ColorOptions,
+  main: DynamicScheme,
   color: number,
-  fidelity: boolean,
-  isDark: boolean
+  fidelity: boolean
 ): DynamicScheme {
-  const hct = Hct.fromInt(color);
-
-  if (fidelity) {
-    // MCU has no 2025 spec for SchemeFidelity and computes it with the 2021 spec.
-    return new SchemeFidelity(hct, isDark, contrastLevel, "2025", "phone");
-  }
-
   return new DynamicScheme({
-    sourceColorHct: hct,
-    variant: schemeVariants[variant],
-    contrastLevel,
-    isDark,
+    sourceColorHct: Hct.fromInt(color),
+    // MCU has no 2025 spec for the fidelity variant and computes it with the 2021 spec.
+    variant: fidelity ? Variant.FIDELITY : main.variant,
+    contrastLevel: main.contrastLevel,
+    isDark: main.isDark,
     platform: "phone",
     specVersion: "2025",
-    primaryPalette: TonalPalette.fromInt(color),
+    ...(!fidelity && { primaryPalette: TonalPalette.fromInt(color) }),
+    // Role tones are contrasted against surfaces from these palettes, so they must
+    // be the main scheme's, not ones derived from the custom color.
+    neutralPalette: main.neutralPalette,
+    neutralVariantPalette: main.neutralVariantPalette,
   });
 }
 
 function makeModeColors(options: ColorOptions, isDark: boolean): ModeColors {
-  const result = schemeColors(makeScheme(options, options.sourceColor, isDark));
+  const main = makeScheme(options, options.sourceColor, isDark);
+  const result = schemeColors(main);
 
   for (const custom of options.customColors ?? []) {
     const value = custom.blend
@@ -192,7 +182,7 @@ function makeModeColors(options: ColorOptions, isDark: boolean): ModeColors {
       result,
       customColors(
         custom.name,
-        makeCustomScheme(options, value, custom.fidelity ?? false, isDark)
+        makeCustomScheme(main, value, custom.fidelity ?? false)
       )
     );
   }
