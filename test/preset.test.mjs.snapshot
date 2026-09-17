@@ -90,7 +90,7 @@ exports[`options 1`] = `
         "fontSize": "1rem",
         "fontWeight": 400,
         "lineHeight": "1.5rem",
-        "letterSpacing": "0em"
+        "letterSpacing": "0.03125em"
       }
     }
   ]
@@ -2809,7 +2809,7 @@ exports[`preset output 1`] = `
               "fontSize": "3.5625rem",
               "fontWeight": 400,
               "lineHeight": "4.5625rem",
-              "letterSpacing": "0em"
+              "letterSpacing": "-0.0043859649122807015em"
             }
           },
           "display-medium": {
@@ -2857,7 +2857,7 @@ exports[`preset output 1`] = `
               "fontSize": "1rem",
               "fontWeight": 400,
               "lineHeight": "1.6875rem",
-              "letterSpacing": "0em"
+              "letterSpacing": "0.03125em"
             }
           },
           "body-medium": {
@@ -2865,7 +2865,7 @@ exports[`preset output 1`] = `
               "fontSize": "0.875rem",
               "fontWeight": 400,
               "lineHeight": "1.4375rem",
-              "letterSpacing": "0em"
+              "letterSpacing": "0.017857142857142856em"
             }
           },
           "body-small": {
@@ -2873,7 +2873,7 @@ exports[`preset output 1`] = `
               "fontSize": "0.75rem",
               "fontWeight": 400,
               "lineHeight": "1.125rem",
-              "letterSpacing": "0.008333333333333333em"
+              "letterSpacing": "0.03333333333333333em"
             }
           },
           "label-large": {
@@ -2881,7 +2881,7 @@ exports[`preset output 1`] = `
               "fontSize": "0.875rem",
               "fontWeight": 500,
               "lineHeight": "1.4375rem",
-              "letterSpacing": "0em"
+              "letterSpacing": "0.0071428571428571435em"
             }
           },
           "label-medium": {
@@ -2889,7 +2889,7 @@ exports[`preset output 1`] = `
               "fontSize": "0.75rem",
               "fontWeight": 500,
               "lineHeight": "1.125rem",
-              "letterSpacing": "0.008333333333333333em"
+              "letterSpacing": "0.041666666666666664em"
             }
           },
           "label-small": {
@@ -2897,7 +2897,7 @@ exports[`preset output 1`] = `
               "fontSize": "0.6875rem",
               "fontWeight": 500,
               "lineHeight": "1.125rem",
-              "letterSpacing": "0.009090909090909092em"
+              "letterSpacing": "0.045454545454545456em"
             }
           },
           "title-large": {
@@ -2913,7 +2913,7 @@ exports[`preset output 1`] = `
               "fontSize": "1rem",
               "fontWeight": 500,
               "lineHeight": "1.6875rem",
-              "letterSpacing": "0em"
+              "letterSpacing": "0.009375em"
             }
           },
           "title-small": {
@@ -2921,7 +2921,7 @@ exports[`preset output 1`] = `
               "fontSize": "0.875rem",
               "fontWeight": 500,
               "lineHeight": "1.4375rem",
-              "letterSpacing": "0em"
+              "letterSpacing": "0.0071428571428571435em"
             }
           },
           "emphasized": {
@@ -2930,7 +2930,7 @@ exports[`preset output 1`] = `
                 "fontSize": "3.5625rem",
                 "fontWeight": 500,
                 "lineHeight": "4.5625rem",
-                "letterSpacing": "0em"
+                "letterSpacing": "-0.0043859649122807015em"
               }
             },
             "display-medium": {
@@ -2978,7 +2978,7 @@ exports[`preset output 1`] = `
                 "fontSize": "1rem",
                 "fontWeight": 500,
                 "lineHeight": "1.6875rem",
-                "letterSpacing": "0em"
+                "letterSpacing": "0.03125em"
               }
             },
             "body-medium": {
@@ -2986,7 +2986,7 @@ exports[`preset output 1`] = `
                 "fontSize": "0.875rem",
                 "fontWeight": 500,
                 "lineHeight": "1.4375rem",
-                "letterSpacing": "0em"
+                "letterSpacing": "0.017857142857142856em"
               }
             },
             "body-small": {
@@ -2994,7 +2994,7 @@ exports[`preset output 1`] = `
                 "fontSize": "0.75rem",
                 "fontWeight": 500,
                 "lineHeight": "1.125rem",
-                "letterSpacing": "0em"
+                "letterSpacing": "0.03333333333333333em"
               }
             },
             "label-large": {
@@ -3002,7 +3002,7 @@ exports[`preset output 1`] = `
                 "fontSize": "0.875rem",
                 "fontWeight": 700,
                 "lineHeight": "1.4375rem",
-                "letterSpacing": "0em"
+                "letterSpacing": "0.0071428571428571435em"
               }
             },
             "label-medium": {
@@ -3010,7 +3010,7 @@ exports[`preset output 1`] = `
                 "fontSize": "0.75rem",
                 "fontWeight": 700,
                 "lineHeight": "1.125rem",
-                "letterSpacing": "0.008333333333333333em"
+                "letterSpacing": "0.041666666666666664em"
               }
             },
             "label-small": {
@@ -3018,7 +3018,7 @@ exports[`preset output 1`] = `
                 "fontSize": "0.6875rem",
                 "fontWeight": 700,
                 "lineHeight": "1.125rem",
-                "letterSpacing": "0.009090909090909092em"
+                "letterSpacing": "0.045454545454545456em"
               }
             },
             "title-large": {
@@ -3034,7 +3034,7 @@ exports[`preset output 1`] = `
                 "fontSize": "1rem",
                 "fontWeight": 700,
                 "lineHeight": "1.6875rem",
-                "letterSpacing": "0em"
+                "letterSpacing": "0.009375em"
               }
             },
             "title-small": {
@@ -3042,7 +3042,7 @@ exports[`preset output 1`] = `
                 "fontSize": "0.875rem",
                 "fontWeight": 700,
                 "lineHeight": "1.4375rem",
-                "letterSpacing": "0em"
+                "letterSpacing": "0.0071428571428571435em"
               }
             }
           }
