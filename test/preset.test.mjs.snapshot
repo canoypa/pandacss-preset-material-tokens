@@ -1353,6 +1353,23 @@ exports[`preset output 1`] = `
             },
             "space900": {
               "value": "72px"
+            },
+            "focus-indicator": {
+              "inner-offset": {
+                "value": "-3px"
+              },
+              "outer-offset": {
+                "value": "2px"
+              }
+            }
+          }
+        },
+        "borderWidths": {
+          "md": {
+            "focus-indicator": {
+              "thickness": {
+                "value": "3px"
+              }
             }
           }
         },

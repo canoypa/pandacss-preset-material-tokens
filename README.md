@@ -69,6 +69,8 @@ css({
 | `md.sys.state.hover.state-layer-opacity`     | `opacity: "md.hover"`                                         |
 | `md.sys.elevation.level1`                    | `boxShadow: "md.level1"`                                      |
 | `md.sys.measurement.space100`                | `padding: "md.space100"`                                      |
+| `md.sys.state.focus-indicator.thickness`     | `outlineWidth: "md.focus-indicator.thickness"`                |
+| `md.sys.state.focus-indicator.outer-offset`  | `outlineOffset: "md.focus-indicator.outer-offset"`            |
 | `md.sys.motion.duration.short1`              | `transitionDuration: "md.short1"`                             |
 | `md.sys.motion.easing.emphasized.decelerate` | `transitionTimingFunction: "md.emphasized.decelerate"`        |
 | `md.sys.motion.spring.default.spatial`       | easing and duration `"md.spring.default.spatial"`             |

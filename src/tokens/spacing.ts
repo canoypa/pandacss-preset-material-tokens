@@ -17,4 +17,9 @@ export const spacing = {
   space700: { value: '56px' },
   space800: { value: '64px' },
   space900: { value: '72px' },
+
+  'focus-indicator': {
+    'inner-offset': { value: '-3px' },
+    'outer-offset': { value: '2px' },
+  },
 }

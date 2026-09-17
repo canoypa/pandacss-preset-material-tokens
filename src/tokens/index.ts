@@ -1,3 +1,4 @@
+export * from './border_widths'
 export * from './breakpoints'
 export * from './colors'
 export * from './durations'

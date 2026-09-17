@@ -28,6 +28,7 @@ export function presetMaterialTokens(options: Options): Preset {
           opacity: { md: tokens.opacity },
           shadows: { md: tokens.shadows },
           spacing: { md: tokens.spacing },
+          borderWidths: { md: tokens.borderWidths },
           durations: { md: tokens.makeDurations(motionScheme) },
           easings: { md: tokens.makeEasings(motionScheme) },
           fonts: { md: tokens.makeFonts(typeface) },
