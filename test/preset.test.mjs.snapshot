@@ -1591,6 +1591,20 @@ exports[`preset output 1`] = `
         },
         "fonts": {
           "md": {}
+        },
+        "fontWeights": {
+          "md": {
+            "label-large": {
+              "weight-prominent": {
+                "value": 700
+              }
+            },
+            "label-medium": {
+              "weight-prominent": {
+                "value": 700
+              }
+            }
+          }
         }
       },
       "semanticTokens": {

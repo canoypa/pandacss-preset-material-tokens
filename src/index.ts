@@ -32,6 +32,7 @@ export function presetMaterialTokens(options: Options): Preset {
           durations: { md: tokens.makeDurations(motionScheme) },
           easings: { md: tokens.makeEasings(motionScheme) },
           fonts: { md: tokens.makeFonts(typeface) },
+          fontWeights: { md: tokens.fontWeights },
         },
         semanticTokens: {
           colors: colors.semanticTokens,
