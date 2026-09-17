@@ -2544,243 +2544,243 @@ exports[`preset output 1`] = `
         "md": {
           "display-large": {
             "value": {
-              "fontSize": "57px",
+              "fontSize": "3.5625rem",
               "fontWeight": 400,
-              "lineHeight": "64px",
-              "letterSpacing": "0px"
+              "lineHeight": "4rem",
+              "letterSpacing": "0rem"
             }
           },
           "display-medium": {
             "value": {
-              "fontSize": "45px",
+              "fontSize": "2.8125rem",
               "fontWeight": 400,
-              "lineHeight": "52px",
-              "letterSpacing": "0px"
+              "lineHeight": "3.25rem",
+              "letterSpacing": "0rem"
             }
           },
           "display-small": {
             "value": {
-              "fontSize": "36px",
+              "fontSize": "2.25rem",
               "fontWeight": 400,
-              "lineHeight": "44px",
-              "letterSpacing": "0px"
+              "lineHeight": "2.75rem",
+              "letterSpacing": "0rem"
             }
           },
           "headline-large": {
             "value": {
-              "fontSize": "32px",
+              "fontSize": "2rem",
               "fontWeight": 400,
-              "lineHeight": "40px",
-              "letterSpacing": "0px"
+              "lineHeight": "2.5rem",
+              "letterSpacing": "0rem"
             }
           },
           "headline-medium": {
             "value": {
-              "fontSize": "28px",
+              "fontSize": "1.75rem",
               "fontWeight": 400,
-              "lineHeight": "36px",
-              "letterSpacing": "0px"
+              "lineHeight": "2.25rem",
+              "letterSpacing": "0rem"
             }
           },
           "headline-small": {
             "value": {
-              "fontSize": "24px",
+              "fontSize": "1.5rem",
               "fontWeight": 400,
-              "lineHeight": "32px",
-              "letterSpacing": "0px"
+              "lineHeight": "2rem",
+              "letterSpacing": "0rem"
             }
           },
           "body-large": {
             "value": {
-              "fontSize": "16px",
+              "fontSize": "1rem",
               "fontWeight": 400,
-              "lineHeight": "24px",
-              "letterSpacing": "0px"
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0rem"
             }
           },
           "body-medium": {
             "value": {
-              "fontSize": "14px",
+              "fontSize": "0.875rem",
               "fontWeight": 400,
-              "lineHeight": "20px",
-              "letterSpacing": "0px"
+              "lineHeight": "1.25rem",
+              "letterSpacing": "0rem"
             }
           },
           "body-small": {
             "value": {
-              "fontSize": "12px",
+              "fontSize": "0.75rem",
               "fontWeight": 400,
-              "lineHeight": "16px",
-              "letterSpacing": "0.1px"
+              "lineHeight": "1rem",
+              "letterSpacing": "0.00625rem"
             }
           },
           "label-large": {
             "value": {
-              "fontSize": "14px",
+              "fontSize": "0.875rem",
               "fontWeight": 500,
-              "lineHeight": "20px",
-              "letterSpacing": "0px"
+              "lineHeight": "1.25rem",
+              "letterSpacing": "0rem"
             }
           },
           "label-medium": {
             "value": {
-              "fontSize": "12px",
+              "fontSize": "0.75rem",
               "fontWeight": 500,
-              "lineHeight": "16px",
-              "letterSpacing": "0.1px"
+              "lineHeight": "1rem",
+              "letterSpacing": "0.00625rem"
             }
           },
           "label-small": {
             "value": {
-              "fontSize": "11px",
+              "fontSize": "0.6875rem",
               "fontWeight": 500,
-              "lineHeight": "16px",
-              "letterSpacing": "0.1px"
+              "lineHeight": "1rem",
+              "letterSpacing": "0.00625rem"
             }
           },
           "title-large": {
             "value": {
-              "fontSize": "22px",
+              "fontSize": "1.375rem",
               "fontWeight": 400,
-              "lineHeight": "28px",
-              "letterSpacing": "0px"
+              "lineHeight": "1.75rem",
+              "letterSpacing": "0rem"
             }
           },
           "title-medium": {
             "value": {
-              "fontSize": "16px",
+              "fontSize": "1rem",
               "fontWeight": 500,
-              "lineHeight": "24px",
-              "letterSpacing": "0px"
+              "lineHeight": "1.5rem",
+              "letterSpacing": "0rem"
             }
           },
           "title-small": {
             "value": {
-              "fontSize": "14px",
+              "fontSize": "0.875rem",
               "fontWeight": 500,
-              "lineHeight": "20px",
-              "letterSpacing": "0px"
+              "lineHeight": "1.25rem",
+              "letterSpacing": "0rem"
             }
           },
           "emphasized": {
             "display-large": {
               "value": {
-                "fontSize": "57px",
+                "fontSize": "3.5625rem",
                 "fontWeight": 500,
-                "lineHeight": "64px",
-                "letterSpacing": "0px"
+                "lineHeight": "4rem",
+                "letterSpacing": "0rem"
               }
             },
             "display-medium": {
               "value": {
-                "fontSize": "45px",
+                "fontSize": "2.8125rem",
                 "fontWeight": 500,
-                "lineHeight": "52px",
-                "letterSpacing": "0px"
+                "lineHeight": "3.25rem",
+                "letterSpacing": "0rem"
               }
             },
             "display-small": {
               "value": {
-                "fontSize": "36px",
+                "fontSize": "2.25rem",
                 "fontWeight": 500,
-                "lineHeight": "44px",
-                "letterSpacing": "0px"
+                "lineHeight": "2.75rem",
+                "letterSpacing": "0rem"
               }
             },
             "headline-large": {
               "value": {
-                "fontSize": "32px",
+                "fontSize": "2rem",
                 "fontWeight": 500,
-                "lineHeight": "40px",
-                "letterSpacing": "0px"
+                "lineHeight": "2.5rem",
+                "letterSpacing": "0rem"
               }
             },
             "headline-medium": {
               "value": {
-                "fontSize": "28px",
+                "fontSize": "1.75rem",
                 "fontWeight": 500,
-                "lineHeight": "36px",
-                "letterSpacing": "0px"
+                "lineHeight": "2.25rem",
+                "letterSpacing": "0rem"
               }
             },
             "headline-small": {
               "value": {
-                "fontSize": "24px",
+                "fontSize": "1.5rem",
                 "fontWeight": 500,
-                "lineHeight": "32px",
-                "letterSpacing": "0px"
+                "lineHeight": "2rem",
+                "letterSpacing": "0rem"
               }
             },
             "body-large": {
               "value": {
-                "fontSize": "16px",
+                "fontSize": "1rem",
                 "fontWeight": 500,
-                "lineHeight": "24px",
-                "letterSpacing": "0px"
+                "lineHeight": "1.5rem",
+                "letterSpacing": "0rem"
               }
             },
             "body-medium": {
               "value": {
-                "fontSize": "14px",
+                "fontSize": "0.875rem",
                 "fontWeight": 500,
-                "lineHeight": "20px",
-                "letterSpacing": "0px"
+                "lineHeight": "1.25rem",
+                "letterSpacing": "0rem"
               }
             },
             "body-small": {
               "value": {
-                "fontSize": "12px",
+                "fontSize": "0.75rem",
                 "fontWeight": 500,
-                "lineHeight": "16px",
-                "letterSpacing": "0px"
+                "lineHeight": "1rem",
+                "letterSpacing": "0rem"
               }
             },
             "label-large": {
               "value": {
-                "fontSize": "14px",
+                "fontSize": "0.875rem",
                 "fontWeight": 700,
-                "lineHeight": "20px",
-                "letterSpacing": "0px"
+                "lineHeight": "1.25rem",
+                "letterSpacing": "0rem"
               }
             },
             "label-medium": {
               "value": {
-                "fontSize": "12px",
+                "fontSize": "0.75rem",
                 "fontWeight": 700,
-                "lineHeight": "16px",
-                "letterSpacing": "0.1px"
+                "lineHeight": "1rem",
+                "letterSpacing": "0.00625rem"
               }
             },
             "label-small": {
               "value": {
-                "fontSize": "11px",
+                "fontSize": "0.6875rem",
                 "fontWeight": 700,
-                "lineHeight": "16px",
-                "letterSpacing": "0.1px"
+                "lineHeight": "1rem",
+                "letterSpacing": "0.00625rem"
               }
             },
             "title-large": {
               "value": {
-                "fontSize": "22px",
+                "fontSize": "1.375rem",
                 "fontWeight": 500,
-                "lineHeight": "28px",
-                "letterSpacing": "0px"
+                "lineHeight": "1.75rem",
+                "letterSpacing": "0rem"
               }
             },
             "title-medium": {
               "value": {
-                "fontSize": "16px",
+                "fontSize": "1rem",
                 "fontWeight": 700,
-                "lineHeight": "24px",
-                "letterSpacing": "0px"
+                "lineHeight": "1.5rem",
+                "letterSpacing": "0rem"
               }
             },
             "title-small": {
               "value": {
-                "fontSize": "14px",
+                "fontSize": "0.875rem",
                 "fontWeight": 700,
-                "lineHeight": "20px",
-                "letterSpacing": "0px"
+                "lineHeight": "1.25rem",
+                "letterSpacing": "0rem"
               }
             }
           }
