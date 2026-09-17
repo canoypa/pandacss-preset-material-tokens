@@ -38,7 +38,7 @@ export function presetMaterialTokens(options: Options): Preset {
           colors: colors.semanticTokens,
         },
         breakpoints: tokens.breakpoints,
-        textStyles: { md: tokens.makeTextStyles(languageHeight, typeface) },
+        textStyles: tokens.makeTextStyles(languageHeight, typeface),
       },
     },
   });

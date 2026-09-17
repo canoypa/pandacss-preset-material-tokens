@@ -30,6 +30,12 @@ const typeScale: Record<string, TypeStyle> = {
   'title-small': { typeface: 'plain', size: 14, lineHeight: { small: 20, medium: 23, large: 26, 'extra-large': 36 }, weight: 500, tracking: 0.1, emphasized: { weight: 700, tracking: 0.1, variableWeight: 600 } },
 }
 
+function prefixKeys<T>(prefix: string, record: Record<string, T>) {
+  return Object.fromEntries(
+    Object.entries(record).map(([key, value]) => [prefix + key, value])
+  )
+}
+
 const rem = (px: number) => `${px / 16}rem`
 const em = (tracking: number, size: number) => `${tracking / size}em`
 
@@ -61,9 +67,13 @@ export function makeTextStyles(languageHeight: LanguageHeight, typeface: Typefac
     variableEmphasized[name] = textStyle(style.emphasized.variableWeight, '0em')
   }
 
+  // Keys are flat dotted paths rather than a nested `md` group: preset-panda
+  // defines a `md` text style, and a nested group would merge into it and be
+  // treated as a single style.
   return {
-    ...baseline,
-    emphasized,
-    variable: { ...variable, emphasized: variableEmphasized },
+    ...prefixKeys('md.', baseline),
+    ...prefixKeys('md.emphasized.', emphasized),
+    ...prefixKeys('md.variable.', variable),
+    ...prefixKeys('md.variable.emphasized.', variableEmphasized),
   }
 }

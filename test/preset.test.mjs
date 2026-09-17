@@ -30,8 +30,8 @@ test("options", (t) => {
     spring: [tokens.easings.md.spring, tokens.durations.md.spring],
     fonts: tokens.fonts,
     textStyle: [
-      preset.theme.extend.textStyles.md["title-large"],
-      preset.theme.extend.textStyles.md["body-large"],
+      preset.theme.extend.textStyles["md.title-large"],
+      preset.theme.extend.textStyles["md.body-large"],
     ],
   });
 });

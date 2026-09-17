@@ -2807,492 +2807,484 @@ exports[`preset output 1`] = `
         "extraLarge": "1600px"
       },
       "textStyles": {
-        "md": {
-          "display-large": {
-            "value": {
-              "fontSize": "3.5625rem",
-              "fontWeight": 400,
-              "lineHeight": "4.5625rem",
-              "letterSpacing": "-0.0043859649122807015em"
-            }
-          },
-          "display-medium": {
-            "value": {
-              "fontSize": "2.8125rem",
-              "fontWeight": 400,
-              "lineHeight": "3.5rem",
-              "letterSpacing": "0em"
-            }
-          },
-          "display-small": {
-            "value": {
-              "fontSize": "2.25rem",
-              "fontWeight": 400,
-              "lineHeight": "2.9375rem",
-              "letterSpacing": "0em"
-            }
-          },
-          "headline-large": {
-            "value": {
-              "fontSize": "2rem",
-              "fontWeight": 400,
-              "lineHeight": "2.625rem",
-              "letterSpacing": "0em"
-            }
-          },
-          "headline-medium": {
-            "value": {
-              "fontSize": "1.75rem",
-              "fontWeight": 400,
-              "lineHeight": "2.375rem",
-              "letterSpacing": "0em"
-            }
-          },
-          "headline-small": {
-            "value": {
-              "fontSize": "1.5rem",
-              "fontWeight": 400,
-              "lineHeight": "2.1875rem",
-              "letterSpacing": "0em"
-            }
-          },
-          "body-large": {
-            "value": {
-              "fontSize": "1rem",
-              "fontWeight": 400,
-              "lineHeight": "1.6875rem",
-              "letterSpacing": "0.03125em"
-            }
-          },
-          "body-medium": {
-            "value": {
-              "fontSize": "0.875rem",
-              "fontWeight": 400,
-              "lineHeight": "1.4375rem",
-              "letterSpacing": "0.017857142857142856em"
-            }
-          },
-          "body-small": {
-            "value": {
-              "fontSize": "0.75rem",
-              "fontWeight": 400,
-              "lineHeight": "1.125rem",
-              "letterSpacing": "0.03333333333333333em"
-            }
-          },
-          "label-large": {
-            "value": {
-              "fontSize": "0.875rem",
-              "fontWeight": 500,
-              "lineHeight": "1.4375rem",
-              "letterSpacing": "0.0071428571428571435em"
-            }
-          },
-          "label-medium": {
-            "value": {
-              "fontSize": "0.75rem",
-              "fontWeight": 500,
-              "lineHeight": "1.125rem",
-              "letterSpacing": "0.041666666666666664em"
-            }
-          },
-          "label-small": {
-            "value": {
-              "fontSize": "0.6875rem",
-              "fontWeight": 500,
-              "lineHeight": "1.125rem",
-              "letterSpacing": "0.045454545454545456em"
-            }
-          },
-          "title-large": {
-            "value": {
-              "fontSize": "1.375rem",
-              "fontWeight": 400,
-              "lineHeight": "1.9375rem",
-              "letterSpacing": "0em"
-            }
-          },
-          "title-medium": {
-            "value": {
-              "fontSize": "1rem",
-              "fontWeight": 500,
-              "lineHeight": "1.6875rem",
-              "letterSpacing": "0.009375em"
-            }
-          },
-          "title-small": {
-            "value": {
-              "fontSize": "0.875rem",
-              "fontWeight": 500,
-              "lineHeight": "1.4375rem",
-              "letterSpacing": "0.0071428571428571435em"
-            }
-          },
-          "emphasized": {
-            "display-large": {
-              "value": {
-                "fontSize": "3.5625rem",
-                "fontWeight": 500,
-                "lineHeight": "4.5625rem",
-                "letterSpacing": "-0.0043859649122807015em"
-              }
-            },
-            "display-medium": {
-              "value": {
-                "fontSize": "2.8125rem",
-                "fontWeight": 500,
-                "lineHeight": "3.5rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "display-small": {
-              "value": {
-                "fontSize": "2.25rem",
-                "fontWeight": 500,
-                "lineHeight": "2.9375rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "headline-large": {
-              "value": {
-                "fontSize": "2rem",
-                "fontWeight": 500,
-                "lineHeight": "2.625rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "headline-medium": {
-              "value": {
-                "fontSize": "1.75rem",
-                "fontWeight": 500,
-                "lineHeight": "2.375rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "headline-small": {
-              "value": {
-                "fontSize": "1.5rem",
-                "fontWeight": 500,
-                "lineHeight": "2.1875rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "body-large": {
-              "value": {
-                "fontSize": "1rem",
-                "fontWeight": 500,
-                "lineHeight": "1.6875rem",
-                "letterSpacing": "0.03125em"
-              }
-            },
-            "body-medium": {
-              "value": {
-                "fontSize": "0.875rem",
-                "fontWeight": 500,
-                "lineHeight": "1.4375rem",
-                "letterSpacing": "0.017857142857142856em"
-              }
-            },
-            "body-small": {
-              "value": {
-                "fontSize": "0.75rem",
-                "fontWeight": 500,
-                "lineHeight": "1.125rem",
-                "letterSpacing": "0.03333333333333333em"
-              }
-            },
-            "label-large": {
-              "value": {
-                "fontSize": "0.875rem",
-                "fontWeight": 700,
-                "lineHeight": "1.4375rem",
-                "letterSpacing": "0.0071428571428571435em"
-              }
-            },
-            "label-medium": {
-              "value": {
-                "fontSize": "0.75rem",
-                "fontWeight": 700,
-                "lineHeight": "1.125rem",
-                "letterSpacing": "0.041666666666666664em"
-              }
-            },
-            "label-small": {
-              "value": {
-                "fontSize": "0.6875rem",
-                "fontWeight": 700,
-                "lineHeight": "1.125rem",
-                "letterSpacing": "0.045454545454545456em"
-              }
-            },
-            "title-large": {
-              "value": {
-                "fontSize": "1.375rem",
-                "fontWeight": 500,
-                "lineHeight": "1.9375rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "title-medium": {
-              "value": {
-                "fontSize": "1rem",
-                "fontWeight": 700,
-                "lineHeight": "1.6875rem",
-                "letterSpacing": "0.009375em"
-              }
-            },
-            "title-small": {
-              "value": {
-                "fontSize": "0.875rem",
-                "fontWeight": 700,
-                "lineHeight": "1.4375rem",
-                "letterSpacing": "0.0071428571428571435em"
-              }
-            }
-          },
-          "variable": {
-            "display-large": {
-              "value": {
-                "fontSize": "3.5625rem",
-                "fontWeight": 400,
-                "lineHeight": "4.5625rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "display-medium": {
-              "value": {
-                "fontSize": "2.8125rem",
-                "fontWeight": 400,
-                "lineHeight": "3.5rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "display-small": {
-              "value": {
-                "fontSize": "2.25rem",
-                "fontWeight": 400,
-                "lineHeight": "2.9375rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "headline-large": {
-              "value": {
-                "fontSize": "2rem",
-                "fontWeight": 400,
-                "lineHeight": "2.625rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "headline-medium": {
-              "value": {
-                "fontSize": "1.75rem",
-                "fontWeight": 400,
-                "lineHeight": "2.375rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "headline-small": {
-              "value": {
-                "fontSize": "1.5rem",
-                "fontWeight": 400,
-                "lineHeight": "2.1875rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "body-large": {
-              "value": {
-                "fontSize": "1rem",
-                "fontWeight": 400,
-                "lineHeight": "1.6875rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "body-medium": {
-              "value": {
-                "fontSize": "0.875rem",
-                "fontWeight": 400,
-                "lineHeight": "1.4375rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "body-small": {
-              "value": {
-                "fontSize": "0.75rem",
-                "fontWeight": 400,
-                "lineHeight": "1.125rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "label-large": {
-              "value": {
-                "fontSize": "0.875rem",
-                "fontWeight": 500,
-                "lineHeight": "1.4375rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "label-medium": {
-              "value": {
-                "fontSize": "0.75rem",
-                "fontWeight": 500,
-                "lineHeight": "1.125rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "label-small": {
-              "value": {
-                "fontSize": "0.6875rem",
-                "fontWeight": 500,
-                "lineHeight": "1.125rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "title-large": {
-              "value": {
-                "fontSize": "1.375rem",
-                "fontWeight": 400,
-                "lineHeight": "1.9375rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "title-medium": {
-              "value": {
-                "fontSize": "1rem",
-                "fontWeight": 500,
-                "lineHeight": "1.6875rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "title-small": {
-              "value": {
-                "fontSize": "0.875rem",
-                "fontWeight": 500,
-                "lineHeight": "1.4375rem",
-                "letterSpacing": "0em"
-              }
-            },
-            "emphasized": {
-              "display-large": {
-                "value": {
-                  "fontSize": "3.5625rem",
-                  "fontWeight": 500,
-                  "lineHeight": "4.5625rem",
-                  "letterSpacing": "0em"
-                }
-              },
-              "display-medium": {
-                "value": {
-                  "fontSize": "2.8125rem",
-                  "fontWeight": 500,
-                  "lineHeight": "3.5rem",
-                  "letterSpacing": "0em"
-                }
-              },
-              "display-small": {
-                "value": {
-                  "fontSize": "2.25rem",
-                  "fontWeight": 500,
-                  "lineHeight": "2.9375rem",
-                  "letterSpacing": "0em"
-                }
-              },
-              "headline-large": {
-                "value": {
-                  "fontSize": "2rem",
-                  "fontWeight": 500,
-                  "lineHeight": "2.625rem",
-                  "letterSpacing": "0em"
-                }
-              },
-              "headline-medium": {
-                "value": {
-                  "fontSize": "1.75rem",
-                  "fontWeight": 500,
-                  "lineHeight": "2.375rem",
-                  "letterSpacing": "0em"
-                }
-              },
-              "headline-small": {
-                "value": {
-                  "fontSize": "1.5rem",
-                  "fontWeight": 500,
-                  "lineHeight": "2.1875rem",
-                  "letterSpacing": "0em"
-                }
-              },
-              "body-large": {
-                "value": {
-                  "fontSize": "1rem",
-                  "fontWeight": 500,
-                  "lineHeight": "1.6875rem",
-                  "letterSpacing": "0em"
-                }
-              },
-              "body-medium": {
-                "value": {
-                  "fontSize": "0.875rem",
-                  "fontWeight": 500,
-                  "lineHeight": "1.4375rem",
-                  "letterSpacing": "0em"
-                }
-              },
-              "body-small": {
-                "value": {
-                  "fontSize": "0.75rem",
-                  "fontWeight": 500,
-                  "lineHeight": "1.125rem",
-                  "letterSpacing": "0em"
-                }
-              },
-              "label-large": {
-                "value": {
-                  "fontSize": "0.875rem",
-                  "fontWeight": 600,
-                  "lineHeight": "1.4375rem",
-                  "letterSpacing": "0em"
-                }
-              },
-              "label-medium": {
-                "value": {
-                  "fontSize": "0.75rem",
-                  "fontWeight": 600,
-                  "lineHeight": "1.125rem",
-                  "letterSpacing": "0em"
-                }
-              },
-              "label-small": {
-                "value": {
-                  "fontSize": "0.6875rem",
-                  "fontWeight": 600,
-                  "lineHeight": "1.125rem",
-                  "letterSpacing": "0em"
-                }
-              },
-              "title-large": {
-                "value": {
-                  "fontSize": "1.375rem",
-                  "fontWeight": 500,
-                  "lineHeight": "1.9375rem",
-                  "letterSpacing": "0em"
-                }
-              },
-              "title-medium": {
-                "value": {
-                  "fontSize": "1rem",
-                  "fontWeight": 600,
-                  "lineHeight": "1.6875rem",
-                  "letterSpacing": "0em"
-                }
-              },
-              "title-small": {
-                "value": {
-                  "fontSize": "0.875rem",
-                  "fontWeight": 600,
-                  "lineHeight": "1.4375rem",
-                  "letterSpacing": "0em"
-                }
-              }
-            }
+        "md.display-large": {
+          "value": {
+            "fontSize": "3.5625rem",
+            "fontWeight": 400,
+            "lineHeight": "4.5625rem",
+            "letterSpacing": "-0.0043859649122807015em"
+          }
+        },
+        "md.display-medium": {
+          "value": {
+            "fontSize": "2.8125rem",
+            "fontWeight": 400,
+            "lineHeight": "3.5rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.display-small": {
+          "value": {
+            "fontSize": "2.25rem",
+            "fontWeight": 400,
+            "lineHeight": "2.9375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.headline-large": {
+          "value": {
+            "fontSize": "2rem",
+            "fontWeight": 400,
+            "lineHeight": "2.625rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.headline-medium": {
+          "value": {
+            "fontSize": "1.75rem",
+            "fontWeight": 400,
+            "lineHeight": "2.375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.headline-small": {
+          "value": {
+            "fontSize": "1.5rem",
+            "fontWeight": 400,
+            "lineHeight": "2.1875rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.body-large": {
+          "value": {
+            "fontSize": "1rem",
+            "fontWeight": 400,
+            "lineHeight": "1.6875rem",
+            "letterSpacing": "0.03125em"
+          }
+        },
+        "md.body-medium": {
+          "value": {
+            "fontSize": "0.875rem",
+            "fontWeight": 400,
+            "lineHeight": "1.4375rem",
+            "letterSpacing": "0.017857142857142856em"
+          }
+        },
+        "md.body-small": {
+          "value": {
+            "fontSize": "0.75rem",
+            "fontWeight": 400,
+            "lineHeight": "1.125rem",
+            "letterSpacing": "0.03333333333333333em"
+          }
+        },
+        "md.label-large": {
+          "value": {
+            "fontSize": "0.875rem",
+            "fontWeight": 500,
+            "lineHeight": "1.4375rem",
+            "letterSpacing": "0.0071428571428571435em"
+          }
+        },
+        "md.label-medium": {
+          "value": {
+            "fontSize": "0.75rem",
+            "fontWeight": 500,
+            "lineHeight": "1.125rem",
+            "letterSpacing": "0.041666666666666664em"
+          }
+        },
+        "md.label-small": {
+          "value": {
+            "fontSize": "0.6875rem",
+            "fontWeight": 500,
+            "lineHeight": "1.125rem",
+            "letterSpacing": "0.045454545454545456em"
+          }
+        },
+        "md.title-large": {
+          "value": {
+            "fontSize": "1.375rem",
+            "fontWeight": 400,
+            "lineHeight": "1.9375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.title-medium": {
+          "value": {
+            "fontSize": "1rem",
+            "fontWeight": 500,
+            "lineHeight": "1.6875rem",
+            "letterSpacing": "0.009375em"
+          }
+        },
+        "md.title-small": {
+          "value": {
+            "fontSize": "0.875rem",
+            "fontWeight": 500,
+            "lineHeight": "1.4375rem",
+            "letterSpacing": "0.0071428571428571435em"
+          }
+        },
+        "md.emphasized.display-large": {
+          "value": {
+            "fontSize": "3.5625rem",
+            "fontWeight": 500,
+            "lineHeight": "4.5625rem",
+            "letterSpacing": "-0.0043859649122807015em"
+          }
+        },
+        "md.emphasized.display-medium": {
+          "value": {
+            "fontSize": "2.8125rem",
+            "fontWeight": 500,
+            "lineHeight": "3.5rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.emphasized.display-small": {
+          "value": {
+            "fontSize": "2.25rem",
+            "fontWeight": 500,
+            "lineHeight": "2.9375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.emphasized.headline-large": {
+          "value": {
+            "fontSize": "2rem",
+            "fontWeight": 500,
+            "lineHeight": "2.625rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.emphasized.headline-medium": {
+          "value": {
+            "fontSize": "1.75rem",
+            "fontWeight": 500,
+            "lineHeight": "2.375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.emphasized.headline-small": {
+          "value": {
+            "fontSize": "1.5rem",
+            "fontWeight": 500,
+            "lineHeight": "2.1875rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.emphasized.body-large": {
+          "value": {
+            "fontSize": "1rem",
+            "fontWeight": 500,
+            "lineHeight": "1.6875rem",
+            "letterSpacing": "0.03125em"
+          }
+        },
+        "md.emphasized.body-medium": {
+          "value": {
+            "fontSize": "0.875rem",
+            "fontWeight": 500,
+            "lineHeight": "1.4375rem",
+            "letterSpacing": "0.017857142857142856em"
+          }
+        },
+        "md.emphasized.body-small": {
+          "value": {
+            "fontSize": "0.75rem",
+            "fontWeight": 500,
+            "lineHeight": "1.125rem",
+            "letterSpacing": "0.03333333333333333em"
+          }
+        },
+        "md.emphasized.label-large": {
+          "value": {
+            "fontSize": "0.875rem",
+            "fontWeight": 700,
+            "lineHeight": "1.4375rem",
+            "letterSpacing": "0.0071428571428571435em"
+          }
+        },
+        "md.emphasized.label-medium": {
+          "value": {
+            "fontSize": "0.75rem",
+            "fontWeight": 700,
+            "lineHeight": "1.125rem",
+            "letterSpacing": "0.041666666666666664em"
+          }
+        },
+        "md.emphasized.label-small": {
+          "value": {
+            "fontSize": "0.6875rem",
+            "fontWeight": 700,
+            "lineHeight": "1.125rem",
+            "letterSpacing": "0.045454545454545456em"
+          }
+        },
+        "md.emphasized.title-large": {
+          "value": {
+            "fontSize": "1.375rem",
+            "fontWeight": 500,
+            "lineHeight": "1.9375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.emphasized.title-medium": {
+          "value": {
+            "fontSize": "1rem",
+            "fontWeight": 700,
+            "lineHeight": "1.6875rem",
+            "letterSpacing": "0.009375em"
+          }
+        },
+        "md.emphasized.title-small": {
+          "value": {
+            "fontSize": "0.875rem",
+            "fontWeight": 700,
+            "lineHeight": "1.4375rem",
+            "letterSpacing": "0.0071428571428571435em"
+          }
+        },
+        "md.variable.display-large": {
+          "value": {
+            "fontSize": "3.5625rem",
+            "fontWeight": 400,
+            "lineHeight": "4.5625rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.display-medium": {
+          "value": {
+            "fontSize": "2.8125rem",
+            "fontWeight": 400,
+            "lineHeight": "3.5rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.display-small": {
+          "value": {
+            "fontSize": "2.25rem",
+            "fontWeight": 400,
+            "lineHeight": "2.9375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.headline-large": {
+          "value": {
+            "fontSize": "2rem",
+            "fontWeight": 400,
+            "lineHeight": "2.625rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.headline-medium": {
+          "value": {
+            "fontSize": "1.75rem",
+            "fontWeight": 400,
+            "lineHeight": "2.375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.headline-small": {
+          "value": {
+            "fontSize": "1.5rem",
+            "fontWeight": 400,
+            "lineHeight": "2.1875rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.body-large": {
+          "value": {
+            "fontSize": "1rem",
+            "fontWeight": 400,
+            "lineHeight": "1.6875rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.body-medium": {
+          "value": {
+            "fontSize": "0.875rem",
+            "fontWeight": 400,
+            "lineHeight": "1.4375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.body-small": {
+          "value": {
+            "fontSize": "0.75rem",
+            "fontWeight": 400,
+            "lineHeight": "1.125rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.label-large": {
+          "value": {
+            "fontSize": "0.875rem",
+            "fontWeight": 500,
+            "lineHeight": "1.4375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.label-medium": {
+          "value": {
+            "fontSize": "0.75rem",
+            "fontWeight": 500,
+            "lineHeight": "1.125rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.label-small": {
+          "value": {
+            "fontSize": "0.6875rem",
+            "fontWeight": 500,
+            "lineHeight": "1.125rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.title-large": {
+          "value": {
+            "fontSize": "1.375rem",
+            "fontWeight": 400,
+            "lineHeight": "1.9375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.title-medium": {
+          "value": {
+            "fontSize": "1rem",
+            "fontWeight": 500,
+            "lineHeight": "1.6875rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.title-small": {
+          "value": {
+            "fontSize": "0.875rem",
+            "fontWeight": 500,
+            "lineHeight": "1.4375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.emphasized.display-large": {
+          "value": {
+            "fontSize": "3.5625rem",
+            "fontWeight": 500,
+            "lineHeight": "4.5625rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.emphasized.display-medium": {
+          "value": {
+            "fontSize": "2.8125rem",
+            "fontWeight": 500,
+            "lineHeight": "3.5rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.emphasized.display-small": {
+          "value": {
+            "fontSize": "2.25rem",
+            "fontWeight": 500,
+            "lineHeight": "2.9375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.emphasized.headline-large": {
+          "value": {
+            "fontSize": "2rem",
+            "fontWeight": 500,
+            "lineHeight": "2.625rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.emphasized.headline-medium": {
+          "value": {
+            "fontSize": "1.75rem",
+            "fontWeight": 500,
+            "lineHeight": "2.375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.emphasized.headline-small": {
+          "value": {
+            "fontSize": "1.5rem",
+            "fontWeight": 500,
+            "lineHeight": "2.1875rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.emphasized.body-large": {
+          "value": {
+            "fontSize": "1rem",
+            "fontWeight": 500,
+            "lineHeight": "1.6875rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.emphasized.body-medium": {
+          "value": {
+            "fontSize": "0.875rem",
+            "fontWeight": 500,
+            "lineHeight": "1.4375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.emphasized.body-small": {
+          "value": {
+            "fontSize": "0.75rem",
+            "fontWeight": 500,
+            "lineHeight": "1.125rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.emphasized.label-large": {
+          "value": {
+            "fontSize": "0.875rem",
+            "fontWeight": 600,
+            "lineHeight": "1.4375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.emphasized.label-medium": {
+          "value": {
+            "fontSize": "0.75rem",
+            "fontWeight": 600,
+            "lineHeight": "1.125rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.emphasized.label-small": {
+          "value": {
+            "fontSize": "0.6875rem",
+            "fontWeight": 600,
+            "lineHeight": "1.125rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.emphasized.title-large": {
+          "value": {
+            "fontSize": "1.375rem",
+            "fontWeight": 500,
+            "lineHeight": "1.9375rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.emphasized.title-medium": {
+          "value": {
+            "fontSize": "1rem",
+            "fontWeight": 600,
+            "lineHeight": "1.6875rem",
+            "letterSpacing": "0em"
+          }
+        },
+        "md.variable.emphasized.title-small": {
+          "value": {
+            "fontSize": "0.875rem",
+            "fontWeight": 600,
+            "lineHeight": "1.4375rem",
+            "letterSpacing": "0em"
           }
         }
       }
