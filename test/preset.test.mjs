@@ -7,6 +7,7 @@ test("preset output", (t) => {
     customColors: [
       { name: "info", value: 0x42a5f5, blend: true },
       { name: "warning", value: 0xffee58 },
+      { name: "success", value: 0x66bb6a, fidelity: true },
     ],
   });
   t.assert.snapshot(preset);

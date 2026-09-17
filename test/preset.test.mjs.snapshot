@@ -571,16 +571,16 @@ exports[`preset output 1`] = `
                 "value": "#ffffff"
               },
               "info": {
-                "value": "#485f8b"
+                "value": "#1a5db8"
               },
               "on-info": {
                 "value": "#f9f8ff"
               },
               "info-container": {
-                "value": "#adc4f6"
+                "value": "#689dfc"
               },
               "on-info-container": {
-                "value": "#263e68"
+                "value": "#001f49"
               },
               "info0": {
                 "value": "#000000"
@@ -589,25 +589,25 @@ exports[`preset output 1`] = `
                 "value": "#001a40"
               },
               "info20": {
-                "value": "#173059"
+                "value": "#002f67"
               },
               "info30": {
-                "value": "#2f4671"
+                "value": "#004492"
               },
               "info40": {
-                "value": "#485e8a"
+                "value": "#195cb7"
               },
               "info50": {
-                "value": "#6177a4"
+                "value": "#3c75d2"
               },
               "info60": {
-                "value": "#7a91c0"
+                "value": "#5a90ed"
               },
               "info70": {
-                "value": "#95abdc"
+                "value": "#7eabff"
               },
               "info80": {
-                "value": "#b0c7f8"
+                "value": "#acc7ff"
               },
               "info90": {
                 "value": "#d7e2ff"
@@ -625,16 +625,16 @@ exports[`preset output 1`] = `
                 "value": "#ffffff"
               },
               "warning": {
-                "value": "#68601f"
+                "value": "#696000"
               },
               "on-warning": {
                 "value": "#fff9e3"
               },
               "warning-container": {
-                "value": "#efe495"
+                "value": "#f6e550"
               },
               "on-warning-container": {
-                "value": "#5a5312"
+                "value": "#5b5300"
               },
               "warning0": {
                 "value": "#000000"
@@ -646,28 +646,28 @@ exports[`preset output 1`] = `
                 "value": "#363100"
               },
               "warning30": {
-                "value": "#4e4806"
+                "value": "#4f4800"
               },
               "warning40": {
-                "value": "#67601f"
+                "value": "#686000"
               },
               "warning50": {
-                "value": "#807835"
+                "value": "#837900"
               },
               "warning60": {
-                "value": "#9b924c"
+                "value": "#a09200"
               },
               "warning70": {
-                "value": "#b6ad63"
+                "value": "#bcad14"
               },
               "warning80": {
-                "value": "#d2c87c"
+                "value": "#d9c935"
               },
               "warning90": {
-                "value": "#efe495"
+                "value": "#f6e550"
               },
               "warning95": {
-                "value": "#fef3a2"
+                "value": "#fff398"
               },
               "warning98": {
                 "value": "#fff9e7"
@@ -676,6 +676,60 @@ exports[`preset output 1`] = `
                 "value": "#fffbff"
               },
               "warning100": {
+                "value": "#ffffff"
+              },
+              "success": {
+                "value": "#126d27"
+              },
+              "on-success": {
+                "value": "#ffffff"
+              },
+              "success-container": {
+                "value": "#66bb6a"
+              },
+              "on-success-container": {
+                "value": "#004814"
+              },
+              "success0": {
+                "value": "#000000"
+              },
+              "success10": {
+                "value": "#002105"
+              },
+              "success20": {
+                "value": "#00390e"
+              },
+              "success30": {
+                "value": "#005318"
+              },
+              "success40": {
+                "value": "#126d27"
+              },
+              "success50": {
+                "value": "#32873d"
+              },
+              "success60": {
+                "value": "#4ea254"
+              },
+              "success70": {
+                "value": "#69be6c"
+              },
+              "success80": {
+                "value": "#83da85"
+              },
+              "success90": {
+                "value": "#9ff79f"
+              },
+              "success95": {
+                "value": "#c7ffc2"
+              },
+              "success98": {
+                "value": "#ebffe5"
+              },
+              "success99": {
+                "value": "#f6fff0"
+              },
+              "success100": {
                 "value": "#ffffff"
               }
             },
@@ -1111,43 +1165,43 @@ exports[`preset output 1`] = `
                 "value": "#ffffff"
               },
               "info": {
-                "value": "#b6c7ed"
+                "value": "#acc7ff"
               },
               "on-info": {
-                "value": "#2f4060"
+                "value": "#003e85"
               },
               "info-container": {
-                "value": "#425274"
+                "value": "#0654af"
               },
               "on-info-container": {
-                "value": "#d8e3ff"
+                "value": "#e4ebff"
               },
               "info0": {
                 "value": "#000000"
               },
               "info10": {
-                "value": "#081b39"
+                "value": "#001a40"
               },
               "info20": {
-                "value": "#1f304f"
+                "value": "#002f67"
               },
               "info30": {
-                "value": "#364767"
+                "value": "#004492"
               },
               "info40": {
-                "value": "#4e5e80"
+                "value": "#195cb7"
               },
               "info50": {
-                "value": "#67779a"
+                "value": "#3c75d2"
               },
               "info60": {
-                "value": "#8091b5"
+                "value": "#5a90ed"
               },
               "info70": {
-                "value": "#9babd1"
+                "value": "#7eabff"
               },
               "info80": {
-                "value": "#b6c7ed"
+                "value": "#acc7ff"
               },
               "info90": {
                 "value": "#d7e2ff"
@@ -1165,16 +1219,16 @@ exports[`preset output 1`] = `
                 "value": "#ffffff"
               },
               "warning": {
-                "value": "#d1c88b"
+                "value": "#d9c935"
               },
               "on-warning": {
-                "value": "#464111"
+                "value": "#474100"
               },
               "warning-container": {
-                "value": "#595322"
+                "value": "#b7a809"
               },
               "on-warning-container": {
-                "value": "#eee5a5"
+                "value": "#2d2800"
               },
               "warning0": {
                 "value": "#000000"
@@ -1183,31 +1237,31 @@ exports[`preset output 1`] = `
                 "value": "#1f1c00"
               },
               "warning20": {
-                "value": "#363103"
+                "value": "#363100"
               },
               "warning30": {
-                "value": "#4d4817"
+                "value": "#4f4800"
               },
               "warning40": {
-                "value": "#665f2d"
+                "value": "#686000"
               },
               "warning50": {
-                "value": "#7f7843"
+                "value": "#837900"
               },
               "warning60": {
-                "value": "#99925a"
+                "value": "#a09200"
               },
               "warning70": {
-                "value": "#b5ad72"
+                "value": "#bcad14"
               },
               "warning80": {
-                "value": "#d1c88b"
+                "value": "#d9c935"
               },
               "warning90": {
-                "value": "#ede4a4"
+                "value": "#f6e550"
               },
               "warning95": {
-                "value": "#fcf2b2"
+                "value": "#fff398"
               },
               "warning98": {
                 "value": "#fff9e7"
@@ -1216,6 +1270,60 @@ exports[`preset output 1`] = `
                 "value": "#fffbff"
               },
               "warning100": {
+                "value": "#ffffff"
+              },
+              "success": {
+                "value": "#83da85"
+              },
+              "on-success": {
+                "value": "#00390e"
+              },
+              "success-container": {
+                "value": "#66bb6a"
+              },
+              "on-success-container": {
+                "value": "#004814"
+              },
+              "success0": {
+                "value": "#000000"
+              },
+              "success10": {
+                "value": "#002105"
+              },
+              "success20": {
+                "value": "#00390e"
+              },
+              "success30": {
+                "value": "#005318"
+              },
+              "success40": {
+                "value": "#126d27"
+              },
+              "success50": {
+                "value": "#32873d"
+              },
+              "success60": {
+                "value": "#4ea254"
+              },
+              "success70": {
+                "value": "#69be6c"
+              },
+              "success80": {
+                "value": "#83da85"
+              },
+              "success90": {
+                "value": "#9ff79f"
+              },
+              "success95": {
+                "value": "#c7ffc2"
+              },
+              "success98": {
+                "value": "#ebffe5"
+              },
+              "success99": {
+                "value": "#f6fff0"
+              },
+              "success100": {
                 "value": "#ffffff"
               }
             }
@@ -2561,6 +2669,114 @@ exports[`preset output 1`] = `
               "value": {
                 "base": "{colors.md.light.warning100}",
                 "_osDark": "{colors.md.dark.warning100}"
+              }
+            },
+            "success": {
+              "value": {
+                "base": "{colors.md.light.success}",
+                "_osDark": "{colors.md.dark.success}"
+              }
+            },
+            "on-success": {
+              "value": {
+                "base": "{colors.md.light.on-success}",
+                "_osDark": "{colors.md.dark.on-success}"
+              }
+            },
+            "success-container": {
+              "value": {
+                "base": "{colors.md.light.success-container}",
+                "_osDark": "{colors.md.dark.success-container}"
+              }
+            },
+            "on-success-container": {
+              "value": {
+                "base": "{colors.md.light.on-success-container}",
+                "_osDark": "{colors.md.dark.on-success-container}"
+              }
+            },
+            "success0": {
+              "value": {
+                "base": "{colors.md.light.success0}",
+                "_osDark": "{colors.md.dark.success0}"
+              }
+            },
+            "success10": {
+              "value": {
+                "base": "{colors.md.light.success10}",
+                "_osDark": "{colors.md.dark.success10}"
+              }
+            },
+            "success20": {
+              "value": {
+                "base": "{colors.md.light.success20}",
+                "_osDark": "{colors.md.dark.success20}"
+              }
+            },
+            "success30": {
+              "value": {
+                "base": "{colors.md.light.success30}",
+                "_osDark": "{colors.md.dark.success30}"
+              }
+            },
+            "success40": {
+              "value": {
+                "base": "{colors.md.light.success40}",
+                "_osDark": "{colors.md.dark.success40}"
+              }
+            },
+            "success50": {
+              "value": {
+                "base": "{colors.md.light.success50}",
+                "_osDark": "{colors.md.dark.success50}"
+              }
+            },
+            "success60": {
+              "value": {
+                "base": "{colors.md.light.success60}",
+                "_osDark": "{colors.md.dark.success60}"
+              }
+            },
+            "success70": {
+              "value": {
+                "base": "{colors.md.light.success70}",
+                "_osDark": "{colors.md.dark.success70}"
+              }
+            },
+            "success80": {
+              "value": {
+                "base": "{colors.md.light.success80}",
+                "_osDark": "{colors.md.dark.success80}"
+              }
+            },
+            "success90": {
+              "value": {
+                "base": "{colors.md.light.success90}",
+                "_osDark": "{colors.md.dark.success90}"
+              }
+            },
+            "success95": {
+              "value": {
+                "base": "{colors.md.light.success95}",
+                "_osDark": "{colors.md.dark.success95}"
+              }
+            },
+            "success98": {
+              "value": {
+                "base": "{colors.md.light.success98}",
+                "_osDark": "{colors.md.dark.success98}"
+              }
+            },
+            "success99": {
+              "value": {
+                "base": "{colors.md.light.success99}",
+                "_osDark": "{colors.md.dark.success99}"
+              }
+            },
+            "success100": {
+              "value": {
+                "base": "{colors.md.light.success100}",
+                "_osDark": "{colors.md.dark.success100}"
               }
             }
           }

@@ -51,7 +51,7 @@ css({
 | Option          | Default        | Description                                                                          |
 | --------------- | -------------- | ------------------------------------------------------------------------------------ |
 | `sourceColor`   | (required)     | Source color as ARGB/RGB number.                                                     |
-| `customColors`  | `[]`           | Extra color roles. `blend: true` harmonizes the color with `sourceColor`.            |
+| `customColors`  | `[]`           | Extra color roles. `blend: true` harmonizes the color with `sourceColor`; `fidelity: true` makes the container tone match the input color. |
 | `variant`       | `"tonal-spot"` | Dynamic color scheme: `"tonal-spot"`, `"vibrant"`, `"expressive"` or `"neutral"`.    |
 | `contrastLevel` | `0`            | `-1` (reduced) to `1` (high). `0.5` is medium contrast.                              |
 | `darkCondition` | `"_osDark"`    | Panda condition used for dark colors, e.g. `"_dark"` to switch with a `.dark` class. |

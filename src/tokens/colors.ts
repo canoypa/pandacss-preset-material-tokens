@@ -5,6 +5,7 @@ import {
   Hct,
   MaterialDynamicColors,
   SchemeExpressive,
+  SchemeFidelity,
   SchemeNeutral,
   SchemeTonalSpot,
   SchemeVibrant,
@@ -17,6 +18,7 @@ export type CustomColor = {
   name: string;
   value: number;
   blend?: boolean;
+  fidelity?: boolean;
 };
 
 // The 2025 color spec only covers these variants; the library silently
@@ -144,6 +146,31 @@ function makeScheme(
   return new Scheme(Hct.fromInt(color), isDark, contrastLevel, "2025", "phone");
 }
 
+function makeCustomScheme(
+  options: ColorOptions,
+  color: number,
+  fidelity: boolean,
+  isDark: boolean
+): DynamicScheme {
+  const hct = Hct.fromInt(color);
+  const { contrastLevel = 0 } = options;
+
+  if (fidelity) {
+    // MCU has no 2025 spec for SchemeFidelity and computes it with the 2021 spec.
+    return new SchemeFidelity(hct, isDark, contrastLevel, "2025", "phone");
+  }
+
+  return new DynamicScheme({
+    sourceColorHct: hct,
+    variant: makeScheme(options, color, isDark).variant,
+    contrastLevel,
+    isDark,
+    platform: "phone",
+    specVersion: "2025",
+    primaryPalette: TonalPalette.fromInt(color),
+  });
+}
+
 function makeModeColors(options: ColorOptions, isDark: boolean): ModeColors {
   const result = schemeColors(makeScheme(options, options.sourceColor, isDark));
 
@@ -153,7 +180,10 @@ function makeModeColors(options: ColorOptions, isDark: boolean): ModeColors {
       : custom.value;
     Object.assign(
       result,
-      customColors(custom.name, makeScheme(options, value, isDark))
+      customColors(
+        custom.name,
+        makeCustomScheme(options, value, custom.fidelity ?? false, isDark)
+      )
     );
   }
 
