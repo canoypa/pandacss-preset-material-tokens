@@ -3,7 +3,9 @@ import {
   DynamicColor,
   DynamicScheme,
   Hct,
+  SchemeContent,
   SchemeExpressive,
+  SchemeFidelity,
   SchemeNeutral,
   SchemeTonalSpot,
   SchemeVibrant,
@@ -20,9 +22,13 @@ export type CustomColor = {
   fidelity?: boolean;
 };
 
-// The 2025 color spec only covers these variants; the library silently
-// falls back to the 2021 spec for the others.
-export type SchemeVariant = "tonal-spot" | "vibrant" | "expressive" | "neutral";
+export type SchemeVariant =
+  | "tonal-spot"
+  | "vibrant"
+  | "expressive"
+  | "neutral"
+  | "fidelity"
+  | "content";
 
 export type ColorOptions = {
   sourceColor: number;
@@ -37,6 +43,8 @@ const schemeClasses = {
   vibrant: SchemeVibrant,
   expressive: SchemeExpressive,
   neutral: SchemeNeutral,
+  fidelity: SchemeFidelity,
+  content: SchemeContent,
 } satisfies Record<SchemeVariant, unknown>;
 
 type ColorTokens = NonNullable<Tokens["colors"]>;
@@ -141,7 +149,7 @@ function customColors(name: string, scheme: DynamicScheme): ModeColors {
 }
 
 function makeScheme(
-  { variant = "tonal-spot", contrastLevel = 0 }: ColorOptions,
+  { variant = "fidelity", contrastLevel = 0 }: ColorOptions,
   color: number,
   isDark: boolean
 ): DynamicScheme {
@@ -159,7 +167,6 @@ function makeCustomScheme(
 ): DynamicScheme {
   return new DynamicScheme({
     sourceColorHct: Hct.fromInt(color),
-    // MCU has no 2025 spec for the fidelity variant and computes it with the 2021 spec.
     variant: fidelity ? Variant.FIDELITY : main.variant,
     contrastLevel: main.contrastLevel,
     isDark: main.isDark,
@@ -186,7 +193,7 @@ function makeModeColors(options: ColorOptions, isDark: boolean): ModeColors {
       : custom.value;
     const colors = customColors(
       custom.name,
-      makeCustomScheme(main, value, custom.fidelity ?? false)
+      makeCustomScheme(main, value, custom.fidelity ?? true)
     );
     for (const key in colors) {
       if (key in result) {
