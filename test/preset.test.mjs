@@ -7,7 +7,7 @@ test("preset output", (t) => {
     customColors: [
       { name: "info", value: 0x42a5f5, blend: true },
       { name: "warning", value: 0xffee58 },
-      { name: "success", value: 0x66bb6a, fidelity: true },
+      { name: "success", value: 0x66bb6a, fidelity: false },
     ],
   });
   t.assert.snapshot(preset);
@@ -24,7 +24,7 @@ test("options", (t) => {
     typeface: { brand: "Comfortaa, sans-serif", plain: "Roboto, sans-serif" },
     customColors: [
       { name: "info", value: 0x42a5f5 },
-      { name: "success", value: 0x66bb6a, fidelity: true },
+      { name: "success", value: 0x66bb6a, fidelity: false },
     ],
   });
   const { tokens, semanticTokens } = preset.theme.extend;
@@ -53,7 +53,7 @@ test("invalid input", (t) => {
     { customColors: [{ name: "surface", value: 0xff0000 }] },
     { customColors: [{ name: "blue", value: 0x2196f3 }, { name: "light-blue", value: 0x03a9f4 }] },
     { customColors: [{ name: "a}b", value: 0xff0000 }] },
-    { variant: "fidelity" },
+    { variant: "monochrome" },
     { motionScheme: "fast" },
     { languageHeight: "extraLarge" },
   ];

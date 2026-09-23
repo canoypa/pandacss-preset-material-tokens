@@ -51,8 +51,8 @@ css({
 | Option          | Default        | Description                                                                          |
 | --------------- | -------------- | ------------------------------------------------------------------------------------ |
 | `sourceColor`   | (required)     | Source color as ARGB/RGB number.                                                     |
-| `customColors`  | `[]`           | Extra color roles. `blend: true` harmonizes the color with `sourceColor`; `fidelity: true` makes the container tone match the input color. |
-| `variant`       | `"tonal-spot"` | Dynamic color scheme: `"tonal-spot"`, `"vibrant"`, `"expressive"` or `"neutral"`.    |
+| `customColors`  | `[]`           | Extra color roles (static colors in Material Design 3). `blend: true` harmonizes the color with `sourceColor`. Color fidelity is on by default, so the container tone matches the input color; `fidelity: false` gives tones that follow `variant` instead. |
+| `variant`       | `"fidelity"`   | How the scheme is generated from `sourceColor`. `"fidelity"` matches the scheme to a hand-picked source color, which is the Material default for a custom scheme. `"content"` is for a source color taken from an image. `"tonal-spot"`, `"vibrant"`, `"expressive"` and `"neutral"` are the Android wallpaper variants. |
 | `contrastLevel` | `0`            | `-1` (reduced) to `1` (high). `0.5` is medium contrast.                              |
 | `darkCondition` | `"_osDark"`    | Panda condition used for dark colors, e.g. `"_dark"` to switch with a `.dark` class. |
 | `motionScheme`  | `"standard"`   | Spring motion scheme: `"standard"` or `"expressive"`.                                |

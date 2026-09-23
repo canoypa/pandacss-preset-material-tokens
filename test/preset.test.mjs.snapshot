@@ -81,34 +81,34 @@ exports[`options 1`] = `
   "customColors": [
     [
       {
-        "value": "#004672"
+        "value": "#00395e"
       },
       {
-        "value": "#7bbeff"
+        "value": "#c4dfff"
       }
     ],
     [
       {
-        "value": "#0079c1"
+        "value": "#0072b5"
       },
       {
-        "value": "#40a4f4"
+        "value": "#42a5f5"
       }
     ],
     [
       {
-        "value": "#004011"
+        "value": "#004e16"
       },
       {
-        "value": "#99f199"
+        "value": "#e0ffda"
       }
     ],
     [
       {
-        "value": "#277d34"
+        "value": "#30853b"
       },
       {
-        "value": "#66bb6a"
+        "value": "#a4fda4"
       }
     ]
   ],
@@ -206,25 +206,25 @@ exports[`preset output 1`] = `
           "md": {
             "light": {
               "background": {
-                "value": "#fcf8fe"
+                "value": "#fcf8ff"
               },
               "on-background": {
-                "value": "#32313b"
+                "value": "#1b1b22"
               },
               "surface": {
-                "value": "#fcf8fe"
+                "value": "#fcf8ff"
               },
               "surface-dim": {
-                "value": "#dbd8e4"
+                "value": "#dcd8e2"
               },
               "surface-bright": {
-                "value": "#fcf8fe"
+                "value": "#fcf8ff"
               },
               "surface-container-lowest": {
                 "value": "#ffffff"
               },
               "surface-container-low": {
-                "value": "#f6f2fa"
+                "value": "#f6f2fc"
               },
               "surface-container": {
                 "value": "#f0ecf6"
@@ -233,28 +233,28 @@ exports[`preset output 1`] = `
                 "value": "#eae7f1"
               },
               "surface-container-highest": {
-                "value": "#e4e1ed"
+                "value": "#e4e1eb"
               },
               "on-surface": {
-                "value": "#32313b"
+                "value": "#1b1b22"
               },
               "surface-variant": {
-                "value": "#e4e1ed"
+                "value": "#e3e0f1"
               },
               "on-surface-variant": {
-                "value": "#5f5e68"
+                "value": "#464553"
               },
               "outline": {
-                "value": "#7b7984"
+                "value": "#777584"
               },
               "outline-variant": {
-                "value": "#b3b0bc"
+                "value": "#c7c5d5"
               },
               "inverse-surface": {
-                "value": "#0e0e12"
+                "value": "#303037"
               },
               "inverse-on-surface": {
-                "value": "#9e9ca2"
+                "value": "#f3eff9"
               },
               "shadow": {
                 "value": "#000000"
@@ -263,122 +263,122 @@ exports[`preset output 1`] = `
                 "value": "#000000"
               },
               "surface-tint": {
-                "value": "#5a5a8b",
+                "value": "#5150bf",
                 "deprecated": "Use elevation instead."
               },
               "primary": {
-                "value": "#5a5a8b"
+                "value": "#4e4dbd"
               },
               "on-primary": {
-                "value": "#fbf7ff"
+                "value": "#ffffff"
               },
               "primary-container": {
-                "value": "#c2c1f9"
+                "value": "#6867d7"
               },
               "on-primary-container": {
-                "value": "#3b3b6a"
+                "value": "#fffbff"
               },
               "inverse-primary": {
-                "value": "#c2c1f9"
+                "value": "#c2c1ff"
               },
               "primary-fixed": {
-                "value": "#c2c1f9"
+                "value": "#e2dfff"
               },
               "primary-fixed-dim": {
-                "value": "#b5b4eb"
+                "value": "#c2c1ff"
               },
               "on-primary-fixed": {
-                "value": "#272755"
+                "value": "#0b006b"
               },
               "on-primary-fixed-variant": {
-                "value": "#444474"
+                "value": "#3836a6"
               },
               "secondary": {
-                "value": "#5e5d72"
+                "value": "#5a5a86"
               },
               "on-secondary": {
-                "value": "#fbf7ff"
+                "value": "#ffffff"
               },
               "secondary-container": {
-                "value": "#e2e0f9"
+                "value": "#cbcafd"
               },
               "on-secondary-container": {
-                "value": "#505064"
+                "value": "#54547f"
               },
               "secondary-fixed": {
-                "value": "#e2e0f9"
+                "value": "#e2dfff"
               },
               "secondary-fixed-dim": {
-                "value": "#d4d2eb"
+                "value": "#c3c2f4"
               },
               "on-secondary-fixed": {
-                "value": "#3e3d51"
+                "value": "#17163f"
               },
               "on-secondary-fixed-variant": {
-                "value": "#5a596f"
+                "value": "#43436d"
               },
               "tertiary": {
-                "value": "#755478"
+                "value": "#7a5500"
               },
               "on-tertiary": {
-                "value": "#fff7fa"
+                "value": "#ffffff"
               },
               "tertiary-container": {
-                "value": "#fcd2fe"
+                "value": "#996c00"
               },
               "on-tertiary-container": {
-                "value": "#654569"
+                "value": "#fffbff"
               },
               "tertiary-fixed": {
-                "value": "#fcd2fe"
+                "value": "#ffdea9"
               },
               "tertiary-fixed-dim": {
-                "value": "#eec5ef"
+                "value": "#fabc43"
               },
               "on-tertiary-fixed": {
-                "value": "#513355"
+                "value": "#271900"
               },
               "on-tertiary-fixed-variant": {
-                "value": "#6f4e73"
+                "value": "#5e4100"
               },
               "error": {
-                "value": "#a8364b"
+                "value": "#ba1a1a"
               },
               "on-error": {
-                "value": "#fff7f7"
+                "value": "#ffffff"
               },
               "error-container": {
-                "value": "#f97386"
+                "value": "#ffdad6"
               },
               "on-error-container": {
-                "value": "#6e0523"
+                "value": "#93000a"
               },
               "primary0": {
                 "value": "#000000"
               },
               "primary10": {
-                "value": "#161543"
+                "value": "#0b006b"
               },
               "primary20": {
-                "value": "#2b2b59"
+                "value": "#1f1990"
               },
               "primary30": {
-                "value": "#424271"
+                "value": "#3836a6"
               },
               "primary40": {
-                "value": "#5a5a8b"
+                "value": "#5150bf"
               },
               "primary50": {
-                "value": "#7272a5"
+                "value": "#6a6ada"
               },
               "primary60": {
-                "value": "#8c8cc0"
+                "value": "#8484f6"
               },
               "primary70": {
-                "value": "#a7a6dd"
+                "value": "#a2a2ff"
               },
               "primary80": {
-                "value": "#c2c1f9"
+                "value": "#c2c1ff"
               },
               "primary90": {
                 "value": "#e2dfff"
@@ -399,31 +399,31 @@ exports[`preset output 1`] = `
                 "value": "#000000"
               },
               "secondary10": {
-                "value": "#1a1a2c"
+                "value": "#17163f"
               },
               "secondary20": {
-                "value": "#2f2f42"
+                "value": "#2c2c55"
               },
               "secondary30": {
-                "value": "#454559"
+                "value": "#43436d"
               },
               "secondary40": {
-                "value": "#5d5c72"
+                "value": "#5a5a86"
               },
               "secondary50": {
-                "value": "#76758b"
+                "value": "#7373a0"
               },
               "secondary60": {
-                "value": "#908ea5"
+                "value": "#8d8cbc"
               },
               "secondary70": {
-                "value": "#aba9c1"
+                "value": "#a8a7d8"
               },
               "secondary80": {
-                "value": "#c6c4dd"
+                "value": "#c3c2f4"
               },
               "secondary90": {
-                "value": "#e2e0f9"
+                "value": "#e2dfff"
               },
               "secondary95": {
                 "value": "#f2efff"
@@ -441,37 +441,37 @@ exports[`preset output 1`] = `
                 "value": "#000000"
               },
               "tertiary10": {
-                "value": "#2c1031"
+                "value": "#271900"
               },
               "tertiary20": {
-                "value": "#422647"
+                "value": "#422c00"
               },
               "tertiary30": {
-                "value": "#5b3c5f"
+                "value": "#5e4100"
               },
               "tertiary40": {
-                "value": "#745378"
+                "value": "#7d5800"
               },
               "tertiary50": {
-                "value": "#8e6b91"
+                "value": "#9c6f00"
               },
               "tertiary60": {
-                "value": "#a985ac"
+                "value": "#bd8703"
               },
               "tertiary70": {
-                "value": "#c59fc8"
+                "value": "#dba129"
               },
               "tertiary80": {
-                "value": "#e2bae4"
+                "value": "#fabc43"
               },
               "tertiary90": {
-                "value": "#fed6ff"
+                "value": "#ffdea9"
               },
               "tertiary95": {
-                "value": "#ffebfc"
+                "value": "#ffeed8"
               },
               "tertiary98": {
-                "value": "#fff7fa"
+                "value": "#fff8f3"
               },
               "tertiary99": {
                 "value": "#fffbff"
@@ -483,67 +483,67 @@ exports[`preset output 1`] = `
                 "value": "#000000"
               },
               "neutral4": {
-                "value": "#0e0e12"
+                "value": "#0e0e14"
               },
               "neutral6": {
-                "value": "#131317"
+                "value": "#131319"
               },
               "neutral10": {
-                "value": "#1b1b20"
+                "value": "#1b1b22"
               },
               "neutral12": {
-                "value": "#201f24"
+                "value": "#1f1f26"
               },
               "neutral17": {
-                "value": "#2a292e"
+                "value": "#2a2931"
               },
               "neutral20": {
-                "value": "#313035"
+                "value": "#303037"
               },
               "neutral22": {
-                "value": "#353439"
+                "value": "#35343c"
               },
               "neutral24": {
-                "value": "#39393d"
+                "value": "#393840"
               },
               "neutral30": {
-                "value": "#47464b"
+                "value": "#47464e"
               },
               "neutral40": {
-                "value": "#5f5e63"
+                "value": "#5f5d66"
               },
               "neutral50": {
-                "value": "#78767c"
+                "value": "#78767f"
               },
               "neutral60": {
-                "value": "#929095"
+                "value": "#928f99"
               },
               "neutral70": {
-                "value": "#adaab0"
+                "value": "#acaab3"
               },
               "neutral80": {
-                "value": "#c8c5cb"
+                "value": "#c8c5cf"
               },
               "neutral87": {
-                "value": "#dcd9df"
+                "value": "#dcd8e2"
               },
               "neutral90": {
-                "value": "#e5e1e7"
+                "value": "#e4e1eb"
               },
               "neutral92": {
-                "value": "#eae7ed"
+                "value": "#eae7f1"
               },
               "neutral94": {
-                "value": "#f0ecf3"
+                "value": "#f0ecf6"
               },
               "neutral95": {
-                "value": "#f3eff6"
+                "value": "#f3eff9"
               },
               "neutral96": {
-                "value": "#f6f2f9"
+                "value": "#f6f2fc"
               },
               "neutral98": {
-                "value": "#fcf8fe"
+                "value": "#fcf8ff"
               },
               "neutral99": {
                 "value": "#fffbff"
@@ -555,34 +555,34 @@ exports[`preset output 1`] = `
                 "value": "#000000"
               },
               "neutral-variant10": {
-                "value": "#1b1b23"
+                "value": "#1b1a26"
               },
               "neutral-variant20": {
-                "value": "#302f38"
+                "value": "#302f3c"
               },
               "neutral-variant30": {
-                "value": "#47464f"
+                "value": "#464553"
               },
               "neutral-variant40": {
-                "value": "#5e5d67"
+                "value": "#5e5d6b"
               },
               "neutral-variant50": {
-                "value": "#777680"
+                "value": "#777584"
               },
               "neutral-variant60": {
-                "value": "#918f9a"
+                "value": "#918f9e"
               },
               "neutral-variant70": {
-                "value": "#acaab5"
+                "value": "#aca9b9"
               },
               "neutral-variant80": {
-                "value": "#c8c5d1"
+                "value": "#c7c5d5"
               },
               "neutral-variant90": {
-                "value": "#e4e1ed"
+                "value": "#e3e0f1"
               },
               "neutral-variant95": {
-                "value": "#f2effb"
+                "value": "#f2efff"
               },
               "neutral-variant98": {
                 "value": "#fcf8ff"
@@ -597,34 +597,34 @@ exports[`preset output 1`] = `
                 "value": "#000000"
               },
               "error10": {
-                "value": "#400010"
+                "value": "#410002"
               },
               "error20": {
-                "value": "#67001f"
+                "value": "#690005"
               },
               "error30": {
-                "value": "#871c34"
+                "value": "#93000a"
               },
               "error40": {
-                "value": "#a7354a"
+                "value": "#ba1a1a"
               },
               "error50": {
-                "value": "#c74d61"
+                "value": "#de3730"
               },
               "error60": {
-                "value": "#e8667a"
+                "value": "#ff5449"
               },
               "error70": {
-                "value": "#ff8796"
+                "value": "#ff897d"
               },
               "error80": {
-                "value": "#ffb2b9"
+                "value": "#ffb4ab"
               },
               "error90": {
-                "value": "#ffdadc"
+                "value": "#ffdad6"
               },
               "error95": {
-                "value": "#ffeced"
+                "value": "#ffedea"
               },
               "error98": {
                 "value": "#fff8f7"
@@ -636,16 +636,16 @@ exports[`preset output 1`] = `
                 "value": "#ffffff"
               },
               "info": {
-                "value": "#1a5db8"
+                "value": "#195cb7"
               },
               "on-info": {
-                "value": "#f9f8ff"
+                "value": "#ffffff"
               },
               "info-container": {
-                "value": "#689dfc"
+                "value": "#699efd"
               },
               "on-info-container": {
-                "value": "#001f49"
+                "value": "#003472"
               },
               "info0": {
                 "value": "#000000"
@@ -690,16 +690,16 @@ exports[`preset output 1`] = `
                 "value": "#ffffff"
               },
               "warning": {
-                "value": "#696000"
+                "value": "#686000"
               },
               "on-warning": {
-                "value": "#fff9e3"
+                "value": "#ffffff"
               },
               "warning-container": {
-                "value": "#f6e550"
+                "value": "#ffee58"
               },
               "on-warning-container": {
-                "value": "#5b5300"
+                "value": "#756b00"
               },
               "warning0": {
                 "value": "#000000"
@@ -800,55 +800,55 @@ exports[`preset output 1`] = `
             },
             "dark": {
               "background": {
-                "value": "#0e0e12"
+                "value": "#131319"
               },
               "on-background": {
-                "value": "#e7e4f0"
+                "value": "#e4e1eb"
               },
               "surface": {
-                "value": "#0e0e12"
+                "value": "#131319"
               },
               "surface-dim": {
-                "value": "#0e0e12"
+                "value": "#131319"
               },
               "surface-bright": {
-                "value": "#2c2b34"
+                "value": "#393840"
               },
               "surface-container-lowest": {
-                "value": "#000000"
+                "value": "#0e0e14"
               },
               "surface-container-low": {
-                "value": "#131318"
+                "value": "#1b1b22"
               },
               "surface-container": {
-                "value": "#191920"
-              },
-              "surface-container-high": {
                 "value": "#1f1f26"
               },
+              "surface-container-high": {
+                "value": "#2a2931"
+              },
               "surface-container-highest": {
-                "value": "#25252e"
+                "value": "#35343c"
               },
               "on-surface": {
-                "value": "#e7e4f0"
+                "value": "#e4e1eb"
               },
               "surface-variant": {
-                "value": "#25252e"
+                "value": "#464553"
               },
               "on-surface-variant": {
-                "value": "#acaab5"
+                "value": "#c7c5d5"
               },
               "outline": {
-                "value": "#76747f"
+                "value": "#918f9e"
               },
               "outline-variant": {
-                "value": "#484750"
+                "value": "#464553"
               },
               "inverse-surface": {
-                "value": "#fcf8fe"
+                "value": "#e4e1eb"
               },
               "inverse-on-surface": {
-                "value": "#56545a"
+                "value": "#303037"
               },
               "shadow": {
                 "value": "#000000"
@@ -857,122 +857,122 @@ exports[`preset output 1`] = `
                 "value": "#000000"
               },
               "surface-tint": {
-                "value": "#c4c2ee",
+                "value": "#c2c1ff",
                 "deprecated": "Use elevation instead."
               },
               "primary": {
-                "value": "#c4c2ee"
+                "value": "#c2c1ff"
               },
               "on-primary": {
-                "value": "#3d3d61"
+                "value": "#1f1990"
               },
               "primary-container": {
-                "value": "#4f4f74"
+                "value": "#8484f6"
               },
               "on-primary-container": {
-                "value": "#e3e0ff"
+                "value": "#150689"
               },
               "inverse-primary": {
-                "value": "#5c5b81"
+                "value": "#5150bf"
               },
               "primary-fixed": {
-                "value": "#d2d0fd"
+                "value": "#e2dfff"
               },
               "primary-fixed-dim": {
-                "value": "#c4c2ee"
+                "value": "#c2c1ff"
               },
               "on-primary-fixed": {
-                "value": "#333356"
+                "value": "#0b006b"
               },
               "on-primary-fixed-variant": {
-                "value": "#4f4f74"
+                "value": "#3836a6"
               },
               "secondary": {
-                "value": "#c6c4dd"
+                "value": "#c3c2f4"
               },
               "on-secondary": {
-                "value": "#3f3e52"
+                "value": "#2c2c55"
               },
               "secondary-container": {
-                "value": "#3a3a4d"
+                "value": "#45456f"
               },
               "on-secondary-container": {
-                "value": "#bfbdd5"
+                "value": "#b5b4e5"
               },
               "secondary-fixed": {
-                "value": "#e2e0f9"
+                "value": "#e2dfff"
               },
               "secondary-fixed-dim": {
-                "value": "#d4d2eb"
+                "value": "#c3c2f4"
               },
               "on-secondary-fixed": {
-                "value": "#3e3d51"
+                "value": "#17163f"
               },
               "on-secondary-fixed-variant": {
-                "value": "#5a596f"
+                "value": "#43436d"
               },
               "tertiary": {
-                "value": "#ffe7fd"
+                "value": "#fabc43"
               },
               "on-tertiary": {
-                "value": "#6e4d71"
+                "value": "#422c00"
               },
               "tertiary-container": {
-                "value": "#fcd2fe"
+                "value": "#bd8703"
               },
               "on-tertiary-container": {
-                "value": "#654569"
+                "value": "#372500"
               },
               "tertiary-fixed": {
-                "value": "#fcd2fe"
+                "value": "#ffdea9"
               },
               "tertiary-fixed-dim": {
-                "value": "#eec5ef"
+                "value": "#fabc43"
               },
               "on-tertiary-fixed": {
-                "value": "#513355"
+                "value": "#271900"
               },
               "on-tertiary-fixed-variant": {
-                "value": "#6f4e73"
+                "value": "#5e4100"
               },
               "error": {
-                "value": "#f97386"
+                "value": "#ffb4ab"
               },
               "on-error": {
-                "value": "#490013"
+                "value": "#690005"
               },
               "error-container": {
-                "value": "#871c34"
+                "value": "#93000a"
               },
               "on-error-container": {
-                "value": "#ff97a3"
+                "value": "#ffdad6"
               },
               "primary0": {
                 "value": "#000000"
               },
               "primary10": {
-                "value": "#18183a"
+                "value": "#0b006b"
               },
               "primary20": {
-                "value": "#2d2d50"
+                "value": "#1f1990"
               },
               "primary30": {
-                "value": "#434368"
+                "value": "#3836a6"
               },
               "primary40": {
-                "value": "#5b5b81"
+                "value": "#5150bf"
               },
               "primary50": {
-                "value": "#74739b"
+                "value": "#6a6ada"
               },
               "primary60": {
-                "value": "#8e8db6"
+                "value": "#8484f6"
               },
               "primary70": {
-                "value": "#a8a7d2"
+                "value": "#a2a2ff"
               },
               "primary80": {
-                "value": "#c4c2ee"
+                "value": "#c2c1ff"
               },
               "primary90": {
                 "value": "#e2dfff"
@@ -993,31 +993,31 @@ exports[`preset output 1`] = `
                 "value": "#000000"
               },
               "secondary10": {
-                "value": "#1a1a2c"
+                "value": "#17163f"
               },
               "secondary20": {
-                "value": "#2f2f42"
+                "value": "#2c2c55"
               },
               "secondary30": {
-                "value": "#454559"
+                "value": "#43436d"
               },
               "secondary40": {
-                "value": "#5d5c72"
+                "value": "#5a5a86"
               },
               "secondary50": {
-                "value": "#76758b"
+                "value": "#7373a0"
               },
               "secondary60": {
-                "value": "#908ea5"
+                "value": "#8d8cbc"
               },
               "secondary70": {
-                "value": "#aba9c1"
+                "value": "#a8a7d8"
               },
               "secondary80": {
-                "value": "#c6c4dd"
+                "value": "#c3c2f4"
               },
               "secondary90": {
-                "value": "#e2e0f9"
+                "value": "#e2dfff"
               },
               "secondary95": {
                 "value": "#f2efff"
@@ -1035,37 +1035,37 @@ exports[`preset output 1`] = `
                 "value": "#000000"
               },
               "tertiary10": {
-                "value": "#2c1031"
+                "value": "#271900"
               },
               "tertiary20": {
-                "value": "#422647"
+                "value": "#422c00"
               },
               "tertiary30": {
-                "value": "#5b3c5f"
+                "value": "#5e4100"
               },
               "tertiary40": {
-                "value": "#745378"
+                "value": "#7d5800"
               },
               "tertiary50": {
-                "value": "#8e6b91"
+                "value": "#9c6f00"
               },
               "tertiary60": {
-                "value": "#a985ac"
+                "value": "#bd8703"
               },
               "tertiary70": {
-                "value": "#c59fc8"
+                "value": "#dba129"
               },
               "tertiary80": {
-                "value": "#e2bae4"
+                "value": "#fabc43"
               },
               "tertiary90": {
-                "value": "#fed6ff"
+                "value": "#ffdea9"
               },
               "tertiary95": {
-                "value": "#ffebfc"
+                "value": "#ffeed8"
               },
               "tertiary98": {
-                "value": "#fff7fa"
+                "value": "#fff8f3"
               },
               "tertiary99": {
                 "value": "#fffbff"
@@ -1077,67 +1077,67 @@ exports[`preset output 1`] = `
                 "value": "#000000"
               },
               "neutral4": {
-                "value": "#0e0e12"
+                "value": "#0e0e14"
               },
               "neutral6": {
-                "value": "#131317"
+                "value": "#131319"
               },
               "neutral10": {
-                "value": "#1b1b20"
+                "value": "#1b1b22"
               },
               "neutral12": {
-                "value": "#201f24"
+                "value": "#1f1f26"
               },
               "neutral17": {
-                "value": "#2a292e"
+                "value": "#2a2931"
               },
               "neutral20": {
-                "value": "#313035"
+                "value": "#303037"
               },
               "neutral22": {
-                "value": "#353439"
+                "value": "#35343c"
               },
               "neutral24": {
-                "value": "#39393d"
+                "value": "#393840"
               },
               "neutral30": {
-                "value": "#47464b"
+                "value": "#47464e"
               },
               "neutral40": {
-                "value": "#5f5e63"
+                "value": "#5f5d66"
               },
               "neutral50": {
-                "value": "#78767c"
+                "value": "#78767f"
               },
               "neutral60": {
-                "value": "#929095"
+                "value": "#928f99"
               },
               "neutral70": {
-                "value": "#adaab0"
+                "value": "#acaab3"
               },
               "neutral80": {
-                "value": "#c8c5cb"
+                "value": "#c8c5cf"
               },
               "neutral87": {
-                "value": "#dcd9df"
+                "value": "#dcd8e2"
               },
               "neutral90": {
-                "value": "#e5e1e7"
+                "value": "#e4e1eb"
               },
               "neutral92": {
-                "value": "#eae7ed"
+                "value": "#eae7f1"
               },
               "neutral94": {
-                "value": "#f0ecf3"
+                "value": "#f0ecf6"
               },
               "neutral95": {
-                "value": "#f3eff6"
+                "value": "#f3eff9"
               },
               "neutral96": {
-                "value": "#f6f2f9"
+                "value": "#f6f2fc"
               },
               "neutral98": {
-                "value": "#fcf8fe"
+                "value": "#fcf8ff"
               },
               "neutral99": {
                 "value": "#fffbff"
@@ -1149,34 +1149,34 @@ exports[`preset output 1`] = `
                 "value": "#000000"
               },
               "neutral-variant10": {
-                "value": "#1b1b23"
+                "value": "#1b1a26"
               },
               "neutral-variant20": {
-                "value": "#302f38"
+                "value": "#302f3c"
               },
               "neutral-variant30": {
-                "value": "#47464f"
+                "value": "#464553"
               },
               "neutral-variant40": {
-                "value": "#5e5d67"
+                "value": "#5e5d6b"
               },
               "neutral-variant50": {
-                "value": "#777680"
+                "value": "#777584"
               },
               "neutral-variant60": {
-                "value": "#918f9a"
+                "value": "#918f9e"
               },
               "neutral-variant70": {
-                "value": "#acaab5"
+                "value": "#aca9b9"
               },
               "neutral-variant80": {
-                "value": "#c8c5d1"
+                "value": "#c7c5d5"
               },
               "neutral-variant90": {
-                "value": "#e4e1ed"
+                "value": "#e3e0f1"
               },
               "neutral-variant95": {
-                "value": "#f2effb"
+                "value": "#f2efff"
               },
               "neutral-variant98": {
                 "value": "#fcf8ff"
@@ -1191,34 +1191,34 @@ exports[`preset output 1`] = `
                 "value": "#000000"
               },
               "error10": {
-                "value": "#400010"
+                "value": "#410002"
               },
               "error20": {
-                "value": "#67001f"
+                "value": "#690005"
               },
               "error30": {
-                "value": "#871c34"
+                "value": "#93000a"
               },
               "error40": {
-                "value": "#a7354a"
+                "value": "#ba1a1a"
               },
               "error50": {
-                "value": "#c74d61"
+                "value": "#de3730"
               },
               "error60": {
-                "value": "#e8667a"
+                "value": "#ff5449"
               },
               "error70": {
-                "value": "#ff8796"
+                "value": "#ff897d"
               },
               "error80": {
-                "value": "#ffb2b9"
+                "value": "#ffb4ab"
               },
               "error90": {
-                "value": "#ffdadc"
+                "value": "#ffdad6"
               },
               "error95": {
-                "value": "#ffeced"
+                "value": "#ffedea"
               },
               "error98": {
                 "value": "#fff8f7"
@@ -1233,13 +1233,13 @@ exports[`preset output 1`] = `
                 "value": "#acc7ff"
               },
               "on-info": {
-                "value": "#003e85"
+                "value": "#002f67"
               },
               "info-container": {
-                "value": "#0654af"
+                "value": "#699efd"
               },
               "on-info-container": {
-                "value": "#e4ebff"
+                "value": "#003472"
               },
               "info0": {
                 "value": "#000000"
@@ -1284,16 +1284,16 @@ exports[`preset output 1`] = `
                 "value": "#ffffff"
               },
               "warning": {
-                "value": "#d9c935"
+                "value": "#ffffff"
               },
               "on-warning": {
-                "value": "#474100"
+                "value": "#363100"
               },
               "warning-container": {
-                "value": "#b7a809"
+                "value": "#f6e550"
               },
               "on-warning-container": {
-                "value": "#2d2800"
+                "value": "#6f6600"
               },
               "warning0": {
                 "value": "#000000"
